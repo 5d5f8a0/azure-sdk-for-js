@@ -2,14 +2,15 @@
 // Licensed under the MIT License.
 
 import { SecretClient } from "../../../src/index.js";
+import type {
+  FindReplaceSanitizer,
+  RecorderStartOptions,
+  VitestTestContext} from "@azure-tools/test-recorder";
 import {
   assertEnvironmentVariable,
   env,
   isRecordMode,
-  FindReplaceSanitizer,
-  Recorder,
-  RecorderStartOptions,
-  VitestTestContext,
+  Recorder
 } from "@azure-tools/test-recorder";
 import { uniqueString } from "./recorderUtils.js";
 import TestClient from "./testClient.js";
