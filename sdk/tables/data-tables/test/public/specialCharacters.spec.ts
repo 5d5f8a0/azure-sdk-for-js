@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { TableClient, TableEntityResult, TransactionAction} from "../../src";
+import type { TableClient, TableEntityResult, TransactionAction } from "../../src";
 import { odata } from "../../src";
 
 import type { Context } from "mocha";

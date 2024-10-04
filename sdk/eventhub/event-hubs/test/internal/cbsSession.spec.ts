@@ -3,7 +3,7 @@
 
 import type { ConnectionContext } from "../../src/connectionContext.js";
 import { openCbsSession } from "../../src/withAuth.js";
-import type { CbsClient} from "@azure/core-amqp";
+import type { CbsClient } from "@azure/core-amqp";
 import { StandardAbortMessage } from "@azure/core-amqp";
 import { describe, it, beforeEach, afterEach } from "vitest";
 import { createContext } from "../utils/clients.js";

@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 /* eslint-disable eqeqeq */
 
-import type { MessagingError} from "./errors.js";
+import type { MessagingError } from "./errors.js";
 import { translate } from "./errors.js";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import { Constants } from "./util/constants.js";

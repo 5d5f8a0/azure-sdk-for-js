@@ -13,13 +13,8 @@ import type { InternalAppConfigurationClientOptions } from "../../../src/appConf
 import type { Recorder } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import { NoOpCredential } from "@azure-tools/test-credential";
-import type {
-  HttpClient,
-  PipelineRequest,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders
-} from "@azure/core-rest-pipeline";
+import type { HttpClient, PipelineRequest, SendRequest } from "@azure/core-rest-pipeline";
+import { createHttpHeaders } from "@azure/core-rest-pipeline";
 
 describe("http request related tests", function () {
   describe("unit tests", () => {

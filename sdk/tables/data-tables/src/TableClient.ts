@@ -34,15 +34,8 @@ import type {
 } from "@azure/core-client";
 import type { TableDeleteEntityOptionalParams } from "./generated";
 import { GeneratedClient } from "./generated";
-import type {
-  NamedKeyCredential,
-  SASCredential,
-  TokenCredential} from "@azure/core-auth";
-import {
-  isNamedKeyCredential,
-  isSASCredential,
-  isTokenCredential,
-} from "@azure/core-auth";
+import type { NamedKeyCredential, SASCredential, TokenCredential } from "@azure/core-auth";
+import { isNamedKeyCredential, isSASCredential, isTokenCredential } from "@azure/core-auth";
 import { COSMOS_SCOPE, STORAGE_SCOPE, TablesLoggingAllowedHeaderNames } from "./utils/constants";
 import { decodeContinuationToken, encodeContinuationToken } from "./utils/continuationToken";
 import {

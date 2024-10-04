@@ -6,7 +6,7 @@
  *  They are duplicated in an internal test which contains workaround logic to record/playback the tests
  */
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { matrix } from "@azure-tools/test-utils";
 import type { Context } from "mocha";

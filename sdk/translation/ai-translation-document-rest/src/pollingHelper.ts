@@ -11,10 +11,9 @@ import type {
   CreateHttpPollerOptions,
   RunningOperation,
   OperationResponse,
-  OperationState} from "@azure/core-lro";
-import {
-  createHttpPoller,
+  OperationState,
 } from "@azure/core-lro";
+import { createHttpPoller } from "@azure/core-lro";
 import type {
   StartTranslation202Response,
   StartTranslationDefaultResponse,

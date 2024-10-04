@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import "./env";
-import type { RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
 import { Recorder, env } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";
 import type { MixedRealityStsClientOptions } from "../../src";

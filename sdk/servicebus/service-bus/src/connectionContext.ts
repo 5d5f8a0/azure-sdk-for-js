@@ -6,10 +6,9 @@ import { packageJsonInfo } from "./util/constants";
 import type {
   ConnectionConfig,
   CreateConnectionContextBaseParameters,
-  SasTokenProvider} from "@azure/core-amqp";
-import {
-  ConnectionContextBase
+  SasTokenProvider,
 } from "@azure/core-amqp";
+import { ConnectionContextBase } from "@azure/core-amqp";
 import type { TokenCredential } from "@azure/core-auth";
 import type { ServiceBusClientOptions } from "./constructorHelpers";
 import type {
@@ -17,10 +16,9 @@ import type {
   Connection,
   ConnectionError,
   EventContext,
-  OnAmqpEvent} from "rhea-promise";
-import {
-  ConnectionEvents
+  OnAmqpEvent,
 } from "rhea-promise";
+import { ConnectionEvents } from "rhea-promise";
 import type { MessageSender } from "./core/messageSender";
 import type { MessageSession } from "./session/messageSession";
 import type { MessageReceiver } from "./core/messageReceiver";

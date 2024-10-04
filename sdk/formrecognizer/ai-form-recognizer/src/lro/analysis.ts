@@ -11,7 +11,7 @@ import type {
   DocumentSpan,
   DocumentStyle,
 } from "../generated";
-import type { DocumentField} from "../models/fields";
+import type { DocumentField } from "../models/fields";
 import { toAnalyzedDocumentFieldsFromGenerated } from "../models/fields";
 import type { PollerOptions } from "../options";
 import type { AnalyzeDocumentOptions } from "../options/AnalyzeDocumentOptions";

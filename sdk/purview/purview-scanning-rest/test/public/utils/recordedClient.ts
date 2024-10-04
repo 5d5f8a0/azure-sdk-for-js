@@ -5,7 +5,7 @@
 
 import type { PurviewScanningRestClient } from "../../../src";
 import PurviewScanning from "../../../src";
-import type { Recorder, RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { Recorder, RecorderStartOptions } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 
 import type { ClientOptions } from "@azure-rest/core-client";

@@ -1,11 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  KeyVaultAdminPollOperationState} from "../keyVaultAdminPoller.js";
-import {
-  KeyVaultAdminPollOperation
-} from "../keyVaultAdminPoller.js";
+import type { KeyVaultAdminPollOperationState } from "../keyVaultAdminPoller.js";
+import { KeyVaultAdminPollOperation } from "../keyVaultAdminPoller.js";
 import type {
   KeyVaultBeginSelectiveKeyRestoreOptions,
   KeyVaultSelectiveKeyRestoreResult,

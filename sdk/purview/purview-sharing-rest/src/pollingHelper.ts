@@ -7,10 +7,9 @@ import type {
   LongRunningOperation,
   LroResponse,
   OperationState,
-  SimplePollerLike} from "@azure/core-lro";
-import {
-  createHttpPoller,
+  SimplePollerLike,
 } from "@azure/core-lro";
+import { createHttpPoller } from "@azure/core-lro";
 /**
  * Helper function that builds a Poller object to help polling a long running operation.
  * @param client - Client to use for sending the request to get additional pages.

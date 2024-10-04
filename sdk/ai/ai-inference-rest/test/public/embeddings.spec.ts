@@ -7,10 +7,9 @@ import { assert, beforeEach, afterEach, it, describe } from "vitest";
 import type {
   ModelClient,
   GetEmbeddingsBodyParam,
-  EmbeddingsResultOutput} from "../../src/index.js";
-import {
-  isUnexpected
+  EmbeddingsResultOutput,
 } from "../../src/index.js";
+import { isUnexpected } from "../../src/index.js";
 
 describe("embeddings test suite", () => {
   let recorder: Recorder;

@@ -4,10 +4,9 @@
 import type {
   MessageAdapter as EHMessageAdapter,
   EventData,
-  EventDataAdapterParameters} from "@azure/event-hubs";
-import {
-  createEventDataAdapter,
+  EventDataAdapterParameters,
 } from "@azure/event-hubs";
+import { createEventDataAdapter } from "@azure/event-hubs";
 import type { AssertEqualKeys } from "../utils/utils";
 import type { MessageAdapter } from "../../src/models";
 import { assert } from "chai";

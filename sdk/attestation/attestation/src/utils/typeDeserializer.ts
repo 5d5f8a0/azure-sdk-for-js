@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Mapper} from "@azure/core-client";
+import type { Mapper } from "@azure/core-client";
 import { createSerializer } from "@azure/core-client";
 
 /**

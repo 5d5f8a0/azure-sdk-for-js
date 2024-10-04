@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  RecorderStartOptions,
-  VitestTestContext} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  assertEnvironmentVariable,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions, VitestTestContext } from "@azure-tools/test-recorder";
+import { Recorder, assertEnvironmentVariable } from "@azure-tools/test-recorder";
 import { createTestCredential } from "@azure-tools/test-credential";
 import type { ClientOptions } from "@azure-rest/core-client";
 import type { ModelClient } from "../../../src/index.js";

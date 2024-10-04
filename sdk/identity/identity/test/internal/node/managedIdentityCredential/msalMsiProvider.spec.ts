@@ -3,7 +3,7 @@
 
 import Sinon from "sinon";
 import { assert } from "@azure-tools/test-utils";
-import type { AuthenticationResult} from "@azure/msal-node";
+import type { AuthenticationResult } from "@azure/msal-node";
 import { AuthError, ManagedIdentityApplication } from "@azure/msal-node";
 import { MsalMsiProvider } from "../../../../src/credentials/managedIdentityCredential/msalMsiProvider";
 import { tokenExchangeMsi } from "../../../../src/credentials/managedIdentityCredential/tokenExchangeMsi";

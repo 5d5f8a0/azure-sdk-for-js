@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import { describe, it, assert, beforeEach, afterEach } from "vitest";
-import type {
-  NotificationHubsClientContext} from "../../src/api/index.js";
+import type { NotificationHubsClientContext } from "../../src/api/index.js";
 import {
   createOrUpdateRegistration,
   createRegistrationId,

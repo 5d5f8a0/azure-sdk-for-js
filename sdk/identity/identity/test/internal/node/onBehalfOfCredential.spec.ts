@@ -3,7 +3,7 @@
 
 import * as path from "path";
 import { IdentityTestContext, prepareMSALResponses } from "../../httpRequests";
-import type { IdentityTestContextInterface} from "../../httpRequestsCommon";
+import type { IdentityTestContextInterface } from "../../httpRequestsCommon";
 import { createResponse } from "../../httpRequestsCommon";
 import { OnBehalfOfCredential } from "../../../src";
 import { assert } from "chai";

@@ -6,7 +6,7 @@ import type * as msalBrowser from "@azure/msal-browser";
 import type { AccessToken, GetTokenOptions } from "@azure/core-auth";
 import type { AuthenticationRecord, MsalResult } from "../types";
 import { AuthenticationRequiredError, CredentialUnavailableError } from "../../errors";
-import type { CredentialLogger} from "../../util/logging";
+import type { CredentialLogger } from "../../util/logging";
 import { formatSuccess } from "../../util/logging";
 import type { MsalFlow, MsalFlowOptions } from "./flows";
 import { ensureValidMsalToken, getAuthority, getKnownAuthorities, msalToPublic } from "../utils";

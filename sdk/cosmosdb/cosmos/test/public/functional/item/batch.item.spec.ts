@@ -2,15 +2,8 @@
 // Licensed under the MIT License.
 
 import assert from "assert";
-import type {
-  Container,
-  OperationResponse} from "../../../../src";
-import {
-  CosmosClient,
-  OperationType,
-  PatchOperationType,
-  ResourceType,
-} from "../../../../src";
+import type { Container, OperationResponse } from "../../../../src";
+import { CosmosClient, OperationType, PatchOperationType, ResourceType } from "../../../../src";
 import { addEntropy, testForDiagnostics } from "../../common/TestHelpers";
 import type { OperationInput } from "../../../../src";
 import { BulkOperationType } from "../../../../src";

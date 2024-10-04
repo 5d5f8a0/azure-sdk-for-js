@@ -4,9 +4,7 @@
 import type { Context, Test } from "mocha";
 import * as dotenv from "dotenv";
 
-import type {
-  RecorderStartOptions,
-  SanitizerOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions, SanitizerOptions } from "@azure-tools/test-recorder";
 import {
   Recorder,
   assertEnvironmentVariable,

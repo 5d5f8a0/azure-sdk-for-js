@@ -3,9 +3,7 @@
 
 import { describe, it, assert } from "vitest";
 import type { AccessToken, GetTokenOptions, TokenCredential } from "@azure/core-auth";
-import type {
-  HttpClient,
-  PipelineResponse} from "@azure/core-rest-pipeline";
+import type { HttpClient, PipelineResponse } from "@azure/core-rest-pipeline";
 import {
   bearerTokenAuthenticationPolicy,
   createEmptyPipeline,

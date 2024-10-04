@@ -49,7 +49,12 @@ import type {
   VectorSearchVectorizerUnion as GeneratedVectorSearchVectorizer,
   WebApiVectorizer as GeneratedWebApiVectorizer,
 } from "./generated/service/models";
-import type { SearchResult, SelectFields, SuggestDocumentsResult, SuggestResult } from "./indexModels";
+import type {
+  SearchResult,
+  SelectFields,
+  SuggestDocumentsResult,
+  SuggestResult,
+} from "./indexModels";
 import { logger } from "./logger";
 import type {
   AIServicesVisionVectorizer,
@@ -98,10 +103,9 @@ import type {
   VectorSearchAlgorithmConfiguration,
   VectorSearchAlgorithmMetric,
   VectorSearchVectorizer,
-  WebApiVectorizer} from "./serviceModels";
-import {
-  isComplexField
+  WebApiVectorizer,
 } from "./serviceModels";
+import { isComplexField } from "./serviceModels";
 
 export const defaultServiceVersion = "2024-09-01-Preview";
 

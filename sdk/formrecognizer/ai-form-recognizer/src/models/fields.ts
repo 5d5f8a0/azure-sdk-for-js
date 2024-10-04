@@ -3,7 +3,11 @@
 
 import type { DocumentSpan } from "..";
 
-import type { AddressValue, CurrencyValue, DocumentField as GeneratedDocumentField } from "../generated";
+import type {
+  AddressValue,
+  CurrencyValue,
+  DocumentField as GeneratedDocumentField,
+} from "../generated";
 import { toBoundingRegions } from "../transforms/polygon";
 import { capitalize } from "../util";
 import type { BoundingRegion } from "./documentElements";

@@ -2,36 +2,30 @@
 // Licensed under the MIT License.
 
 import { Constants as AMQPConstants, parseConnectionString } from "@azure/core-amqp";
-import type {
-  TokenCredential,
-  NamedKeyCredential} from "@azure/core-auth";
-import {
-  isTokenCredential,
-  isNamedKeyCredential,
-} from "@azure/core-auth";
+import type { TokenCredential, NamedKeyCredential } from "@azure/core-auth";
+import { isTokenCredential, isNamedKeyCredential } from "@azure/core-auth";
 import type {
   OperationOptions,
   CommonClientOptions,
-  FullOperationResponse} from "@azure/core-client";
-import {
-  ServiceClient
+  FullOperationResponse,
 } from "@azure/core-client";
+import { ServiceClient } from "@azure/core-client";
 import type { PagedAsyncIterableIterator, PageSettings } from "@azure/core-paging";
 import type {
   PipelineResponse,
   PipelineRequest,
   PipelinePolicy,
-  SendRequest} from "@azure/core-rest-pipeline";
+  SendRequest,
+} from "@azure/core-rest-pipeline";
 import {
   bearerTokenAuthenticationPolicy,
   RestError,
   createPipelineFromOptions,
-  createPipelineRequest
+  createPipelineRequest,
 } from "@azure/core-rest-pipeline";
 import type { CorrelationRuleFilter } from "./core/managementClient";
 import { administrationLogger as logger } from "./log";
-import type {
-  NamespaceProperties} from "./serializers/namespaceResourceSerializer";
+import type { NamespaceProperties } from "./serializers/namespaceResourceSerializer";
 import {
   buildNamespace,
   NamespaceResourceSerializer,
@@ -40,59 +34,62 @@ import type {
   CreateQueueOptions,
   InternalQueueOptions,
   QueueProperties,
-  QueueRuntimeProperties} from "./serializers/queueResourceSerializer";
+  QueueRuntimeProperties,
+} from "./serializers/queueResourceSerializer";
 import {
   buildQueue,
   buildQueueOptions,
   buildQueueRuntimeProperties,
-  QueueResourceSerializer
+  QueueResourceSerializer,
 } from "./serializers/queueResourceSerializer";
 import type {
   CreateRuleOptions,
   RuleProperties,
   SqlRuleAction,
-  SqlRuleFilter} from "./serializers/ruleResourceSerializer";
+  SqlRuleFilter,
+} from "./serializers/ruleResourceSerializer";
 import {
   buildRule,
   isSqlRuleAction,
-  RuleResourceSerializer
+  RuleResourceSerializer,
 } from "./serializers/ruleResourceSerializer";
 import type {
   CreateSubscriptionOptions,
   InternalSubscriptionOptions,
   SubscriptionProperties,
-  SubscriptionRuntimeProperties} from "./serializers/subscriptionResourceSerializer";
+  SubscriptionRuntimeProperties,
+} from "./serializers/subscriptionResourceSerializer";
 import {
   buildSubscription,
   buildSubscriptionOptions,
   buildSubscriptionRuntimeProperties,
-  SubscriptionResourceSerializer
+  SubscriptionResourceSerializer,
 } from "./serializers/subscriptionResourceSerializer";
 import type {
   CreateTopicOptions,
   InternalTopicOptions,
   TopicProperties,
-  TopicRuntimeProperties} from "./serializers/topicResourceSerializer";
+  TopicRuntimeProperties,
+} from "./serializers/topicResourceSerializer";
 import {
   buildTopic,
   buildTopicOptions,
   buildTopicRuntimeProperties,
-  TopicResourceSerializer
+  TopicResourceSerializer,
 } from "./serializers/topicResourceSerializer";
-import type { AtomXmlSerializer} from "./util/atomXmlHelper";
+import type { AtomXmlSerializer } from "./util/atomXmlHelper";
 import { executeAtomXmlOperation } from "./util/atomXmlHelper";
 import * as Constants from "./util/constants";
 import { parseURL } from "./util/parseUrl";
 import { SasServiceClientCredentials } from "./util/sasServiceClientCredentials";
 import { tracingClient } from "./diagnostics/tracing";
 import { isDefined } from "@azure/core-util";
-import type {
-  ServiceBusAtomAPIVersion} from "./util/utils";
+import type { ServiceBusAtomAPIVersion } from "./util/utils";
 import {
   formatUserAgentPrefix,
   getHttpResponseOnly,
   isAbsoluteUrl,
-  isJSONLikeObject
+  isJSONLikeObject,
 } from "./util/utils";
 import type { HttpResponse } from "./util/compat";
 

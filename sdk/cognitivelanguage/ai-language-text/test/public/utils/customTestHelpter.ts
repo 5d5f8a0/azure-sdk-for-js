@@ -8,10 +8,9 @@ import type {
   TextAuthoringClient,
   ExportedCustomSingleLabelClassificationProjectAssets,
   ExportedCustomMultiLabelClassificationProjectAssets,
-  ExportedCustomEntityRecognitionProjectAssets} from "@azure/ai-language-textauthoring";
-import {
-  getLongRunningPoller
+  ExportedCustomEntityRecognitionProjectAssets,
 } from "@azure/ai-language-textauthoring";
+import { getLongRunningPoller } from "@azure/ai-language-textauthoring";
 import type { ContainerClient } from "@azure/storage-blob";
 import { BlobServiceClient } from "@azure/storage-blob";
 import { DefaultAzureCredential } from "@azure/identity";

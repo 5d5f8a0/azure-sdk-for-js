@@ -6,12 +6,13 @@ import type {
   MessagingError,
   OnSendEventsErrorContext,
   Subscription,
-  EventHubConsumerClientOptions} from "@azure/event-hubs";
+  EventHubConsumerClientOptions,
+} from "@azure/event-hubs";
 import {
   EventHubBufferedProducerClient,
   EventHubConsumerClient,
   earliestEventPosition,
-  latestEventPosition
+  latestEventPosition,
 } from "@azure/event-hubs";
 import type { MessagingTestClient } from "./models";
 import type { Recorder } from "@azure-tools/test-recorder";

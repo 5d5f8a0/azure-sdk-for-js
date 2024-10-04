@@ -2,16 +2,10 @@
 // Licensed under the MIT License.
 
 import { Recorder, assertEnvironmentVariable } from "@azure-tools/test-recorder";
-import type {
-  Schema,
-  SchemaDescription,
-  SchemaProperties} from "../../src";
-import {
-  KnownSchemaFormats,
-  SchemaRegistryClient,
-} from "../../src";
+import type { Schema, SchemaDescription, SchemaProperties } from "../../src";
+import { KnownSchemaFormats, SchemaRegistryClient } from "../../src";
 import { assert, matrix } from "@azure-tools/test-utils";
-import type { Format} from "./utils/recordedClient";
+import type { Format } from "./utils/recordedClient";
 import { createRecordedClient, recorderOptions } from "./utils/recordedClient";
 import { ClientSecretCredential } from "@azure/identity";
 import type { Context } from "mocha";

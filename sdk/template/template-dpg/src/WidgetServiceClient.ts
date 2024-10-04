@@ -9,9 +9,9 @@
  * If you need to make changes, please do so in the original source file, \{project-root\}/sources/custom
  */
 
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
-import type { WidgetServiceClientOptions} from "./api/WidgetServiceContext.js";
+import type { WidgetServiceClientOptions } from "./api/WidgetServiceContext.js";
 import { createWidgetService } from "./api/WidgetServiceContext.js";
 import type {
   AnalyzeResult,
@@ -22,7 +22,8 @@ import type {
   GetWidgetOptions,
   ListWidgetsOptions,
   UpdateWidgetOptions,
-  Widget} from "./api/index.js";
+  Widget,
+} from "./api/index.js";
 import {
   analyzeWidget,
   createWidget,

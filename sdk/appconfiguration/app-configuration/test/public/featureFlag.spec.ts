@@ -4,12 +4,10 @@
 import type {
   AddConfigurationSettingResponse,
   AppConfigurationClient,
-  ConfigurationSetting} from "../../src";
-import {
-  featureFlagContentType,
-  featureFlagPrefix,
+  ConfigurationSetting,
 } from "../../src";
-import type { FeatureFlagValue} from "../../src/featureFlag";
+import { featureFlagContentType, featureFlagPrefix } from "../../src";
+import type { FeatureFlagValue } from "../../src/featureFlag";
 import { isFeatureFlag, parseFeatureFlag } from "../../src/featureFlag";
 import type { Recorder } from "@azure-tools/test-recorder";
 import { createAppConfigurationClientForTests, startRecorder } from "./utils/testHelpers";

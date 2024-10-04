@@ -8,7 +8,8 @@ import type {
   MessagingError,
   ReceivedEventData,
   Subscription,
-  SubscriptionEventHandlers} from "../../src/index.js";
+  SubscriptionEventHandlers,
+} from "../../src/index.js";
 import {
   CloseReason,
   earliestEventPosition,

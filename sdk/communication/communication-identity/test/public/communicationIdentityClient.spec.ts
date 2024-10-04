@@ -1,12 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  CommunicationUserIdentifier} from "@azure/communication-common";
-import {
-  isCommunicationUserIdentifier,
-} from "@azure/communication-common";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { CommunicationUserIdentifier } from "@azure/communication-common";
+import { isCommunicationUserIdentifier } from "@azure/communication-common";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isPlaybackMode } from "@azure-tools/test-recorder";
 import {
   createRecordedCommunicationIdentityClient,

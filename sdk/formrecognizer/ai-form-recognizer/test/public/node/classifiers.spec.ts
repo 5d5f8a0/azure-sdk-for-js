@@ -6,7 +6,7 @@ import type { Context } from "mocha";
 
 import { matrix } from "@azure-tools/test-utils";
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable } from "@azure-tools/test-recorder";
 
 import {

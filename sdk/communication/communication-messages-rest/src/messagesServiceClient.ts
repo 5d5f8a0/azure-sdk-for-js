@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  TokenCredential,
-  KeyCredential} from "@azure/core-auth";
-import {
-  isTokenCredential,
-  isKeyCredential,
-} from "@azure/core-auth";
+import type { TokenCredential, KeyCredential } from "@azure/core-auth";
+import { isTokenCredential, isKeyCredential } from "@azure/core-auth";
 import type { ClientOptions } from "@azure-rest/core-client";
 import { parseClientArguments, createCommunicationAuthPolicy } from "@azure/communication-common";
 import type { MessagesServiceClient } from "./generated/src/clientDefinitions";

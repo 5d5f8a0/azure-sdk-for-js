@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import type { AccessToken, GetTokenOptions, TokenCredential } from "../../src";
-import type {
-  CredentialLogger} from "../../src/util/logging";
+import type { CredentialLogger } from "../../src/util/logging";
 import {
   credentialLogger,
   credentialLoggerInstance,

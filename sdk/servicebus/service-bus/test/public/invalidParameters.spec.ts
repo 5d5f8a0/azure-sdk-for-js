@@ -8,7 +8,7 @@ const expect = chai.expect;
 import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
 import { TestClientType, TestMessage } from "./utils/testUtils";
-import type { ServiceBusClientForTests} from "./utils/testutils2";
+import type { ServiceBusClientForTests } from "./utils/testutils2";
 import { createServiceBusClientForTests } from "./utils/testutils2";
 import type { ServiceBusSender } from "../../src";
 import type { ServiceBusSessionReceiver } from "../../src";

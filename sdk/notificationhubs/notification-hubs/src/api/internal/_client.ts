@@ -5,11 +5,9 @@ import type {
   HttpHeaders,
   HttpMethods,
   PipelineRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  RestError,
-  createPipelineRequest,
+  PipelineResponse,
 } from "@azure/core-rest-pipeline";
+import { RestError, createPipelineRequest } from "@azure/core-rest-pipeline";
 import type {
   NotificationHubsMessageResponse,
   NotificationHubsResponse,

@@ -3,7 +3,7 @@
 
 import { QueueSASPermissions } from "./QueueSASPermissions";
 import type { StorageSharedKeyCredential } from "../../storage-blob/src/credentials/StorageSharedKeyCredential";
-import type { SasIPRange} from "./SasIPRange";
+import type { SasIPRange } from "./SasIPRange";
 import { ipRangeToString } from "./SasIPRange";
 import type { SASProtocol } from "./SASQueryParameters";
 import { SASQueryParameters } from "./SASQueryParameters";

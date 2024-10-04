@@ -13,13 +13,10 @@ import {
 import type { DiagnosticNodeInternal } from "../diagnostics/DiagnosticNodeInternal";
 import type { FeedOptions } from "../request";
 import type { Response } from "../request";
-import type {
-  FetchFunctionCallback} from "./defaultQueryExecutionContext";
-import {
-  DefaultQueryExecutionContext
-} from "./defaultQueryExecutionContext";
+import type { FetchFunctionCallback } from "./defaultQueryExecutionContext";
+import { DefaultQueryExecutionContext } from "./defaultQueryExecutionContext";
 import { FetchResult, FetchResultType } from "./FetchResult";
-import type { CosmosHeaders} from "./headerUtils";
+import type { CosmosHeaders } from "./headerUtils";
 import { getInitialHeader, mergeHeaders } from "./headerUtils";
 import type { SqlQuerySpec } from "./index";
 

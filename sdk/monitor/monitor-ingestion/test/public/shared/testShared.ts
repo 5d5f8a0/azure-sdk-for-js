@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import { createTestCredential } from "@azure-tools/test-credential";
-import type {
-  Recorder,
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  assertEnvironmentVariable,
-  env,
-} from "@azure-tools/test-recorder";
+import type { Recorder, RecorderStartOptions } from "@azure-tools/test-recorder";
+import { assertEnvironmentVariable, env } from "@azure-tools/test-recorder";
 
 import { createClientLogger } from "@azure/logger";
 import { LogsIngestionClient } from "../../../src";

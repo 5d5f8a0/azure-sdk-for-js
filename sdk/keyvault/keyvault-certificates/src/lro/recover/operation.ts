@@ -11,11 +11,8 @@ import type {
 import type { KeyVaultClient } from "../../generated/keyVaultClient.js";
 import { tracingClient } from "../../tracing.js";
 import { getCertificateWithPolicyFromCertificateBundle } from "../../transformations.js";
-import type {
-  KeyVaultCertificatePollOperationState} from "../keyVaultCertificatePoller.js";
-import {
-  KeyVaultCertificatePollOperation
-} from "../keyVaultCertificatePoller.js";
+import type { KeyVaultCertificatePollOperationState } from "../keyVaultCertificatePoller.js";
+import { KeyVaultCertificatePollOperation } from "../keyVaultCertificatePoller.js";
 
 /**
  * Deprecated: Public representation of the recovery of a deleted certificate poll operation

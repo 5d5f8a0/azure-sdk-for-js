@@ -3,8 +3,7 @@
 /// <reference lib="esnext.asynciterable" />
 
 /* eslint-disable @azure/azure-sdk/ts-naming-options */
-import type {
-  CommunicationTokenCredential} from "@azure/communication-common";
+import type { CommunicationTokenCredential } from "@azure/communication-common";
 import {
   createCommunicationAuthPolicy,
   isKeyCredential,
@@ -18,10 +17,9 @@ import type {
   JobRouterAdministrationListClassificationPoliciesOptionalParams,
   JobRouterAdministrationListDistributionPoliciesOptionalParams,
   JobRouterAdministrationListExceptionPoliciesOptionalParams,
-  JobRouterAdministrationListQueuesOptionalParams} from "./generated/src";
-import {
-  JobRouterApiClient,
+  JobRouterAdministrationListQueuesOptionalParams,
 } from "./generated/src";
+import { JobRouterApiClient } from "./generated/src";
 import type {
   ClassificationPolicyItem,
   DistributionPolicyItem,

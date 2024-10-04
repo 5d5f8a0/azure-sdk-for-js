@@ -3,7 +3,7 @@
 
 import * as sinon from "sinon";
 import { Recorder, isPlaybackMode, isLiveMode } from "@azure-tools/test-recorder";
-import type { TableClient, TransactionAction} from "../../src";
+import type { TableClient, TransactionAction } from "../../src";
 import { TableTransaction, odata } from "../../src";
 import type { Context } from "mocha";
 import { Uuid } from "../../src/utils/uuid";

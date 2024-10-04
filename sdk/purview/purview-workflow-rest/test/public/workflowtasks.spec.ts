@@ -7,7 +7,10 @@ import { createClient } from "./utils/recordedClient";
 
 import type { Context } from "mocha";
 import type { PurviewWorkflowClient } from "../../src/clientDefinitions";
-import type { ApproveApprovalTaskParameters, RejectApprovalTaskParameters } from "../../src/parameters";
+import type {
+  ApproveApprovalTaskParameters,
+  RejectApprovalTaskParameters,
+} from "../../src/parameters";
 import { isUnexpected } from "../../src/isUnexpected";
 
 describe("Operate the workflow task.", () => {

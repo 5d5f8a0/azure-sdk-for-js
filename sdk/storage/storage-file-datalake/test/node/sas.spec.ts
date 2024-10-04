@@ -9,7 +9,8 @@ import type {
   PathPermissions,
   StorageSharedKeyCredential,
   UserDelegationKey,
-  FileSystemListPathsResponse} from "../../src";
+  FileSystemListPathsResponse,
+} from "../../src";
 import {
   AccountSASPermissions,
   AccountSASResourceTypes,
@@ -23,7 +24,7 @@ import {
   generateAccountSASQueryParameters,
   generateDataLakeSASQueryParameters,
   newPipeline,
-  SASQueryParameters
+  SASQueryParameters,
 } from "../../src";
 import { DataLakeFileClient } from "../../src/";
 import { DirectorySASPermissions } from "../../src/sas/DirectorySASPermissions";

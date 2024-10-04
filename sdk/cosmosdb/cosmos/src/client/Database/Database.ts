@@ -8,7 +8,7 @@ import { Container, Containers } from "../Container";
 import { User, Users } from "../User";
 import type { DatabaseDefinition } from "./DatabaseDefinition";
 import { DatabaseResponse } from "./DatabaseResponse";
-import type { OfferDefinition} from "../Offer";
+import type { OfferDefinition } from "../Offer";
 import { OfferResponse, Offer } from "../Offer";
 import type { Resource } from "../Resource";
 import type { DiagnosticNodeInternal } from "../../diagnostics/DiagnosticNodeInternal";

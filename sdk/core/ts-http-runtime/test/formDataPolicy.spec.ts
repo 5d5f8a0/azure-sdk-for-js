@@ -2,9 +2,7 @@
 // Licensed under the MIT License.
 
 import { describe, it, assert, vi } from "vitest";
-import type {
-  PipelineResponse,
-  SendRequest} from "../src/index.js";
+import type { PipelineResponse, SendRequest } from "../src/index.js";
 import {
   createFile,
   createFileFromStream,

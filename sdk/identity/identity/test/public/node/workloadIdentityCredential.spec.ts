@@ -5,20 +5,19 @@
 
 import path, { join } from "path";
 import { tmpdir } from "os";
-import type { MsalTestCleanup} from "../../node/msalNodeTestSetup";
+import type { MsalTestCleanup } from "../../node/msalNodeTestSetup";
 import { msalNodeTestSetup } from "../../node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";
 import { assert } from "@azure-tools/test-utils";
 import { createJWTTokenFromCertificate } from "./utils/utils";
 import { mkdtempSync, rmdirSync, unlinkSync, writeFileSync } from "fs";
-import type {
-  WorkloadIdentityCredentialOptions} from "../../../src";
+import type { WorkloadIdentityCredentialOptions } from "../../../src";
 import {
   DefaultAzureCredential,
   ManagedIdentityCredential,
-  WorkloadIdentityCredential
+  WorkloadIdentityCredential,
 } from "../../../src";
 
 describe.skip("WorkloadIdentityCredential", function () {

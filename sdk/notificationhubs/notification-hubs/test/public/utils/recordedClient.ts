@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Recorder, RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { Recorder, RecorderStartOptions } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
-import type { NotificationHubsClientContext} from "../../../src/api/index.js";
+import type { NotificationHubsClientContext } from "../../../src/api/index.js";
 import { createClientContext } from "../../../src/api/index.js";
 import { isBrowser } from "@azure/core-util";
 

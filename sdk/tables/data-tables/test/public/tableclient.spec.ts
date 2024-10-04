@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Edm, TableClient, TableEntity, TableEntityResult} from "../../src";
+import type { Edm, TableClient, TableEntity, TableEntityResult } from "../../src";
 import { odata } from "../../src";
 import { Recorder, isPlaybackMode } from "@azure-tools/test-recorder";
 import { isNodeLike } from "@azure/core-util";

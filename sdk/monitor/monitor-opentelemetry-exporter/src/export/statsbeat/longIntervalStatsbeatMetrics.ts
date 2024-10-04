@@ -5,30 +5,22 @@ import type {
   BatchObservableResult,
   ObservableGauge,
   ObservableResult,
-  Meter} from "@opentelemetry/api";
-import {
-  diag
+  Meter,
 } from "@opentelemetry/api";
-import type { ExportResult} from "@opentelemetry/core";
+import { diag } from "@opentelemetry/api";
+import type { ExportResult } from "@opentelemetry/core";
 import { ExportResultCode } from "@opentelemetry/core";
-import type {
-  PeriodicExportingMetricReaderOptions} from "@opentelemetry/sdk-metrics";
-import {
-  MeterProvider,
-  PeriodicExportingMetricReader
-} from "@opentelemetry/sdk-metrics";
+import type { PeriodicExportingMetricReaderOptions } from "@opentelemetry/sdk-metrics";
+import { MeterProvider, PeriodicExportingMetricReader } from "@opentelemetry/sdk-metrics";
 import type { AzureMonitorExporterOptions } from "../../index";
 import * as ai from "../../utils/constants/applicationinsights";
 import { StatsbeatMetrics } from "./statsbeatMetrics";
 import type {
   CommonStatsbeatProperties,
   AttachStatsbeatProperties,
-  StatsbeatOptions} from "./types";
-import {
-  StatsbeatCounter,
-  STATSBEAT_LANGUAGE,
-  StatsbeatFeatureType
+  StatsbeatOptions,
 } from "./types";
+import { StatsbeatCounter, STATSBEAT_LANGUAGE, StatsbeatFeatureType } from "./types";
 import { AzureMonitorStatsbeatExporter } from "./statsbeatExporter";
 
 let instance: LongIntervalStatsbeatMetrics | null = null;

@@ -1,29 +1,18 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  HttpClient,
-  Pipeline} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
-  createEmptyPipeline,
-} from "@azure/core-rest-pipeline";
+import type { HttpClient, Pipeline } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy, createEmptyPipeline } from "@azure/core-rest-pipeline";
 import type { PartitionKeyRange } from "./client/Container/PartitionKeyRange";
 import type { Resource } from "./client/Resource";
 import { Constants, HTTPMethod, OperationType, ResourceType } from "./common/constants";
 import { getIdFromLink, getPathFromLink, parseLink } from "./common/helper";
 import { StatusCodes, SubStatusCodes } from "./common/statusCodes";
 import type { Agent, CosmosClientOptions } from "./CosmosClientOptions";
-import type {
-  ConnectionPolicy,
-  PartitionKey} from "./documents";
-import {
-  ConsistencyLevel,
-  DatabaseAccount,
-  convertToInternalPartitionKey,
-} from "./documents";
+import type { ConnectionPolicy, PartitionKey } from "./documents";
+import { ConsistencyLevel, DatabaseAccount, convertToInternalPartitionKey } from "./documents";
 import type { GlobalEndpointManager } from "./globalEndpointManager";
-import type { PluginConfig} from "./plugins/Plugin";
+import type { PluginConfig } from "./plugins/Plugin";
 import { PluginOn, executePlugins } from "./plugins/Plugin";
 import type { FetchFunctionCallback, SqlQuerySpec } from "./queryExecutionContext";
 import type { CosmosHeaders } from "./queryExecutionContext/CosmosHeaders";
@@ -39,16 +28,12 @@ import type { SessionContext } from "./session/SessionContext";
 import type { BulkOptions } from "./utils/batch";
 import { sanitizeEndpoint } from "./utils/checkURL";
 import { supportedQueryFeaturesBuilder } from "./utils/supportedQueryFeaturesBuilder";
-import type { AzureLogger} from "@azure/logger";
+import type { AzureLogger } from "@azure/logger";
 import { createClientLogger } from "@azure/logger";
 import type { ClientConfigDiagnostic, CosmosDiagnostics } from "./CosmosDiagnostics";
 import type { DiagnosticNodeInternal } from "./diagnostics/DiagnosticNodeInternal";
-import type {
-  DiagnosticWriter} from "./diagnostics/DiagnosticWriter";
-import {
-  LogDiagnosticWriter,
-  NoOpDiagnosticWriter,
-} from "./diagnostics/DiagnosticWriter";
+import type { DiagnosticWriter } from "./diagnostics/DiagnosticWriter";
+import { LogDiagnosticWriter, NoOpDiagnosticWriter } from "./diagnostics/DiagnosticWriter";
 import type { DiagnosticFormatter } from "./diagnostics/DiagnosticFormatter";
 import { DefaultDiagnosticFormatter } from "./diagnostics/DiagnosticFormatter";
 import { CosmosDbDiagnosticLevel } from "./diagnostics/CosmosDbDiagnosticLevel";

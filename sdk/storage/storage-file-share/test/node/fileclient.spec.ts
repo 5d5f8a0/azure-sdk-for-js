@@ -11,16 +11,13 @@ import * as zlib from "zlib";
 
 import { isLiveMode, Recorder } from "@azure-tools/test-recorder";
 
-import type {
-  ShareClient,
-  ShareDirectoryClient,
-  StorageSharedKeyCredential} from "../../src";
+import type { ShareClient, ShareDirectoryClient, StorageSharedKeyCredential } from "../../src";
 import {
   FileSASPermissions,
   generateFileSASQueryParameters,
   getFileServiceAccountAudience,
   newPipeline,
-  ShareFileClient
+  ShareFileClient,
 } from "../../src";
 import { readStreamToLocalFileWithLogs } from "../../test/utils/testutils.node";
 import {

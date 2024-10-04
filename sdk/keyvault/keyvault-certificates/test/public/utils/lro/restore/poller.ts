@@ -6,10 +6,9 @@ import { delay } from "@azure/core-util";
 import { Poller } from "@azure/core-lro";
 import type {
   RestoreCertificateBackupPollOperationState,
-  TestCertificateClientInterface} from "./operation.js";
-import {
-  makeRestoreCertificateBackupPollOperation
+  TestCertificateClientInterface,
 } from "./operation.js";
+import { makeRestoreCertificateBackupPollOperation } from "./operation.js";
 import type { KeyVaultCertificate } from "../../../../../src/index.js";
 
 export interface RestoreCertificateBackupPollerOptions {

@@ -1,9 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  HttpClient,
-  PipelineResponse} from "@azure/core-rest-pipeline";
+import type { HttpClient, PipelineResponse } from "@azure/core-rest-pipeline";
 import {
   createEmptyPipeline,
   createHttpHeaders,

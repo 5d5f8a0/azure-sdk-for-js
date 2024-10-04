@@ -3,8 +3,7 @@
 
 import type { CryptographyOptions, KeyVaultKey } from "./keysModels";
 
-import type {
-  JsonWebKey} from "./generated/models";
+import type { JsonWebKey } from "./generated/models";
 import {
   JsonWebKeyEncryptionAlgorithm as EncryptionAlgorithm,
   JsonWebKeyCurveName as KeyCurveName,

@@ -13,12 +13,9 @@ import type {
   ScheduleOutput,
   DelayActionsParameters,
   DevBoxActionDelayResultOutput,
-  CreateDevBoxParameters} from "../../src/index.js";
-import {
-  getLongRunningPoller,
-  isUnexpected,
-  paginate
+  CreateDevBoxParameters,
 } from "../../src/index.js";
+import { getLongRunningPoller, isUnexpected, paginate } from "../../src/index.js";
 
 const testPollingOptions = {
   intervalInMs: isPlaybackMode() ? 0 : undefined,

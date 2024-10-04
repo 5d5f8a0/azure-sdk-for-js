@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { diag } from "@opentelemetry/api";
-import type { ExportResult} from "@opentelemetry/core";
+import type { ExportResult } from "@opentelemetry/core";
 import { ExportResultCode } from "@opentelemetry/core";
 import type { ReadableSpan, SpanExporter } from "@opentelemetry/sdk-trace-base";
 import { AzureMonitorBaseExporter } from "./base";

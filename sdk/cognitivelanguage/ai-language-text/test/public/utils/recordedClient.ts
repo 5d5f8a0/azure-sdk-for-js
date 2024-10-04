@@ -3,12 +3,8 @@
 
 import type { TextAnalysisClientOptions } from "../../../src/";
 import { AzureKeyCredential, TextAnalysisClient } from "../../../src/";
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  assertEnvironmentVariable,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
+import { Recorder, assertEnvironmentVariable } from "@azure-tools/test-recorder";
 import type { Test } from "mocha";
 import { createTestCredential } from "@azure-tools/test-credential";
 

@@ -5,10 +5,9 @@ import type { KeyVaultAdminPollerOptions } from "../keyVaultAdminPoller.js";
 import { KeyVaultAdminPoller } from "../keyVaultAdminPoller.js";
 import type {
   KeyVaultSelectiveKeyRestoreOperationState,
-  KeyVaultSelectiveKeyRestorePollOperationState} from "./operation.js";
-import {
-  KeyVaultSelectiveKeyRestorePollOperation
+  KeyVaultSelectiveKeyRestorePollOperationState,
 } from "./operation.js";
+import { KeyVaultSelectiveKeyRestorePollOperation } from "./operation.js";
 import type { KeyVaultSelectiveKeyRestoreResult } from "../../backupClientModels.js";
 
 export interface KeyVaultSelectiveKeyRestorePollerOptions extends KeyVaultAdminPollerOptions {

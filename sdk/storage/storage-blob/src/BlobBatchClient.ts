@@ -18,14 +18,8 @@ import type { StorageSharedKeyCredential } from "./credentials/StorageSharedKeyC
 import { AnonymousCredential } from "./credentials/AnonymousCredential";
 import type { BlobDeleteOptions, BlobClient, BlobSetTierOptions } from "./Clients";
 import { StorageContextClient } from "./StorageContextClient";
-import type {
-  PipelineLike,
-  StoragePipelineOptions} from "./Pipeline";
-import {
-  newPipeline,
-  isPipelineLike,
-  getCoreClientOptions,
-} from "./Pipeline";
+import type { PipelineLike, StoragePipelineOptions } from "./Pipeline";
+import { newPipeline, isPipelineLike, getCoreClientOptions } from "./Pipeline";
 import type { WithResponse } from "./utils/utils.common";
 import { assertResponse, getURLPath } from "./utils/utils.common";
 

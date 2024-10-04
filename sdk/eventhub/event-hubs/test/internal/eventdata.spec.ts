@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  EventData,
-  ReceivedEventData} from "../../src/eventData.js";
-import {
-  fromRheaMessage,
-  toRheaMessage,
-} from "../../src/eventData.js";
+import type { EventData, ReceivedEventData } from "../../src/eventData.js";
+import { fromRheaMessage, toRheaMessage } from "../../src/eventData.js";
 import { assert, should } from "../utils/chai.js";
 import {
   dataSectionTypeCode,

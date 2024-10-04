@@ -15,7 +15,7 @@
  */
 
 import type { AvroSerializer, MessageAdapter } from "../../src";
-import type { EventData} from "@azure/event-hubs";
+import type { EventData } from "@azure/event-hubs";
 import { createEventDataAdapter } from "@azure/event-hubs";
 import type { MessagingTestClient } from "./clients/models";
 import { assert } from "chai";
@@ -27,7 +27,7 @@ import { matrix } from "@azure-tools/test-utils";
 import { testGroup } from "./utils/dummies";
 import { Recorder, env } from "@azure-tools/test-recorder";
 import { createPipelineWithCredential, removeSchemas } from "./utils/mockedRegistryClient";
-import type { HttpClient, Pipeline} from "@azure/core-rest-pipeline";
+import type { HttpClient, Pipeline } from "@azure/core-rest-pipeline";
 import { createDefaultHttpClient } from "@azure/core-rest-pipeline";
 
 /**

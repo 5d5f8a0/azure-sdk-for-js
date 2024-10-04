@@ -10,10 +10,9 @@ import type { AnalysisPollerOptions } from "../poller";
 import { AnalysisPoller } from "../poller";
 import type {
   AnalyzeHealthcareOperationState,
-  BeginAnalyzeHealthcareEntitiesOptions} from "./operation";
-import {
-  BeginAnalyzeHealthcarePollerOperation,
+  BeginAnalyzeHealthcareEntitiesOptions,
 } from "./operation";
+import { BeginAnalyzeHealthcarePollerOperation } from "./operation";
 
 /**
  * Abstract representation of a poller, intended to expose just the minimal API that the user needs to work with.

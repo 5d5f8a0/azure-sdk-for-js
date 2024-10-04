@@ -6,8 +6,7 @@ import type {
   TextDocumentBatchStatistics,
   TextDocumentInput,
 } from "./generated/models";
-import type {
-  ExtractKeyPhrasesResult} from "./extractKeyPhrasesResult";
+import type { ExtractKeyPhrasesResult } from "./extractKeyPhrasesResult";
 import {
   makeExtractKeyPhrasesErrorResult,
   makeExtractKeyPhrasesResult,

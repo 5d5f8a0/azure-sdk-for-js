@@ -11,7 +11,7 @@ import {
 } from "../../common";
 import type { PartitionKey } from "../../documents/PartitionKey";
 import { undefinedPartitionKey } from "../../extractPartitionKey";
-import type { RequestOptions} from "../../request";
+import type { RequestOptions } from "../../request";
 import { ResourceResponse } from "../../request";
 import { readPartitionKeyDefinition } from "../ClientUtils";
 import type { Container } from "../Container";

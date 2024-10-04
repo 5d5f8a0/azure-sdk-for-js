@@ -1,14 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  Container,
-  RequestContext} from "../../../src";
-import {
-  CosmosClient,
-  PatchOperationType,
-  ResourceType,
-} from "../../../src";
+import type { Container, RequestContext } from "../../../src";
+import { CosmosClient, PatchOperationType, ResourceType } from "../../../src";
 import assert from "assert";
 import type { Suite } from "mocha";
 import type { SinonSandbox, SinonSpy } from "sinon";

@@ -12,7 +12,7 @@ import type { DeidentificationClient } from "../../src/clientDefinitions.js";
 import { createTestCredential } from "@azure-tools/test-credential";
 import type { DeidentificationJob } from "../../src/models.js";
 import type { DeidentificationJobOutput, DocumentDetailsOutput } from "../../src/outputModels.js";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isPlaybackMode, isRecordMode } from "@azure-tools/test-recorder";
 import type { ErrorResponse } from "@azure-rest/core-client";
 import { getLongRunningPoller } from "../../src/pollingHelper.js";

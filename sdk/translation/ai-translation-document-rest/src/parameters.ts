@@ -6,7 +6,11 @@
 
 import type { RawHttpHeadersInput } from "@azure/core-rest-pipeline";
 import type { RequestParameters } from "@azure-rest/core-client";
-import type { DocumentTranslateContent, StartTranslationDetails, FileFormatType } from "./models.js";
+import type {
+  DocumentTranslateContent,
+  StartTranslationDetails,
+  FileFormatType,
+} from "./models.js";
 
 export interface DocumentTranslateHeaders {
   /** An opaque, globally-unique, client-generated string identifier for the request. */

@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  Span} from "@opentelemetry/api";
+import type { Span } from "@opentelemetry/api";
 import {
   INVALID_SPAN_CONTEXT,
   context,

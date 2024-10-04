@@ -22,7 +22,7 @@ import type { ClientOptions } from "@azure-rest/core-client";
 import { getClient } from "@azure-rest/core-client";
 import { logger } from "./logger";
 import type { TokenCredential } from "@azure/core-auth";
-import type { TracingClient} from "@azure/core-tracing";
+import type { TracingClient } from "@azure/core-tracing";
 import { createTracingClient } from "@azure/core-tracing";
 import { DEFAULT_SCOPE, SDK_VERSION } from "./constants";
 

@@ -27,7 +27,7 @@ import type { RawTestResult } from "../model/testResult";
 import { TestResult as MPTTestResult } from "../model/testResult";
 import type { TestRunConfig } from "../model/testRun";
 import { TestRun } from "../model/testRun";
-import type { CIInfo} from "./cIInfoProvider";
+import type { CIInfo } from "./cIInfoProvider";
 import { CI_PROVIDERS } from "./cIInfoProvider";
 import { CIInfoProvider } from "./cIInfoProvider";
 import type { StorageUri } from "../model/storageUri";

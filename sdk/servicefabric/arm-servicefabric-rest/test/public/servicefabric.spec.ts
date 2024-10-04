@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import { createClient, createRecorder } from "./utils/recordedClient";
@@ -14,10 +14,9 @@ import type {
   ClusterOutput,
   ClustersCreateOrUpdateParameters,
   ClustersUpdateParameters,
-  ServiceFabricClient} from "../../src/index";
-import {
-  getLongRunningPoller,
+  ServiceFabricClient,
 } from "../../src/index";
+import { getLongRunningPoller } from "../../src/index";
 
 export const testPollingOptions = {
   intervalInMs: isPlaybackMode() ? 0 : undefined,

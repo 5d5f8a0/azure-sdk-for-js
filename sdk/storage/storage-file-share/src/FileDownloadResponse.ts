@@ -13,11 +13,10 @@ import type {
 import type { Metadata } from "./models";
 import type {
   ReadableStreamGetter,
-  RetriableReadableStreamOptions} from "./utils/RetriableReadableStream";
-import {
-  RetriableReadableStream
+  RetriableReadableStreamOptions,
 } from "./utils/RetriableReadableStream";
-import type { HttpResponse, WithResponse} from "./utils/utils.common";
+import { RetriableReadableStream } from "./utils/RetriableReadableStream";
+import type { HttpResponse, WithResponse } from "./utils/utils.common";
 import { assertResponse } from "./utils/utils.common";
 
 /**

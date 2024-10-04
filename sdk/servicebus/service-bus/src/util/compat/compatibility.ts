@@ -9,7 +9,7 @@ import type {
   PipelineResponse,
   ProxySettings,
 } from "@azure/core-rest-pipeline";
-import type { HttpHeadersLike} from "./httpHeaders";
+import type { HttpHeadersLike } from "./httpHeaders";
 import { HttpHeaders as HttpHeadersV1 } from "./httpHeaders";
 
 /**

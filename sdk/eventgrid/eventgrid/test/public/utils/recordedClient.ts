@@ -3,12 +3,8 @@
 
 import type { Test } from "mocha";
 
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  assertEnvironmentVariable,
-  Recorder
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
+import { assertEnvironmentVariable, Recorder } from "@azure-tools/test-recorder";
 
 import type { InputSchema } from "../../../src";
 import { EventGridPublisherClient } from "../../../src";

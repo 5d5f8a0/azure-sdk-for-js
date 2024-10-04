@@ -2,33 +2,18 @@
 // Licensed under the MIT License.
 
 import type { PagedAsyncIterableIterator } from "@azure/core-paging";
-import type {
-  AnalyzeSentimentResultArray} from "./analyzeSentimentResultArray";
-import {
-  makeAnalyzeSentimentResultArray,
-} from "./analyzeSentimentResultArray";
-import type {
-  ExtractKeyPhrasesResultArray} from "./extractKeyPhrasesResultArray";
-import {
-  makeExtractKeyPhrasesResultArray,
-} from "./extractKeyPhrasesResultArray";
+import type { AnalyzeSentimentResultArray } from "./analyzeSentimentResultArray";
+import { makeAnalyzeSentimentResultArray } from "./analyzeSentimentResultArray";
+import type { ExtractKeyPhrasesResultArray } from "./extractKeyPhrasesResultArray";
+import { makeExtractKeyPhrasesResultArray } from "./extractKeyPhrasesResultArray";
 import type { AnalyzeJobState as GeneratedResponse, TextDocumentInput } from "./generated/models";
-import type {
-  RecognizeCategorizedEntitiesResultArray} from "./recognizeCategorizedEntitiesResultArray";
-import {
-  makeRecognizeCategorizedEntitiesResultArray,
-} from "./recognizeCategorizedEntitiesResultArray";
-import type {
-  RecognizeLinkedEntitiesResultArray} from "./recognizeLinkedEntitiesResultArray";
-import {
-  makeRecognizeLinkedEntitiesResultArray,
-} from "./recognizeLinkedEntitiesResultArray";
-import type {
-  RecognizePiiEntitiesResultArray} from "./recognizePiiEntitiesResultArray";
-import {
-  makeRecognizePiiEntitiesResultArray,
-} from "./recognizePiiEntitiesResultArray";
-import type { ErrorCode, TextAnalyticsError} from "./textAnalyticsResult";
+import type { RecognizeCategorizedEntitiesResultArray } from "./recognizeCategorizedEntitiesResultArray";
+import { makeRecognizeCategorizedEntitiesResultArray } from "./recognizeCategorizedEntitiesResultArray";
+import type { RecognizeLinkedEntitiesResultArray } from "./recognizeLinkedEntitiesResultArray";
+import { makeRecognizeLinkedEntitiesResultArray } from "./recognizeLinkedEntitiesResultArray";
+import type { RecognizePiiEntitiesResultArray } from "./recognizePiiEntitiesResultArray";
+import { makeRecognizePiiEntitiesResultArray } from "./recognizePiiEntitiesResultArray";
+import type { ErrorCode, TextAnalyticsError } from "./textAnalyticsResult";
 import { intoTextAnalyticsError } from "./textAnalyticsResult";
 
 /**

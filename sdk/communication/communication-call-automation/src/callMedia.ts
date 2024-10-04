@@ -22,19 +22,14 @@ import type {
   StopTranscriptionRequest,
   UpdateTranscriptionRequest,
   HoldRequest,
-  UnholdRequest} from "./generated/src";
-import {
-  KnownPlaySourceType,
-  KnownRecognizeInputType
+  UnholdRequest,
 } from "./generated/src";
+import { KnownPlaySourceType, KnownRecognizeInputType } from "./generated/src";
 
 import { CallMediaImpl } from "./generated/src/operations";
 
-import type {
-  CommunicationIdentifier} from "@azure/communication-common";
-import {
-  serializeCommunicationIdentifier,
-} from "@azure/communication-common";
+import type { CommunicationIdentifier } from "@azure/communication-common";
+import { serializeCommunicationIdentifier } from "@azure/communication-common";
 
 import type { FileSource, TextSource, SsmlSource, DtmfTone } from "./models/models";
 import type {

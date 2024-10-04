@@ -2,17 +2,18 @@
 // Licensed under the MIT License.
 
 import { randomUUID } from "@azure/core-util";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type {
   PipelinePolicy,
   PipelineRequest,
   PipelineResponse,
-  SendRequest} from "@azure/core-rest-pipeline";
+  SendRequest,
+} from "@azure/core-rest-pipeline";
 import {
   bearerTokenAuthenticationPolicy,
   createEmptyPipeline,
-  createHttpHeaders
+  createHttpHeaders,
 } from "@azure/core-rest-pipeline";
 import { isNode } from "@azure/core-util";
 import { AnonymousCredential } from "./credentials/AnonymousCredential";

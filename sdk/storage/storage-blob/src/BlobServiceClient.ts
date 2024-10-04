@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { getDefaultProxySettings } from "@azure/core-rest-pipeline";
 import { isNode } from "@azure/core-util";
@@ -29,21 +29,16 @@ import type {
   ServiceListContainersSegmentResponseInternal,
 } from "./generatedModels";
 import type { Service } from "./generated/src/operationsInterfaces";
-import type { StoragePipelineOptions, PipelineLike} from "./Pipeline";
+import type { StoragePipelineOptions, PipelineLike } from "./Pipeline";
 import { newPipeline, isPipelineLike } from "./Pipeline";
-import type {
-  ContainerCreateOptions,
-  ContainerDeleteMethodOptions} from "./ContainerClient";
-import {
-  ContainerClient
-} from "./ContainerClient";
-import type {
-  WithResponse} from "./utils/utils.common";
+import type { ContainerCreateOptions, ContainerDeleteMethodOptions } from "./ContainerClient";
+import { ContainerClient } from "./ContainerClient";
+import type { WithResponse } from "./utils/utils.common";
 import {
   appendToURLPath,
   appendToURLQuery,
   extractConnectionStringParts,
-  toTags
+  toTags,
 } from "./utils/utils.common";
 import { StorageSharedKeyCredential } from "./credentials/StorageSharedKeyCredential";
 import { AnonymousCredential } from "./credentials/AnonymousCredential";
@@ -51,7 +46,7 @@ import type { PageSettings, PagedAsyncIterableIterator } from "@azure/core-pagin
 import { truncatedISO8061Date, assertResponse } from "./utils/utils.common";
 import { tracingClient } from "./utils/tracing";
 import { BlobBatchClient } from "./BlobBatchClient";
-import type { CommonOptions} from "./StorageClient";
+import type { CommonOptions } from "./StorageClient";
 import { StorageClient } from "./StorageClient";
 import { AccountSASPermissions } from "./sas/AccountSASPermissions";
 import type { SASProtocol } from "./sas/SASQueryParameters";

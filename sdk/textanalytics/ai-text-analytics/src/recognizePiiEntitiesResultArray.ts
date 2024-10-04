@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import type { PiiResult, TextDocumentBatchStatistics, TextDocumentInput } from "./generated/models";
-import type {
-  RecognizePiiEntitiesResult} from "./recognizePiiEntitiesResult";
+import type { RecognizePiiEntitiesResult } from "./recognizePiiEntitiesResult";
 import {
   makeRecognizePiiEntitiesErrorResult,
   makeRecognizePiiEntitiesResult,

@@ -6,17 +6,10 @@ const should = chai.should();
 const assert: typeof chai.assert = chai.assert;
 import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
-import type {
-  OperationOptions,
-  ServiceBusMessage} from "../../src";
-import {
-  ServiceBusAdministrationClient,
-  ServiceBusClient
-} from "../../src";
+import type { OperationOptions, ServiceBusMessage } from "../../src";
+import { ServiceBusAdministrationClient, ServiceBusClient } from "../../src";
 import { TestClientType } from "../public/utils/testUtils";
-import type {
-  EntityName,
-  ServiceBusClientForTests} from "../public/utils/testutils2";
+import type { EntityName, ServiceBusClientForTests } from "../public/utils/testutils2";
 import {
   createServiceBusClientForTests,
   getRandomTestClientTypeWithSessions,

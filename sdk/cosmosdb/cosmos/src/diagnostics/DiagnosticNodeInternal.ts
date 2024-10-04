@@ -6,16 +6,14 @@ import type { RequestContext } from "../request";
 import type {
   DiagnosticNode,
   MetadataLookUpType,
-  ClientConfigDiagnostic} from "../CosmosDiagnostics";
-import {
-  CosmosDiagnostics,
-  getRootNode
+  ClientConfigDiagnostic,
 } from "../CosmosDiagnostics";
+import { CosmosDiagnostics, getRootNode } from "../CosmosDiagnostics";
 import { getCurrentTimestampInMs } from "../utils/time";
 import { CosmosDbDiagnosticLevel } from "./CosmosDbDiagnosticLevel";
 import type { CosmosHeaders } from "../queryExecutionContext/CosmosHeaders";
 import type { HttpHeaders, PipelineResponse } from "@azure/core-rest-pipeline";
-import type { OperationType, ResourceType} from "../common";
+import type { OperationType, ResourceType } from "../common";
 import { Constants, prepareURL } from "../common";
 import { allowTracing } from "./diagnosticLevelComparator";
 import { randomUUID } from "@azure/core-util";

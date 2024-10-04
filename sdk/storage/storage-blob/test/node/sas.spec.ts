@@ -7,7 +7,8 @@ import type {
   StorageSharedKeyCredential,
   Tags,
   UserDelegationKey,
-  BlobImmutabilityPolicyMode} from "../../src";
+  BlobImmutabilityPolicyMode,
+} from "../../src";
 import {
   AccountSASPermissions,
   AccountSASResourceTypes,
@@ -23,7 +24,7 @@ import {
   newPipeline,
   BlobClient,
   SASProtocol,
-  BlobBatch
+  BlobBatch,
 } from "../../src";
 import {
   configureBlobStorageClient,

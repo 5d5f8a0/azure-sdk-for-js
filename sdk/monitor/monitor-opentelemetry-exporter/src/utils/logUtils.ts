@@ -9,11 +9,9 @@ import type {
   PageViewData,
   TelemetryEventData,
   TelemetryExceptionData,
-  TelemetryExceptionDetails} from "../generated";
-import {
-  KnownContextTagKeys,
-  KnownSeverityLevel
+  TelemetryExceptionDetails,
 } from "../generated";
+import { KnownContextTagKeys, KnownSeverityLevel } from "../generated";
 import { createTagsFromResource, hrTimeToDate, serializeAttribute } from "./common";
 import type { ReadableLogRecord } from "@opentelemetry/sdk-logs";
 import {

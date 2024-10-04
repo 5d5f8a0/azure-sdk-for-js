@@ -10,15 +10,14 @@ import type {
   GetTokenOptions,
   TokenScope,
 } from "./models";
-import type {
-  CommunicationUserIdentifier} from "@azure/communication-common";
+import type { CommunicationUserIdentifier } from "@azure/communication-common";
 import {
   createCommunicationAuthPolicy,
   isKeyCredential,
   parseClientArguments,
 } from "@azure/communication-common";
 import type { InternalClientPipelineOptions, OperationOptions } from "@azure/core-client";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { IdentityRestClient } from "./generated/src/identityRestClient";
 import { logger } from "./common/logger";

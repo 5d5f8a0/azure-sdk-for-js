@@ -4,16 +4,15 @@
 import http from "http";
 import https from "https";
 import type { AccessToken, GetTokenOptions, TokenCredential } from "../src";
-import type { AzureLogLevel} from "@azure/logger";
+import type { AzureLogLevel } from "@azure/logger";
 import { AzureLogger, getLogLevel, setLogLevel } from "@azure/logger";
 import type { ClientRequest, IncomingHttpHeaders, IncomingMessage } from "http";
 import type {
   IdentityTestContextInterface,
   RawTestResponse,
-  TestResponse} from "./httpRequestsCommon";
-import {
-  createResponse,
+  TestResponse,
 } from "./httpRequestsCommon";
+import { createResponse } from "./httpRequestsCommon";
 import type Sinon from "sinon";
 import * as sinon from "sinon";
 import { PassThrough } from "stream";

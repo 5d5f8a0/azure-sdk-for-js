@@ -9,7 +9,7 @@ import type {
 } from "@azure/core-client";
 import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
 import type { TokenCredential } from "@azure/core-auth";
-import type { TracingClient} from "@azure/core-tracing";
+import type { TracingClient } from "@azure/core-tracing";
 import { createTracingClient } from "@azure/core-tracing";
 import { SDK_VERSION } from "./constants.js";
 import { logger } from "./logger.js";

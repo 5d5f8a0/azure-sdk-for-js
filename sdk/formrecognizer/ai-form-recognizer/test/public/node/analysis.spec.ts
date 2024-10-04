@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable } from "@azure-tools/test-recorder";
 import { matrix } from "@azure-tools/test-utils";
 import { assert } from "chai";
@@ -12,11 +12,12 @@ import type {
   AnalyzedDocument,
   DocumentTable,
   DocumentModelDetails,
-  DocumentBarcode} from "../../../src";
+  DocumentBarcode,
+} from "../../../src";
 import {
   DocumentAnalysisClient,
   DocumentModelAdministrationClient,
-  FormRecognizerFeature
+  FormRecognizerFeature,
 } from "../../../src";
 import type { DocumentSelectionMarkField } from "../../../src/models/fields";
 import {

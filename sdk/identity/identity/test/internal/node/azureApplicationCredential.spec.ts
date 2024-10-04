@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { IdentityTestContextInterface} from "../../httpRequestsCommon";
+import type { IdentityTestContextInterface } from "../../httpRequestsCommon";
 import { createResponse } from "../../httpRequestsCommon";
 
 import { AzureApplicationCredential } from "../../../src/credentials/azureApplicationCredential";

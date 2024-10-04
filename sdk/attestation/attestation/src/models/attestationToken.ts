@@ -8,7 +8,7 @@ import * as jsrsasign from "jsrsasign";
 import type { JsonWebKey } from "../generated/models";
 import { base64UrlDecodeString } from "../utils/base64";
 import { bytesToString } from "../utils/utf8";
-import type { AttestationSigner} from "./attestationSigner";
+import type { AttestationSigner } from "./attestationSigner";
 import { _attestationSignerFromGenerated } from "./attestationSigner";
 
 import * as Mappers from "../generated/models/mappers";

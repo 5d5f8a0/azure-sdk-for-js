@@ -1,10 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type {
-  FetchFunctionCallback} from "../../../src/queryExecutionContext";
-import {
-  DefaultQueryExecutionContext,
-} from "../../../src/queryExecutionContext";
+import type { FetchFunctionCallback } from "../../../src/queryExecutionContext";
+import { DefaultQueryExecutionContext } from "../../../src/queryExecutionContext";
 import type { FeedOptions } from "../../../src";
 import assert from "assert";
 import { sleep } from "../../../src/common";

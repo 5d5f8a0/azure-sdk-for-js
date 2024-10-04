@@ -3,8 +3,7 @@
 
 import type { Test } from "mocha";
 
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
 import {
   Recorder,
   assertEnvironmentVariable,
@@ -12,8 +11,7 @@ import {
   isPlaybackMode,
 } from "@azure-tools/test-recorder";
 import { ChatClient } from "../../../src";
-import type {
-  CommunicationUserIdentifier} from "@azure/communication-common";
+import type { CommunicationUserIdentifier } from "@azure/communication-common";
 import {
   AzureCommunicationTokenCredential,
   parseClientArguments,

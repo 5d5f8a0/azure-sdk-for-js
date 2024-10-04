@@ -12,11 +12,8 @@ import type {
   CancelCertificateOperationOptions,
 } from "../../certificatesModels.js";
 import type { CertificateOperation } from "../../generated/models/index.js";
-import type {
-  KeyVaultCertificatePollOperationState} from "../keyVaultCertificatePoller.js";
-import {
-  KeyVaultCertificatePollOperation
-} from "../keyVaultCertificatePoller.js";
+import type { KeyVaultCertificatePollOperationState } from "../keyVaultCertificatePoller.js";
+import { KeyVaultCertificatePollOperation } from "../keyVaultCertificatePoller.js";
 import type { KeyVaultClient } from "../../generated/keyVaultClient.js";
 import {
   getCertificateOperationFromCoreOperation,

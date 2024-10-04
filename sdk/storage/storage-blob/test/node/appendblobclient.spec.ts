@@ -3,15 +3,12 @@
 
 import { assert } from "chai";
 
-import type {
-  StorageSharedKeyCredential,
-  ContainerClient,
-  BlobServiceClient} from "../../src";
+import type { StorageSharedKeyCredential, ContainerClient, BlobServiceClient } from "../../src";
 import {
   AppendBlobClient,
   newPipeline,
   generateBlobSASQueryParameters,
-  BlobSASPermissions
+  BlobSASPermissions,
 } from "../../src";
 import {
   getBSU,

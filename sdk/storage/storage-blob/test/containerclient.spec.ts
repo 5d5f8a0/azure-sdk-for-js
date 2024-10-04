@@ -19,11 +19,9 @@ import type {
   ContainerListBlobHierarchySegmentResponse,
   BlobServiceClient,
   BlockBlobClient,
-  BlobHTTPHeaders} from "../src";
-import {
-  ContainerClient,
-  BlockBlobTier
+  BlobHTTPHeaders,
 } from "../src";
+import { ContainerClient, BlockBlobTier } from "../src";
 import { Test_CPK_INFO } from "./utils/fakeTestSecrets";
 import type { Context } from "mocha";
 import type { Tags } from "../src/models";

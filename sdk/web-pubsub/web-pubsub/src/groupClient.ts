@@ -1,7 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { CommonClientOptions, FullOperationResponse, OperationOptions } from "@azure/core-client";
+import type {
+  CommonClientOptions,
+  FullOperationResponse,
+  OperationOptions,
+} from "@azure/core-client";
 import type { RequestBodyType } from "@azure/core-rest-pipeline";
 import { RestError } from "@azure/core-rest-pipeline";
 import type { GeneratedClient } from "./generated/generatedClient";

@@ -3,8 +3,7 @@
 
 import type { ConnectionConfig } from "@azure/core-amqp";
 import type { TokenCredential, NamedKeyCredential, SASCredential } from "@azure/core-auth";
-import type {
-  ServiceBusClientOptions} from "./constructorHelpers";
+import type { ServiceBusClientOptions } from "./constructorHelpers";
 import {
   createConnectionContextForConnectionString,
   createConnectionContextForCredential,
@@ -16,16 +15,13 @@ import type {
   ReceiveMode,
   ServiceBusSenderOptions,
 } from "./models";
-import type { ServiceBusReceiver} from "./receivers/receiver";
+import type { ServiceBusReceiver } from "./receivers/receiver";
 import { ServiceBusReceiverImpl } from "./receivers/receiver";
-import type {
-  ServiceBusSessionReceiver} from "./receivers/sessionReceiver";
-import {
-  ServiceBusSessionReceiverImpl,
-} from "./receivers/sessionReceiver";
-import type { ServiceBusRuleManager} from "./serviceBusRuleManager";
+import type { ServiceBusSessionReceiver } from "./receivers/sessionReceiver";
+import { ServiceBusSessionReceiverImpl } from "./receivers/sessionReceiver";
+import type { ServiceBusRuleManager } from "./serviceBusRuleManager";
 import { ServiceBusRuleManagerImpl } from "./serviceBusRuleManager";
-import type { ServiceBusSender} from "./sender";
+import type { ServiceBusSender } from "./sender";
 import { ServiceBusSenderImpl } from "./sender";
 import { entityPathMisMatchError } from "./util/errors";
 import { MessageSession } from "./session/messageSession";

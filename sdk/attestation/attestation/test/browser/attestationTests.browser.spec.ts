@@ -8,8 +8,7 @@ chaiUse(chaiPromises);
 
 import { Recorder } from "@azure-tools/test-recorder";
 
-import type {
-  EndpointType} from "../utils/recordedClient";
+import type { EndpointType } from "../utils/recordedClient";
 import {
   createRecordedAdminClient,
   createRecordedClient,

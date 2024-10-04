@@ -2,12 +2,8 @@
 // Licensed under the MIT License.
 
 import type { FullOperationResponse } from "@azure/core-client";
-import type {
-  AtomXmlSerializer} from "../util/atomXmlHelper";
-import {
-  deserializeAtomXmlResponse,
-  serializeToAtomXmlRequest,
-} from "../util/atomXmlHelper";
+import type { AtomXmlSerializer } from "../util/atomXmlHelper";
+import { deserializeAtomXmlResponse, serializeToAtomXmlRequest } from "../util/atomXmlHelper";
 import { getInteger, getString, getDate } from "../util/utils";
 
 /**

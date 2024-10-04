@@ -4,12 +4,8 @@
 import type { Recorder } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import type { Context } from "mocha";
-import type {
-  AzureHealthInsightsClient} from "../../src";
-import {
-  ClinicalDocumentTypeEnum,
-  getLongRunningPoller,
-} from "../../src";
+import type { AzureHealthInsightsClient } from "../../src";
+import { ClinicalDocumentTypeEnum, getLongRunningPoller } from "../../src";
 import { createRecorder, createTestClient } from "./utils/recordedClient";
 
 const codingData = {

@@ -5,11 +5,8 @@
 
 import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
-import type {
-  InternalPipelineOptions} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
-} from "@azure/core-rest-pipeline";
+import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
 import type { CommonClientOptions, OperationOptions } from "@azure/core-client";
 
 import type { PageSettings, PagedAsyncIterableIterator } from "@azure/core-paging";
@@ -20,12 +17,8 @@ import { tracingClient } from "./tracing";
 import type { RepositoryPageResponse } from "./models";
 import { extractNextLink } from "./utils/helpers";
 import { ChallengeHandler } from "./containerRegistryChallengeHandler";
-import type {
-  ContainerRepository,
-  DeleteRepositoryOptions} from "./containerRepository";
-import {
-  ContainerRepositoryImpl
-} from "./containerRepository";
+import type { ContainerRepository, DeleteRepositoryOptions } from "./containerRepository";
+import { ContainerRepositoryImpl } from "./containerRepository";
 import type { RegistryArtifact } from "./registryArtifact";
 import { ContainerRegistryRefreshTokenCredential } from "./containerRegistryTokenCredential";
 

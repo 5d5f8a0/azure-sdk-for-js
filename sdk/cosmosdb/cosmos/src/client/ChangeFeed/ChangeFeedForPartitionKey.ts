@@ -5,7 +5,7 @@ import { ChangeFeedIteratorResponse } from "./ChangeFeedIteratorResponse";
 import type { Container, Resource } from "../../client";
 import type { ClientContext } from "../../ClientContext";
 import { Constants, ResourceType, StatusCodes } from "../../common";
-import type { FeedOptions, Response} from "../../request";
+import type { FeedOptions, Response } from "../../request";
 import { ErrorResponse } from "../../request";
 import { ContinuationTokenForPartitionKey } from "./ContinuationTokenForPartitionKey";
 import type { ChangeFeedPullModelIterator } from "./ChangeFeedPullModelIterator";

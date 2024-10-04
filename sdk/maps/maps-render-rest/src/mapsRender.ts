@@ -2,14 +2,8 @@
 // Licensed under the MIT License.
 
 import type { ClientOptions } from "@azure-rest/core-client";
-import type {
-  AzureKeyCredential,
-  AzureSASCredential,
-  TokenCredential} from "@azure/core-auth";
-import {
-  isSASCredential,
-  isTokenCredential
-} from "@azure/core-auth";
+import type { AzureKeyCredential, AzureSASCredential, TokenCredential } from "@azure/core-auth";
+import { isSASCredential, isTokenCredential } from "@azure/core-auth";
 import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
 import { createMapsClientIdPolicy } from "@azure/maps-common";
 import type { MapsRenderClient } from "./generated";

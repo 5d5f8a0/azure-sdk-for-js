@@ -4,7 +4,8 @@
 import type {
   CommunicationIdentifier,
   CommunicationIdentifierKind,
-  PhoneNumberIdentifier} from "../../src";
+  PhoneNumberIdentifier,
+} from "../../src";
 import {
   createIdentifierFromRawId,
   getIdentifierKind,

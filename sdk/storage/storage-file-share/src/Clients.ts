@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type {
   RequestBodyType as HttpRequestBody,
@@ -110,8 +110,7 @@ import {
   FileAttributesPreserve,
   FileAttributesNone,
 } from "./utils/constants";
-import type {
-  WithResponse} from "./utils/utils.common";
+import type { WithResponse } from "./utils/utils.common";
 import {
   appendToURLPath,
   setURLParameter,
@@ -138,7 +137,7 @@ import { StorageClient } from "./StorageClient";
 import type { PageSettings, PagedAsyncIterableIterator } from "@azure/core-paging";
 import { FileSystemAttributes } from "./FileSystemAttributes";
 import { FileDownloadResponse } from "./FileDownloadResponse";
-import type { Range} from "./Range";
+import type { Range } from "./Range";
 import { rangeToString } from "./Range";
 import type {
   CloseHandlesInfo,
@@ -149,7 +148,8 @@ import type {
   ShareProtocols,
   HttpAuthorization,
   ShareClientOptions,
-  ShareClientConfig} from "./models";
+  ShareClientConfig,
+} from "./models";
 import {
   fileAttributesToString,
   fileCreationTimeToString,
@@ -158,7 +158,7 @@ import {
   validateAndSetDefaultsForFileAndDirectorySetPropertiesCommonOptions,
   toShareProtocolsString,
   toShareProtocols,
-  fileChangeTimeToString
+  fileChangeTimeToString,
 } from "./models";
 import { Batch } from "./utils/Batch";
 import { BufferScheduler } from "./utils/BufferScheduler";
@@ -169,7 +169,10 @@ import {
   readStreamToLocalFile,
   streamToBuffer,
 } from "./utils/utils.node";
-import type { FileSetHttpHeadersHeaders, StorageClient as StorageClientContext } from "./generated/src/";
+import type {
+  FileSetHttpHeadersHeaders,
+  StorageClient as StorageClientContext,
+} from "./generated/src/";
 import { randomUUID } from "@azure/core-util";
 import {
   generateFileSASQueryParameters,
@@ -645,7 +648,7 @@ export class ShareClient extends StorageClient {
    * @param options - Optional. Options to configure the HTTP pipeline.
    */
   // Legacy, no way to fix the eslint error without breaking. Disable the rule for this line.
-   
+
   constructor(connectionString: string, name: string, options?: ShareClientOptions);
   /**
    * Creates an instance of ShareClient.
@@ -662,7 +665,7 @@ export class ShareClient extends StorageClient {
     url: string,
     credential?: Credential | TokenCredential,
     // Legacy, no way to fix the eslint error without breaking. Disable the rule for this line.
-     
+
     options?: ShareClientOptions,
   );
   /**
@@ -680,7 +683,7 @@ export class ShareClient extends StorageClient {
     urlOrConnectionString: string,
     credentialOrPipelineOrShareName?: Credential | TokenCredential | PipelineLike | string,
     // Legacy, no way to fix the eslint error without breaking. Disable the rule for this line.
-     
+
     options?: ShareClientOptions,
   ) {
     let pipeline: Pipeline;

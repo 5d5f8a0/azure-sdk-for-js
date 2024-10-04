@@ -13,11 +13,9 @@ import type {
   RequiredSerializerOptions,
   SequenceMapper,
   Serializer,
-  SerializerOptions} from "./interfaces.js";
-import {
-  XML_ATTRKEY,
-  XML_CHARKEY,
+  SerializerOptions,
 } from "./interfaces.js";
+import { XML_ATTRKEY, XML_CHARKEY } from "./interfaces.js";
 import { isDuration, isValidUuid } from "./utils.js";
 
 class SerializerImpl implements Serializer {

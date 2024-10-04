@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  ReplaceTypesPreserveOptional,
-  Validate,
-  ValidateFnc} from "./execute-configs.js";
-import {
-  fieldIdToName,
-} from "./execute-configs.js";
+import type { ReplaceTypesPreserveOptional, Validate, ValidateFnc } from "./execute-configs.js";
+import { fieldIdToName } from "./execute-configs.js";
 import type { Configs } from "../scaffolding.js";
 import { hideBin } from "yargs/helpers";
 import yargsParser from "yargs-parser";

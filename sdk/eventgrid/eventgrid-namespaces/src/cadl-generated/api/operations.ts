@@ -25,16 +25,11 @@ import type {
   ReleaseCloudEvents200Response,
   ReleaseCloudEventsDefaultResponse,
   RenewCloudEventLocks200Response,
-  RenewCloudEventLocksDefaultResponse} from "../rest/index";
-import {
-  isUnexpected
+  RenewCloudEventLocksDefaultResponse,
 } from "../rest/index";
-import type {
-  StreamableMethod} from "@azure-rest/core-client";
-import {
-  operationOptionsToRequestParameters,
-  createRestError,
-} from "@azure-rest/core-client";
+import { isUnexpected } from "../rest/index";
+import type { StreamableMethod } from "@azure-rest/core-client";
+import { operationOptionsToRequestParameters, createRestError } from "@azure-rest/core-client";
 import { uint8ArrayToString, stringToUint8Array } from "@azure/core-util";
 import type {
   PublishCloudEventOptionalParams,

@@ -14,13 +14,8 @@ import {
   recorderEnvSetup,
   uriSanitizers,
 } from "../utils";
-import type {
-  DataLakeServiceClient} from "../../src";
-import {
-  DataLakeFileSystemClient,
-  FileSystemSASPermissions,
-  newPipeline,
-} from "../../src";
+import type { DataLakeServiceClient } from "../../src";
+import { DataLakeFileSystemClient, FileSystemSASPermissions, newPipeline } from "../../src";
 import type { PublicAccessType } from "../../src/models";
 import { getDataLakeServiceAccountAudience } from "../../src/models";
 import { assertClientUsesTokenCredential } from "../utils/assert";

@@ -36,7 +36,7 @@ import {
 } from "./receiverCommon";
 import type Long from "long";
 import type { ServiceBusMessageImpl, DeadLetterOptions } from "../serviceBusMessage";
-import type { RetryConfig, RetryOptions} from "@azure/core-amqp";
+import type { RetryConfig, RetryOptions } from "@azure/core-amqp";
 import { Constants, RetryOperationType, retry } from "@azure/core-amqp";
 import { LockRenewer } from "../core/autoLockRenewer";
 import { receiverLogger as logger } from "../log";

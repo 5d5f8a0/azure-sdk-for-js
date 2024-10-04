@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { Recorder, isPlaybackMode } from "@azure-tools/test-recorder";
-import type { TableItem, TableItemResultPage, TableServiceClient} from "../../src";
+import type { TableItem, TableItemResultPage, TableServiceClient } from "../../src";
 import { odata } from "../../src";
 import type { Context } from "mocha";
 import type { FullOperationResponse, OperationOptions } from "@azure/core-client";

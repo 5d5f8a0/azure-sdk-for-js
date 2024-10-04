@@ -11,8 +11,7 @@ import { logger } from "./log";
 import { PageSettings, PagedAsyncIterableIterator } from "@azure/core-paging";
 import { PollOperationState, PollerLike } from "@azure/core-lro";
 
-import type {
-  GetKeysOptionalParams} from "./generated/models";
+import type { GetKeysOptionalParams } from "./generated/models";
 import {
   DeletionRecoveryLevel,
   KnownDeletionRecoveryLevel,

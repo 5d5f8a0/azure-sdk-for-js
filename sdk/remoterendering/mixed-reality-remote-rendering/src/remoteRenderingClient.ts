@@ -4,19 +4,15 @@
 import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
 import type { OperationOptions } from "@azure/core-client";
 
-import type {
-  AccessToken,
-  TokenCredential} from "@azure/core-auth";
-import {
-  AzureKeyCredential,
-  isTokenCredential,
-} from "@azure/core-auth";
+import type { AccessToken, TokenCredential } from "@azure/core-auth";
+import { AzureKeyCredential, isTokenCredential } from "@azure/core-auth";
 
 import { RemoteRenderingRestClient } from "./generated";
 import type {
   RemoteRenderingCreateConversionResponse,
   RemoteRenderingCreateSessionResponse,
-  RemoteRenderingRestClientOptionalParams} from "./generated/models/index";
+  RemoteRenderingRestClientOptionalParams,
+} from "./generated/models/index";
 import {
   AssetConversionSettings,
   RenderingSessionSettings,

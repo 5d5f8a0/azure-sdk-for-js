@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 import assert from "assert";
 import type { Suite } from "mocha";
-import type { Container} from "../../../src";
+import type { Container } from "../../../src";
 import { CosmosClient, PermissionMode } from "../../../src";
 import type { Database } from "../../../src";
 import { endpoint } from "../common/_testConfig";

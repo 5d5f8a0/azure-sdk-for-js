@@ -8,11 +8,9 @@ import type {
   SentShareInvitationListOutput,
   SentShareListOutput,
   ServiceInvitationOutput,
-  UserInvitationOutput} from "../../src";
-import {
-  getLongRunningPoller,
-  isUnexpected
+  UserInvitationOutput,
 } from "../../src";
+import { getLongRunningPoller, isUnexpected } from "../../src";
 import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { assert } from "chai";

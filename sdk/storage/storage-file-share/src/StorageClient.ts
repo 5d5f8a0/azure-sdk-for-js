@@ -3,7 +3,7 @@
 
 import type { StorageClient as StorageClientContext } from "./generated/src/";
 import { StorageContextClient } from "./StorageContextClient";
-import type { Pipeline} from "./Pipeline";
+import type { Pipeline } from "./Pipeline";
 import { getCoreClientOptions, getCredentialFromPipeline } from "./Pipeline";
 import { escapeURLPath, getAccountNameFromUrl } from "./utils/utils.common";
 import type { OperationTracingOptions } from "@azure/core-tracing";

@@ -14,10 +14,9 @@ import type {
   OperationArguments,
   OperationSpec,
   RawResponseCallback,
-  ServiceClientOptions} from "@azure/core-client";
-import {
-  ServiceClient
+  ServiceClientOptions,
 } from "@azure/core-client";
+import { ServiceClient } from "@azure/core-client";
 import { toCompatResponse } from "./response.js";
 
 /**

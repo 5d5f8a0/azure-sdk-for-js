@@ -6,10 +6,9 @@ import { delay } from "@azure/core-util";
 import { Poller } from "@azure/core-lro";
 import type {
   RestoreSecretBackupPollOperationState,
-  TestSecretClientInterface} from "./operation.js";
-import {
-  makeRestoreSecretBackupPollOperation,
+  TestSecretClientInterface,
 } from "./operation.js";
+import { makeRestoreSecretBackupPollOperation } from "./operation.js";
 import type { SecretProperties } from "../../../../../src/index.js";
 
 export interface RestoreSecretBackupPollerOptions {

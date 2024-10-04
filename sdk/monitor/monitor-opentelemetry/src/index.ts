@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { ProxyTracerProvider} from "@opentelemetry/api";
+import type { ProxyTracerProvider } from "@opentelemetry/api";
 import { metrics, trace } from "@opentelemetry/api";
 import { logs } from "@opentelemetry/api-logs";
 import type { NodeSDKConfiguration } from "@opentelemetry/sdk-node";
@@ -11,14 +11,12 @@ import { MetricHandler } from "./metrics";
 import { TraceHandler } from "./traces/handler";
 import { Logger as InternalLogger } from "./shared/logging";
 import { LogHandler } from "./logs";
-import type {
-  StatsbeatFeatures,
-  StatsbeatInstrumentations} from "./types";
+import type { StatsbeatFeatures, StatsbeatInstrumentations } from "./types";
 import {
   AZURE_MONITOR_OPENTELEMETRY_VERSION,
   AzureMonitorOpenTelemetryOptions,
   InstrumentationOptions,
-  BrowserSdkLoaderOptions
+  BrowserSdkLoaderOptions,
 } from "./types";
 import { BrowserSdkLoader } from "./browserSdkLoader/browserSdkLoader";
 import { setSdkPrefix } from "./metrics/quickpulse/utils";

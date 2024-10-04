@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type { ConfidentialLedgerClient} from "../../src";
+import type { ConfidentialLedgerClient } from "../../src";
 import { isUnexpected } from "../../src";
 import { createClient, createRecorder } from "./utils/recordedClient";
 

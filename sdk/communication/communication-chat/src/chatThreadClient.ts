@@ -4,10 +4,9 @@
 import { logger } from "./models/logger";
 import type {
   CommunicationIdentifier,
-  CommunicationTokenCredential} from "@azure/communication-common";
-import {
-  serializeCommunicationIdentifier,
+  CommunicationTokenCredential,
 } from "@azure/communication-common";
+import { serializeCommunicationIdentifier } from "@azure/communication-common";
 import type { PagedAsyncIterableIterator } from "@azure/core-paging";
 import type {
   AddParticipantsRequest,

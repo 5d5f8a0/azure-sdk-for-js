@@ -6,10 +6,9 @@ import { assert } from "chai";
 import type { Context } from "mocha";
 import type {
   AzureCommunicationRoutingServiceClient,
-  ClassificationPolicyOutput} from "../../../src";
-import {
-  paginate,
+  ClassificationPolicyOutput,
 } from "../../../src";
+import { paginate } from "../../../src";
 import {
   getClassificationPolicyRequest,
   getDistributionPolicyRequest,

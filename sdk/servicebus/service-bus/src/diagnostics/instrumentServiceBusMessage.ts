@@ -6,7 +6,7 @@ import type { ConnectionContext } from "../connectionContext";
 import type { OperationOptionsBase } from "../modelsToBeSharedWithEventHubs";
 import type { ServiceBusReceiver } from "../receivers/receiver";
 import type { ServiceBusMessage, ServiceBusReceivedMessage } from "../serviceBusMessage";
-import type { MessagingOperationNames} from "./tracing";
+import type { MessagingOperationNames } from "./tracing";
 import { toSpanOptions, tracingClient } from "./tracing";
 
 /**

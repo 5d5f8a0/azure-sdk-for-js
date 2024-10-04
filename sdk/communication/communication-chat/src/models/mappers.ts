@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  SerializedCommunicationIdentifier} from "@azure/communication-common";
+import type { SerializedCommunicationIdentifier } from "@azure/communication-common";
 import {
   deserializeCommunicationIdentifier,
   serializeCommunicationIdentifier,

@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import { setLogLevel } from "@azure/logger";
-import type {
-  JsonPatch} from "@azure/notification-hubs";
+import type { JsonPatch } from "@azure/notification-hubs";
 import {
   createAppleInstallation,
   createAppleNotification,

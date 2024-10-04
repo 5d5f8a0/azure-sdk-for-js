@@ -12,7 +12,8 @@ import type {
   ClientConfigDiagnostic,
   CosmosClientOptions,
   RequestOptions,
-  Resource} from "../../../src";
+  Resource,
+} from "../../../src";
 import {
   ClientContext,
   ConsistencyLevel,
@@ -20,7 +21,7 @@ import {
   CosmosClient,
   ErrorResponse,
   GlobalEndpointManager,
-  ItemResponse
+  ItemResponse,
 } from "../../../src";
 import { expect } from "chai";
 import { getCurrentTimestampInMs } from "../../../src/utils/time";

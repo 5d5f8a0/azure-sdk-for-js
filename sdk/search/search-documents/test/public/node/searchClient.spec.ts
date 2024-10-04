@@ -11,13 +11,14 @@ import type {
   AutocompleteResult,
   SearchIndex,
   SearchIndexClient,
-  SelectFields} from "../../../src";
+  SelectFields,
+} from "../../../src";
 import {
   AzureKeyCredential,
   IndexDocumentsBatch,
   KnownQueryLanguage,
   KnownSpeller,
-  SearchClient
+  SearchClient,
 } from "../../../src";
 import type { SearchFieldArray, SelectArray } from "../../../src/indexModels";
 import { defaultServiceVersion } from "../../../src/serviceUtils";

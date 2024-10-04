@@ -2,9 +2,13 @@
 // Licensed under the MIT License.
 
 import { delay } from "@azure/core-util";
-import type { PollOperation, PollOperationState} from "@azure/core-lro";
+import type { PollOperation, PollOperationState } from "@azure/core-lro";
 import { Poller } from "@azure/core-lro";
-import type { BlobClient, BlobStartCopyFromURLOptions, BlobBeginCopyFromURLResponse } from "../Clients";
+import type {
+  BlobClient,
+  BlobStartCopyFromURLOptions,
+  BlobBeginCopyFromURLResponse,
+} from "../Clients";
 
 /**
  * Defines the operations from a {@link BlobClient} that are needed for the poller

@@ -19,15 +19,8 @@ import type {
   TableQueryOptions,
   TableServiceClientOptions,
 } from "./models";
-import type {
-  NamedKeyCredential,
-  SASCredential,
-  TokenCredential} from "@azure/core-auth";
-import {
-  isNamedKeyCredential,
-  isSASCredential,
-  isTokenCredential,
-} from "@azure/core-auth";
+import type { NamedKeyCredential, SASCredential, TokenCredential } from "@azure/core-auth";
+import { isNamedKeyCredential, isSASCredential, isTokenCredential } from "@azure/core-auth";
 import { COSMOS_SCOPE, STORAGE_SCOPE, TablesLoggingAllowedHeaderNames } from "./utils/constants";
 import type { Service, Table } from "./generated";
 import {

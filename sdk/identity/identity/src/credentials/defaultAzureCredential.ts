@@ -8,10 +8,9 @@ import type {
 } from "./defaultAzureCredentialOptions";
 import type {
   ManagedIdentityCredentialClientIdOptions,
-  ManagedIdentityCredentialResourceIdOptions} from "./managedIdentityCredential";
-import {
-  ManagedIdentityCredential
+  ManagedIdentityCredentialResourceIdOptions,
 } from "./managedIdentityCredential";
+import { ManagedIdentityCredential } from "./managedIdentityCredential";
 
 import { AzureCliCredential } from "./azureCliCredential";
 import { AzureDeveloperCliCredential } from "./azureDeveloperCliCredential";

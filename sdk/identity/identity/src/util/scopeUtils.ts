@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { CredentialLogger} from "./logging";
+import type { CredentialLogger } from "./logging";
 import { formatError } from "./logging";
 
 /**

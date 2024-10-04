@@ -16,10 +16,9 @@ import type {
 import type {
   AnalyzeActionsResult,
   PagedAnalyzeActionsResult,
-  PagedAsyncIterableAnalyzeActionsResult} from "../../analyzeActionsResult";
-import {
-  createAnalyzeActionsResult,
+  PagedAsyncIterableAnalyzeActionsResult,
 } from "../../analyzeActionsResult";
+import { createAnalyzeActionsResult } from "../../analyzeActionsResult";
 import type { PageSettings } from "@azure/core-paging";
 import { getOperationId, nextLinkToTopAndSkip, throwError } from "../../util";
 import type { AnalysisPollOperationState, OperationMetadata } from "../poller";

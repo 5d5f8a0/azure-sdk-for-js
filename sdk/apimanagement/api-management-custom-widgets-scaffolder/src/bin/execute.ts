@@ -3,7 +3,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Log} from "./execute-helpers.js";
+import type { Log } from "./execute-helpers.js";
 import { buildGetConfig } from "./execute-helpers.js";
 import {
   prefixUrlProtocol,

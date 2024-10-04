@@ -1,14 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  RecorderStartOptions,
-  VitestTestContext} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  env,
-  isPlaybackMode,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions, VitestTestContext } from "@azure-tools/test-recorder";
+import { Recorder, env, isPlaybackMode } from "@azure-tools/test-recorder";
 import type { ClientOptions } from "@azure-rest/core-client";
 import type { BatchClient } from "../../src/index.js";
 import BatchServiceClient from "../../src/index.js";

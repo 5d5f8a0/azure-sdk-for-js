@@ -25,10 +25,9 @@ import type {
   ListWidgets200Response,
   ListWidgetsDefaultResponse,
   UpdateWidget200Response,
-  UpdateWidgetDefaultResponse} from "../rest/index.js";
-import {
-  isUnexpected,
+  UpdateWidgetDefaultResponse,
 } from "../rest/index.js";
+import { isUnexpected } from "../rest/index.js";
 import { foo } from "./foo.js";
 import type { AnalyzeResult, ColorType, Widget } from "./models.js";
 

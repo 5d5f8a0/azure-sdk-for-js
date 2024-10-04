@@ -4,9 +4,9 @@
 /* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 
 import { EnvironmentCredential, UsernamePasswordCredential } from "../../../src";
-import type { MsalTestCleanup} from "../../node/msalNodeTestSetup";
+import type { MsalTestCleanup } from "../../node/msalNodeTestSetup";
 import { msalNodeTestSetup } from "../../node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isLiveMode } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";
 import { assert } from "@azure-tools/test-utils";

@@ -5,7 +5,7 @@
 
 import type { DocumentTranslatorClient } from "../../../src";
 import DocumentTranslator from "../../../src";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 
 import type { ClientOptions } from "@azure-rest/core-client";

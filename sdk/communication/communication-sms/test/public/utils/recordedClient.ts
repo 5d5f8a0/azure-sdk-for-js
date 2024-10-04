@@ -2,14 +2,8 @@
 // Licensed under the MIT License.
 
 import type { Context, Test } from "mocha";
-import type {
-  RecorderStartOptions,
-  SanitizerOptions} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  env,
-  isPlaybackMode,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions, SanitizerOptions } from "@azure-tools/test-recorder";
+import { Recorder, env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { SmsClient } from "../../../src";
 import { parseConnectionString } from "@azure/communication-common";
 import type { TokenCredential } from "@azure/core-auth";

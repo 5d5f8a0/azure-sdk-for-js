@@ -15,13 +15,16 @@ import type {
   PermissionDefinition,
   RequestOptions,
   Response,
-  UserDefinition} from "../../../src";
-import {
-  CosmosClient,
-  CosmosDbDiagnosticLevel,
-  MetadataLookUpType
+  UserDefinition,
 } from "../../../src";
-import type { ItemDefinition, ItemResponse, PermissionResponse, Resource, User } from "../../../src";
+import { CosmosClient, CosmosDbDiagnosticLevel, MetadataLookUpType } from "../../../src";
+import type {
+  ItemDefinition,
+  ItemResponse,
+  PermissionResponse,
+  Resource,
+  User,
+} from "../../../src";
 import type { UserResponse } from "../../../src";
 import { endpoint } from "../common/_testConfig";
 import { masterKey } from "../common/_fakeTestSecrets";

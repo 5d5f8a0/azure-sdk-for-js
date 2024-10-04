@@ -3,7 +3,7 @@
 
 import type { Recorder } from "@azure-tools/test-recorder";
 import { assert } from "chai";
-import type { TextTranslationClient} from "../../src";
+import type { TextTranslationClient } from "../../src";
 import { isUnexpected } from "../../src";
 import {
   createCustomTranslationClient,

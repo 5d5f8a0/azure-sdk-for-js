@@ -33,7 +33,7 @@ import {
   SEMRESATTRS_SERVICE_NAMESPACE,
 } from "@opentelemetry/semantic-conventions";
 
-import type { Tags, Properties, Measurements} from "../../src/types";
+import type { Tags, Properties, Measurements } from "../../src/types";
 import { MaxPropertyLengths } from "../../src/types";
 import { Context, getInstance } from "../../src/platform";
 import { readableSpanToEnvelope, spanEventsToEnvelopes } from "../../src/utils/spanUtils";
@@ -41,10 +41,9 @@ import type {
   RemoteDependencyData,
   RequestData,
   TelemetryExceptionData,
-  MessageData} from "../../src/generated";
-import {
-  KnownContextTagKeys
+  MessageData,
 } from "../../src/generated";
+import { KnownContextTagKeys } from "../../src/generated";
 import type { TelemetryItem as Envelope } from "../../src/generated";
 import { DependencyTypes } from "../../src/utils/constants/applicationinsights";
 import { hrTimeToDate } from "../../src/utils/common";

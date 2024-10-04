@@ -9,9 +9,7 @@ import { delay } from "../../src";
 import { InvalidOperationForPeekedMessage } from "../../src/util/errors";
 import { TestClientType, TestMessage } from "../public/utils/testUtils";
 import type { ServiceBusReceiver, ServiceBusReceiverImpl } from "../../src/receivers/receiver";
-import type {
-  ServiceBusClientForTests,
-  EntityName} from "../public/utils/testutils2";
+import type { ServiceBusClientForTests, EntityName } from "../public/utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,
@@ -19,7 +17,7 @@ import {
   getRandomTestClientType,
   getRandomTestClientTypeWithSessions,
 } from "../public/utils/testutils2";
-import type { Receiver} from "rhea-promise";
+import type { Receiver } from "rhea-promise";
 import { ReceiverEvents } from "rhea-promise";
 import type {
   ServiceBusSessionReceiver,

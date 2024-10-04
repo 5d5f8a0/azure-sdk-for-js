@@ -16,11 +16,10 @@ import type {
   /* eslint-disable-next-line @typescript-eslint/no-redeclare */
   Request,
   Trace,
-  CollectionConfigurationError} from "../../generated";
-import {
-  KnownDocumentType
+  CollectionConfigurationError,
 } from "../../generated";
-import type { Attributes} from "@opentelemetry/api";
+import { KnownDocumentType } from "../../generated";
+import type { Attributes } from "@opentelemetry/api";
 import { SpanKind, SpanStatusCode } from "@opentelemetry/api";
 import {
   SEMATTRS_EXCEPTION_MESSAGE,
@@ -67,12 +66,7 @@ import {
   AttachTypePrefix,
 } from "../../types";
 import type { Resource } from "@opentelemetry/resources";
-import type {
-  RequestData,
-  DependencyData,
-  ExceptionData,
-  TraceData,
-  TelemetryData} from "./types";
+import type { RequestData, DependencyData, ExceptionData, TraceData, TelemetryData } from "./types";
 import {
   QuickPulseMetricNames,
   QuickPulseOpenTelemetryMetricNames,

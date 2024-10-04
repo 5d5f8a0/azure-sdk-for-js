@@ -1,14 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  Configs,
-  ServiceInformation,
-  Options,
-  WidgetConfig} from "../scaffolding.js";
-import {
-  TECHNOLOGIES
-} from "../scaffolding.js";
+import type { Configs, ServiceInformation, Options, WidgetConfig } from "../scaffolding.js";
+import { TECHNOLOGIES } from "../scaffolding.js";
 
 export const fieldIdToName: Record<
   keyof (WidgetConfig & ServiceInformation & Options) | string,

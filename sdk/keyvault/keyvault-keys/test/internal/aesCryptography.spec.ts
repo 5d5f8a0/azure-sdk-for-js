@@ -3,14 +3,8 @@
 
 import { assert } from "@azure-tools/test-utils";
 import type { Context } from "mocha";
-import type {
-  AesCbcEncryptionAlgorithm,
-  JsonWebKey,
-  KeyClient,
-  KeyVaultKey} from "../../src";
-import {
-  CryptographyClient
-} from "../../src";
+import type { AesCbcEncryptionAlgorithm, JsonWebKey, KeyClient, KeyVaultKey } from "../../src";
+import { CryptographyClient } from "../../src";
 import { getKey, stringToUint8Array, uint8ArrayToString } from "../public/utils/crypto";
 import { isNode } from "@azure/core-util";
 import { AesCryptographyProvider } from "../../src/cryptography/aesCryptographyProvider";

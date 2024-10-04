@@ -7,12 +7,8 @@ import type { OperationOptions, CommonClientOptions } from "@azure/core-client";
 
 import { eventGridCredentialPolicy } from "./eventGridAuthenticationPolicy";
 import { DEFAULT_EVENTGRID_SCOPE } from "./constants";
-import type {
-  SendCloudEventInput,
-  SendEventGridEventInput} from "./models";
-import {
-  cloudEventReservedPropertyNames,
-} from "./models";
+import type { SendCloudEventInput, SendEventGridEventInput } from "./models";
+import { cloudEventReservedPropertyNames } from "./models";
 import { GeneratedClient } from "./generated/generatedClient";
 import type {
   CloudEvent as CloudEventWireModel,

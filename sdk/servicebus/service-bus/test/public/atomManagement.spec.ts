@@ -20,12 +20,8 @@ import { recreateQueue, recreateSubscription, recreateTopic } from "./utils/mana
 import { EntityNames, TestClientType } from "./utils/testUtils";
 import { TestConstants } from "./fakeTestSecrets";
 import { AzureNamedKeyCredential } from "@azure/core-auth";
-import type {
-  ServiceBusClientForTests} from "./utils/testutils2";
-import {
-  createServiceBusClientForTests,
-  getFullyQualifiedNamespace
-} from "./utils/testutils2";
+import type { ServiceBusClientForTests } from "./utils/testutils2";
+import { createServiceBusClientForTests, getFullyQualifiedNamespace } from "./utils/testutils2";
 import { versionsToTest } from "@azure-tools/test-utils";
 import { createTestCredential } from "@azure-tools/test-credential";
 

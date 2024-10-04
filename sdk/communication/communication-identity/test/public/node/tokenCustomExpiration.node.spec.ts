@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { CommunicationUserIdentifier } from "@azure/communication-common";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isLiveMode } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";
 import { assert } from "chai";

@@ -7,11 +7,9 @@ import type { CosmosDiagnostics, RequestOptions } from "..";
 import type {
   PartitionKey,
   PartitionKeyDefinition,
-  PrimitivePartitionKeyValue} from "../documents";
-import {
-  NonePartitionKeyLiteral,
-  convertToInternalPartitionKey,
+  PrimitivePartitionKeyValue,
 } from "../documents";
+import { NonePartitionKeyLiteral, convertToInternalPartitionKey } from "../documents";
 import type { PatchRequestBody } from "./patch";
 import { assertNotUndefined } from "./typeChecks";
 import { bodyFromData } from "../request/request";

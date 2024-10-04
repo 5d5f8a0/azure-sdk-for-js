@@ -1,11 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  CommunicationTokenRefreshOptions} from "./autoRefreshTokenCredential";
-import {
-  AutoRefreshTokenCredential
-} from "./autoRefreshTokenCredential";
+import type { CommunicationTokenRefreshOptions } from "./autoRefreshTokenCredential";
+import { AutoRefreshTokenCredential } from "./autoRefreshTokenCredential";
 import type {
   CommunicationGetTokenOptions,
   CommunicationTokenCredential,

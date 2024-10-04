@@ -13,12 +13,9 @@ import type {
   Message as RheaMessage,
   Sender,
   SenderOptions,
-  Session} from "rhea-promise";
-import {
-  ReceiverEvents,
-  SenderEvents,
-  generate_uuid,
+  Session,
 } from "rhea-promise";
+import { ReceiverEvents, SenderEvents, generate_uuid } from "rhea-promise";
 import { Constants, StandardAbortMessage } from "./util/constants.js";
 import { logErrorStackTrace, logger } from "./log.js";
 import { isDefined } from "@azure/core-util";

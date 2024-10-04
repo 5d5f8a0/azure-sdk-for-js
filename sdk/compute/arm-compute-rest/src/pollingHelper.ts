@@ -7,10 +7,9 @@ import type {
   LroEngineOptions,
   LroResponse,
   PollOperationState,
-  PollerLike} from "@azure/core-lro";
-import {
-  LroEngine
+  PollerLike,
 } from "@azure/core-lro";
+import { LroEngine } from "@azure/core-lro";
 
 /**
  * Helper function that builds a Poller object to help polling a long running operation.

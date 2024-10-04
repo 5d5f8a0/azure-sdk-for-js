@@ -16,7 +16,7 @@ import type {
   EtagEntity,
   ListLabelsOptions,
 } from "../models";
-import type { FeatureFlagValue} from "../featureFlag";
+import type { FeatureFlagValue } from "../featureFlag";
 import { FeatureFlagHelper, featureFlagContentType } from "../featureFlag";
 import type {
   GetKeyValuesOptionalParams,
@@ -24,12 +24,8 @@ import type {
   GetSnapshotsOptionalParams,
   KeyValue,
 } from "../generated/src/models";
-import type {
-  SecretReferenceValue} from "../secretReference";
-import {
-  SecretReferenceHelper,
-  secretReferenceContentType,
-} from "../secretReference";
+import type { SecretReferenceValue } from "../secretReference";
+import { SecretReferenceHelper, secretReferenceContentType } from "../secretReference";
 import { isDefined } from "@azure/core-util";
 import { logger } from "../logger";
 import type { OperationOptions } from "@azure/core-client";

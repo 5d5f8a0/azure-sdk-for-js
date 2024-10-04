@@ -5,12 +5,11 @@ import chai from "chai";
 const should = chai.should();
 import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
-import type { ServiceBusMessage, ProcessErrorArgs} from "../../src";
+import type { ServiceBusMessage, ProcessErrorArgs } from "../../src";
 import { delay, isServiceBusError } from "../../src";
-import type { TestClientType} from "./utils/testUtils";
+import type { TestClientType } from "./utils/testUtils";
 import { TestMessage } from "./utils/testUtils";
-import type {
-  ServiceBusClientForTests} from "./utils/testutils2";
+import type { ServiceBusClientForTests } from "./utils/testutils2";
 import {
   createServiceBusClientForTests,
   getRandomTestClientTypeWithSessions,

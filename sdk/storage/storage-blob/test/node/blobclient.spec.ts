@@ -14,12 +14,13 @@ import type {
   BlobServiceClient,
   BlockBlobClient,
   ContainerClient,
-  StorageSharedKeyCredential} from "../../src";
+  StorageSharedKeyCredential,
+} from "../../src";
 import {
   BlobClient,
   BlobSASPermissions,
   generateBlobSASQueryParameters,
-  newPipeline
+  newPipeline,
 } from "../../src";
 import {
   bodyToString,

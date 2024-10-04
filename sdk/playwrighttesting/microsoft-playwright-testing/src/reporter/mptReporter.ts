@@ -18,13 +18,13 @@ import {
 import { EnvironmentVariables } from "../common/environmentVariables";
 import { MultiMap } from "../common/multimap";
 import type { EntraTokenDetails } from "../model/entraTokenDetails";
-import type { MPTTokenDetails} from "../model/mptTokenDetails";
+import type { MPTTokenDetails } from "../model/mptTokenDetails";
 import { TokenType } from "../model/mptTokenDetails";
 import type { Shard, UploadMetadata } from "../model/shard";
 import type { StorageUri } from "../model/storageUri";
 import type { TestResult as MPTTestResult, RawTestResult } from "../model/testResult";
 import type { TestRun } from "../model/testRun";
-import type { CIInfo} from "../utils/cIInfoProvider";
+import type { CIInfo } from "../utils/cIInfoProvider";
 import { CIInfoProvider } from "../utils/cIInfoProvider";
 import ReporterUtils from "../utils/reporterUtils";
 import { ServiceClient } from "../utils/serviceClient";

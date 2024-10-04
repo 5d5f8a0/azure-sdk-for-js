@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Span} from "@opentelemetry/api";
+import type { Span } from "@opentelemetry/api";
 import { SpanStatusCode } from "@opentelemetry/api";
 import type { SpanStatus, TracingSpan, AddEventOptions } from "@azure/core-tracing";
 import { isAttributeValue, sanitizeAttributes } from "@opentelemetry/core";

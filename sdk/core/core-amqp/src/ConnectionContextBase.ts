@@ -1,10 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  AwaitableSender,
-  Receiver,
-  Sender} from "rhea-promise";
+import type { AwaitableSender, Receiver, Sender } from "rhea-promise";
 import {
   Connection,
   type ConnectionOptions,

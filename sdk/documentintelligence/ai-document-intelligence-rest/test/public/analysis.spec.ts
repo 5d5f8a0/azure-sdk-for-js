@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable } from "@azure-tools/test-recorder";
 import { createRecorder, testPollingOptions } from "./utils/recorderUtils.js";
 import DocumentIntelligence from "../../src/documentIntelligence.js";
@@ -21,11 +21,9 @@ import type {
   DocumentBarcodeOutput,
   DocumentModelBuildOperationDetailsOutput,
   DocumentModelDetailsOutput,
-  DocumentTableOutput} from "../../src/index.js";
-import {
-  getLongRunningPoller,
-  isUnexpected,
+  DocumentTableOutput,
 } from "../../src/index.js";
+import { getLongRunningPoller, isUnexpected } from "../../src/index.js";
 
 describe("DocumentIntelligenceClient", () => {
   let recorder: Recorder;

@@ -8,12 +8,8 @@ import { delay } from "../../util";
 
 import type { AnalysisPollerOptions } from "../poller";
 import { AnalysisPoller } from "../poller";
-import type {
-  AnalyzeActionsOperationState,
-  BeginAnalyzeActionsOptions} from "./operation";
-import {
-  BeginAnalyzeActionsPollerOperation,
-} from "./operation";
+import type { AnalyzeActionsOperationState, BeginAnalyzeActionsOptions } from "./operation";
+import { BeginAnalyzeActionsPollerOperation } from "./operation";
 
 /**
  * @internal

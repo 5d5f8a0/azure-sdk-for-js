@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type { DeviceUpdateClient} from "../../src";
+import type { DeviceUpdateClient } from "../../src";
 import { isUnexpected } from "../../src";
 import type { Context } from "mocha";
 import { assert } from "chai";

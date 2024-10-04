@@ -4,12 +4,8 @@
 import type { OperationOptions } from "@azure/core-client";
 import { delay } from "@azure/core-util";
 import { Poller } from "@azure/core-lro";
-import type {
-  RestoreKeyBackupPollOperationState,
-  TestKeyClientInterface} from "./operation";
-import {
-  makeRestoreKeyBackupPollOperation,
-} from "./operation";
+import type { RestoreKeyBackupPollOperationState, TestKeyClientInterface } from "./operation";
+import { makeRestoreKeyBackupPollOperation } from "./operation";
 import type { KeyVaultKey } from "../../../../../src";
 
 export interface RestoreKeyBackupPollerOptions {

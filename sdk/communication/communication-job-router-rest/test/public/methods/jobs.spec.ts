@@ -7,10 +7,9 @@ import type {
   AzureCommunicationRoutingServiceClient,
   RouterJob,
   RouterJobOutput,
-  RouterJobPositionDetailsOutput} from "../../../src";
-import {
-  paginate
+  RouterJobPositionDetailsOutput,
 } from "../../../src";
+import { paginate } from "../../../src";
 import type { Context } from "mocha";
 import {
   getClassificationPolicyRequest,

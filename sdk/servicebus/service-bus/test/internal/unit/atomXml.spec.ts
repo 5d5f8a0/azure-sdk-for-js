@@ -6,8 +6,7 @@ import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
 const assert: typeof chai.assert = chai.assert;
 
-import type {
-  AtomXmlSerializer} from "../../../src/util/atomXmlHelper";
+import type { AtomXmlSerializer } from "../../../src/util/atomXmlHelper";
 import {
   deserializeAtomXmlResponse,
   executeAtomXmlOperation,

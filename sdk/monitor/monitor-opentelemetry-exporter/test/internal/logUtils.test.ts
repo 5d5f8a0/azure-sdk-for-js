@@ -7,7 +7,7 @@ import {
   SemanticResourceAttributes,
 } from "@opentelemetry/semantic-conventions";
 
-import type { Tags, Properties, Measurements} from "../../src/types";
+import type { Tags, Properties, Measurements } from "../../src/types";
 import { MaxPropertyLengths } from "../../src/types";
 import { getInstance } from "../../src/platform";
 import type {
@@ -17,15 +17,14 @@ import type {
   PageViewData,
   TelemetryEventData,
   TelemetryExceptionData,
-  TelemetryExceptionDetails} from "../../src/generated";
-import {
-  KnownContextTagKeys
+  TelemetryExceptionDetails,
 } from "../../src/generated";
+import { KnownContextTagKeys } from "../../src/generated";
 import type { TelemetryItem as Envelope } from "../../src/generated";
 import type { ReadableLogRecord } from "@opentelemetry/sdk-logs";
 import { logToEnvelope } from "../../src/utils/logUtils";
 import { SeverityNumber } from "@opentelemetry/api-logs";
-import type { HrTime} from "@opentelemetry/api";
+import type { HrTime } from "@opentelemetry/api";
 import { TraceFlags } from "@opentelemetry/api";
 import { hrTimeToDate } from "../../src/utils/common";
 

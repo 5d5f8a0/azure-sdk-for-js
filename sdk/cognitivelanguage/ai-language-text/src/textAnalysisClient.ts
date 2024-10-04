@@ -19,9 +19,9 @@ import type {
   TextDocumentInput,
 } from "./generated/models";
 import { DEFAULT_COGNITIVE_SCOPE, SDK_VERSION } from "./constants";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
-import type { TracingClient} from "@azure/core-tracing";
+import type { TracingClient } from "@azure/core-tracing";
 import { createTracingClient } from "@azure/core-tracing";
 import {
   convertToLanguageDetectionInput,

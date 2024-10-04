@@ -4,10 +4,9 @@
 import type { AbortSignalLike } from "@azure/abort-controller";
 import type {
   RequestBodyType as HttpRequestBody,
-  TransferProgressEvent} from "@azure/core-rest-pipeline";
-import {
-  getDefaultProxySettings
+  TransferProgressEvent,
 } from "@azure/core-rest-pipeline";
+import { getDefaultProxySettings } from "@azure/core-rest-pipeline";
 import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { isNode } from "@azure/core-util";
@@ -136,28 +135,24 @@ import type {
   BlobQueryArrowField,
   BlobImmutabilityPolicy,
   HttpAuthorization,
-  PollerLikeWithCancellation} from "./models";
-import {
-  ensureCpkIfSpecified,
-  toAccessTier
+  PollerLikeWithCancellation,
 } from "./models";
+import { ensureCpkIfSpecified, toAccessTier } from "./models";
 import type {
   PageBlobGetPageRangesDiffResponse,
-  PageBlobGetPageRangesResponse} from "./PageBlobRangeResponse";
-import {
-  rangeResponseFromModel,
+  PageBlobGetPageRangesResponse,
 } from "./PageBlobRangeResponse";
+import { rangeResponseFromModel } from "./PageBlobRangeResponse";
 import type { PipelineLike, StoragePipelineOptions } from "./Pipeline";
 import { newPipeline, isPipelineLike } from "./Pipeline";
 import type {
   BlobBeginCopyFromUrlPollState,
-  CopyPollerBlobClient} from "./pollers/BlobStartCopyFromUrlPoller";
-import {
-  BlobBeginCopyFromUrlPoller
+  CopyPollerBlobClient,
 } from "./pollers/BlobStartCopyFromUrlPoller";
-import type { Range} from "./Range";
+import { BlobBeginCopyFromUrlPoller } from "./pollers/BlobStartCopyFromUrlPoller";
+import type { Range } from "./Range";
 import { rangeToString } from "./Range";
-import type { CommonOptions} from "./StorageClient";
+import type { CommonOptions } from "./StorageClient";
 import { StorageClient } from "./StorageClient";
 import { Batch } from "./utils/Batch";
 import { BufferScheduler } from "../../storage-common/src";
@@ -174,8 +169,7 @@ import {
   URLConstants,
 } from "./utils/constants";
 import { tracingClient } from "./utils/tracing";
-import type {
-  WithResponse} from "./utils/utils.common";
+import type { WithResponse } from "./utils/utils.common";
 import {
   appendToURLPath,
   appendToURLQuery,
@@ -191,7 +185,7 @@ import {
   toBlobTags,
   toBlobTagsString,
   toQuerySerialization,
-  toTags
+  toTags,
 } from "./utils/utils.common";
 import {
   fsCreateReadStream,

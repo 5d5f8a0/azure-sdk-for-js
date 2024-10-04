@@ -3,15 +3,10 @@
 
 import type { Context } from "mocha";
 
-import type { AccessToken} from "@azure/core-auth";
+import type { AccessToken } from "@azure/core-auth";
 import { AzureKeyCredential } from "@azure/core-auth";
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  assertEnvironmentVariable,
-  isPlaybackMode,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
+import { Recorder, assertEnvironmentVariable, isPlaybackMode } from "@azure-tools/test-recorder";
 
 import { RemoteRenderingClient } from "../../src";
 

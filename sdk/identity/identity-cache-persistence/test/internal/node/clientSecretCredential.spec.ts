@@ -6,12 +6,9 @@
 
 import type { TokenCachePersistenceOptions } from "../../../../identity/src";
 import { ClientSecretCredential } from "../../../../identity/src";
-import type {
-  MsalTestCleanup} from "../../../../identity/test/node/msalNodeTestSetup";
-import {
-  msalNodeTestSetup,
-} from "../../../../identity/test/node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { MsalTestCleanup } from "../../../../identity/test/node/msalNodeTestSetup";
+import { msalNodeTestSetup } from "../../../../identity/test/node/msalNodeTestSetup";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 
 import { ConfidentialClientApplication } from "@azure/msal-node";

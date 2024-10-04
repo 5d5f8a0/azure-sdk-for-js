@@ -7,7 +7,7 @@ import { FileSystemSASPermissions } from "./FileSystemSASPermissions";
 import type { UserDelegationKey } from "../models";
 import type { SasIPRange } from "./SasIPRange";
 import { ipRangeToString } from "./SasIPRange";
-import type { SASProtocol} from "./SASQueryParameters";
+import type { SASProtocol } from "./SASQueryParameters";
 import { SASQueryParameters } from "./SASQueryParameters";
 import { SERVICE_VERSION } from "../utils/constants";
 import { truncatedISO8061Date } from "../utils/utils.common";

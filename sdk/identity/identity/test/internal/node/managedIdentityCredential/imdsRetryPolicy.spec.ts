@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  PipelineRequest,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  RestError,
-  createHttpHeaders,
-} from "@azure/core-rest-pipeline";
+import type { PipelineRequest, SendRequest } from "@azure/core-rest-pipeline";
+import { RestError, createHttpHeaders } from "@azure/core-rest-pipeline";
 
 import type { MSIConfiguration } from "../../../../src/credentials/managedIdentityCredential/models";
 import { assert } from "@azure-tools/test-utils";

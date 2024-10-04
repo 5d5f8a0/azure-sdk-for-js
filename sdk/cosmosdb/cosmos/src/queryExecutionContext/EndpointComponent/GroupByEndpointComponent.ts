@@ -5,7 +5,7 @@ import type { ExecutionContext } from "../ExecutionContext";
 import type { CosmosHeaders } from "../CosmosHeaders";
 import type { QueryInfo } from "../../request/ErrorResponse";
 import { hashObject } from "../../utils/hashObject";
-import type { Aggregator} from "../Aggregators";
+import type { Aggregator } from "../Aggregators";
 import { createAggregator } from "../Aggregators";
 import { getInitialHeader, mergeHeaders } from "../headerUtils";
 import { emptyGroup, extractAggregateResult } from "./emptyGroup";

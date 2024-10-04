@@ -4,9 +4,9 @@
 import { logErrorStackTrace, logger } from "../logger.js";
 import type { ConnectionContext } from "../connectionContext.js";
 import { isDefined } from "@azure/core-util";
-import type { AmqpError} from "rhea-promise";
+import type { AmqpError } from "rhea-promise";
 import { isAmqpError } from "rhea-promise";
-import type { MessagingError} from "@azure/core-amqp";
+import type { MessagingError } from "@azure/core-amqp";
 import { isMessagingError, translate } from "@azure/core-amqp";
 
 /**

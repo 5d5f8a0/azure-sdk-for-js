@@ -4,11 +4,9 @@
 import type {
   BodyPart,
   MultipartRequestBody,
-  RawHttpHeadersInput} from "@azure/core-rest-pipeline";
-import {
-  RestError,
-  createHttpHeaders,
+  RawHttpHeadersInput,
 } from "@azure/core-rest-pipeline";
+import { RestError, createHttpHeaders } from "@azure/core-rest-pipeline";
 import { stringToUint8Array } from "@azure/core-util";
 import { isBinaryBody } from "./helpers/isBinaryBody.js";
 

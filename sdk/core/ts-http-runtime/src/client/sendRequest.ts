@@ -16,7 +16,7 @@ import { createPipelineRequest } from "../pipelineRequest.js";
 import { getCachedDefaultHttpsClient } from "./clientHelpers.js";
 import { isReadableStream } from "../util/typeGuards.js";
 import type { HttpResponse, RequestParameters } from "./common.js";
-import type { PartDescriptor} from "./multipart.js";
+import type { PartDescriptor } from "./multipart.js";
 import { buildMultipartBody } from "./multipart.js";
 
 /**

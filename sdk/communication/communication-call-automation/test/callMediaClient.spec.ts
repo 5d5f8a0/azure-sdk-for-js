@@ -8,21 +8,14 @@ import type { Recorder } from "@azure-tools/test-recorder";
 import type {
   CommunicationIdentifier,
   CommunicationUserIdentifier,
-  PhoneNumberIdentifier} from "@azure/communication-common";
-import {
-  serializeCommunicationIdentifier,
+  PhoneNumberIdentifier,
 } from "@azure/communication-common";
+import { serializeCommunicationIdentifier } from "@azure/communication-common";
 
 // Parent directory imports
 import { CallMedia } from "../src/callMedia";
-import type {
-  FileSource,
-  TextSource,
-  SsmlSource,
-  RecognitionChoice} from "../src/models/models";
-import {
-  DtmfTone,
-} from "../src/models/models";
+import type { FileSource, TextSource, SsmlSource, RecognitionChoice } from "../src/models/models";
+import { DtmfTone } from "../src/models/models";
 import type {
   CallMediaRecognizeDtmfOptions,
   CallMediaRecognizeChoiceOptions,
@@ -38,10 +31,9 @@ import type {
   StartTranscriptionOptions,
   StopTranscriptionOptions,
   HoldOptions,
-  UnholdOptions} from "../src";
-import {
-  CallAutomationEventProcessor
+  UnholdOptions,
 } from "../src";
+import { CallAutomationEventProcessor } from "../src";
 
 // Current directory imports
 import {

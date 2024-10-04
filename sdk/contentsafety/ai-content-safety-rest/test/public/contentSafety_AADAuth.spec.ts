@@ -5,7 +5,7 @@ import type { Recorder } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import { createAADRecorder, createAADClient } from "./utils/recordedAADClient";
 import type { Context } from "mocha";
-import type { ContentSafetyClient} from "../../src";
+import type { ContentSafetyClient } from "../../src";
 import { isUnexpected } from "../../src";
 import fs from "fs";
 import path from "path";

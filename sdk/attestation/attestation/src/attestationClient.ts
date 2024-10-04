@@ -3,25 +3,24 @@
 
 import { GeneratedClient } from "./generated/generatedClient";
 
-import type { AttestationResult, AttestationSigner, AttestationTokenValidationOptions } from "./models";
-
 import type {
-  GeneratedAttestationResult,
-  InitTimeData,
-  RuntimeData} from "./generated/models";
-import {
-  KnownDataType
-} from "./generated/models";
+  AttestationResult,
+  AttestationSigner,
+  AttestationTokenValidationOptions,
+} from "./models";
+
+import type { GeneratedAttestationResult, InitTimeData, RuntimeData } from "./generated/models";
+import { KnownDataType } from "./generated/models";
 
 import { logger } from "./logger";
 import type { GeneratedClientOptionalParams } from "./generated/models";
 import * as Mappers from "./generated/models/mappers";
 
-import type { AttestationResponse} from "./models/attestationResponse";
+import type { AttestationResponse } from "./models/attestationResponse";
 import { createAttestationResponse } from "./models/attestationResponse";
 
 import { TypeDeserializer } from "./utils/typeDeserializer";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { CommonClientOptions, OperationOptions } from "@azure/core-client";
 import { bytesToString, stringToBytes } from "./utils/utf8";

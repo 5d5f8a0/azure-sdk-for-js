@@ -4,8 +4,7 @@
 import * as dotenv from "dotenv";
 import { isNode } from "@azure/core-util";
 import fs from "fs";
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
 import {
   Recorder,
   env,
@@ -15,27 +14,20 @@ import {
 } from "@azure-tools/test-recorder";
 import type { Test } from "mocha";
 import { generateToken } from "./connectionUtils";
-import type {
-  CommunicationIdentityClientOptions} from "@azure/communication-identity";
-import {
-  CommunicationIdentityClient
-} from "@azure/communication-identity";
+import type { CommunicationIdentityClientOptions } from "@azure/communication-identity";
+import { CommunicationIdentityClient } from "@azure/communication-identity";
 import type {
   CommunicationUserIdentifier,
   CommunicationIdentifier,
-  CommunicationIdentifierKind} from "@azure/communication-common";
+  CommunicationIdentifierKind,
+} from "@azure/communication-common";
 import {
   serializeCommunicationIdentifier,
   isPhoneNumberIdentifier,
-  createIdentifierFromRawId
+  createIdentifierFromRawId,
 } from "@azure/communication-common";
-import type {
-  CallAutomationClientOptions,
-  CallAutomationEvent} from "../../src";
-import {
-  CallAutomationClient,
-  parseCallAutomationEvent,
-} from "../../src";
+import type { CallAutomationClientOptions, CallAutomationEvent } from "../../src";
+import { CallAutomationClient, parseCallAutomationEvent } from "../../src";
 import type { CommunicationIdentifierModel } from "../../src/generated/src";
 import { assert } from "chai";
 import {
@@ -46,10 +38,9 @@ import {
 import type {
   ServiceBusReceiver,
   ServiceBusReceivedMessage,
-  ProcessErrorArgs} from "@azure/service-bus";
-import {
-  ServiceBusClient
+  ProcessErrorArgs,
 } from "@azure/service-bus";
+import { ServiceBusClient } from "@azure/service-bus";
 import type { PhoneNumbersClientOptions } from "@azure/communication-phone-numbers";
 import { PhoneNumbersClient } from "@azure/communication-phone-numbers";
 

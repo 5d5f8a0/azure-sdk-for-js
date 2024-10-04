@@ -6,12 +6,9 @@ import type {
   HttpHeaders,
   HttpMethods,
   PipelineRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-  createPipelineRequest,
-  RestError,
+  PipelineResponse,
 } from "@azure/core-rest-pipeline";
+import { createHttpHeaders, createPipelineRequest, RestError } from "@azure/core-rest-pipeline";
 import { logger } from "./logger";
 import type { Fetcher } from "./fetcherAbstract";
 import type { DTDL } from "./psuedoDtdl";

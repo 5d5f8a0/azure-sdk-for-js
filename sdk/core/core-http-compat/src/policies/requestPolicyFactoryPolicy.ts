@@ -7,9 +7,9 @@ import type {
   PipelineResponse,
   SendRequest,
 } from "@azure/core-rest-pipeline";
-import type { WebResourceLike} from "../util.js";
+import type { WebResourceLike } from "../util.js";
 import { toPipelineRequest, toWebResourceLike } from "../util.js";
-import type { CompatResponse} from "../response.js";
+import type { CompatResponse } from "../response.js";
 import { toCompatResponse, toPipelineResponse } from "../response.js";
 
 /**

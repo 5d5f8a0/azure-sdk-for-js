@@ -8,7 +8,8 @@ import type {
   Pipeline,
   PipelineRequest,
   PipelineResponse,
-  RequestBodyType} from "@azure/core-rest-pipeline";
+  RequestBodyType,
+} from "@azure/core-rest-pipeline";
 import {
   RestError,
   createHttpHeaders,
@@ -18,7 +19,7 @@ import {
 import { getCachedDefaultHttpsClient } from "./clientHelpers.js";
 import { isReadableStream } from "./helpers/isReadableStream.js";
 import type { HttpResponse, RequestParameters } from "./common.js";
-import type { PartDescriptor} from "./multipart.js";
+import type { PartDescriptor } from "./multipart.js";
 import { buildMultipartBody } from "./multipart.js";
 
 /**

@@ -6,10 +6,9 @@ import { assert } from "chai";
 import type {
   DocumentTranslateDefaultResponse,
   DocumentTranslateParameters,
-  DocumentTranslationClient} from "../../src";
-import {
-  isUnexpected,
+  DocumentTranslationClient,
 } from "../../src";
+import { isUnexpected } from "../../src";
 import { createDocumentTranslationClient, startRecorder } from "./utils/recordedClient";
 import type { Context } from "mocha";
 

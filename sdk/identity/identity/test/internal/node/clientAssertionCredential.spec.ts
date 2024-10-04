@@ -5,7 +5,7 @@
 
 import * as path from "path";
 
-import type { MsalTestCleanup} from "../../node/msalNodeTestSetup";
+import type { MsalTestCleanup } from "../../node/msalNodeTestSetup";
 import { msalNodeTestSetup } from "../../node/msalNodeTestSetup";
 
 import { ClientAssertionCredential } from "../../../src";

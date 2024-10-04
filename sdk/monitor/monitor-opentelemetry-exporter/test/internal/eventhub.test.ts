@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { SpanAttributes, HrTime, SpanContext} from "@opentelemetry/api";
+import type { SpanAttributes, HrTime, SpanContext } from "@opentelemetry/api";
 import { SpanKind, ROOT_CONTEXT } from "@opentelemetry/api";
 import { timeInputToHrTime } from "@opentelemetry/core";
 import { BasicTracerProvider, Span } from "@opentelemetry/sdk-trace-base";

@@ -15,7 +15,7 @@ import {
   getRecorderUniqueVariable,
   makeCredential,
 } from "./util/recordedClients";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable } from "@azure-tools/test-recorder";
 import { getYieldedValue, matrix } from "@azure-tools/test-utils";
 

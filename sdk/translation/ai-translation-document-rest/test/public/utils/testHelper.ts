@@ -11,7 +11,7 @@ import type {
   StorageSource,
   TargetInput,
 } from "../../../src";
-import type { TestDocument} from "./TestDocument";
+import type { TestDocument } from "./TestDocument";
 import { createTestDocument } from "./TestDocument";
 
 export function createSourceInput(

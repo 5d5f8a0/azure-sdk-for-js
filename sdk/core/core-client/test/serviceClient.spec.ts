@@ -12,7 +12,8 @@ import type {
   OperationRequest,
   OperationSpec,
   ParameterPath,
-  QueryCollectionFormat} from "../src/index.js";
+  QueryCollectionFormat,
+} from "../src/index.js";
 import {
   MapperTypeNames,
   ServiceClient,
@@ -25,7 +26,8 @@ import type {
   PipelineRequest,
   PipelineResponse,
   RestError,
-  SendRequest} from "@azure/core-rest-pipeline";
+  SendRequest,
+} from "@azure/core-rest-pipeline";
 import {
   createEmptyPipeline,
   createHttpHeaders,

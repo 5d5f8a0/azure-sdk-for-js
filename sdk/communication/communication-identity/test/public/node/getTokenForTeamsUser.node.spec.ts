@@ -6,7 +6,7 @@ import type {
   CommunicationIdentityClient,
   GetTokenForTeamsUserOptions,
 } from "../../../src";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isPlaybackMode } from "@azure-tools/test-recorder";
 import {
   createRecordedCommunicationIdentityClient,

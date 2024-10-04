@@ -5,7 +5,7 @@ import { describe, it, assert } from "vitest";
 import { sendRequest } from "../../src/client/sendRequest.js";
 import { RestError } from "../../src/restError.js";
 import type { MultipartRequestBody, PipelineResponse } from "../../src/interfaces.js";
-import type { Pipeline} from "../../src/pipeline.js";
+import type { Pipeline } from "../../src/pipeline.js";
 import { createEmptyPipeline } from "../../src/pipeline.js";
 import { createHttpHeaders } from "../../src/httpHeaders.js";
 import { stringToUint8Array } from "../../src/util/bytesEncoding.js";

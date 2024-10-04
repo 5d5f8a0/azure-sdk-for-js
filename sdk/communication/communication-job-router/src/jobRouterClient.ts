@@ -3,8 +3,7 @@
 /// <reference lib="esnext.asynciterable" />
 
 /* eslint-disable @azure/azure-sdk/ts-naming-options */
-import type {
-  CommunicationTokenCredential} from "@azure/communication-common";
+import type { CommunicationTokenCredential } from "@azure/communication-common";
 import {
   createCommunicationAuthPolicy,
   isKeyCredential,
@@ -22,11 +21,9 @@ import type {
   RouterJob as RouterJobGenerated,
   RouterJobItem as RouterJobItemGenerated,
   RouterWorkerItem as RouterWorkerItemGenerated,
-  JobMatchingMode} from "./generated/src";
-import {
-  JobRouterApiClient,
-  KnownJobMatchModeType
+  JobMatchingMode,
 } from "./generated/src";
+import { JobRouterApiClient, KnownJobMatchModeType } from "./generated/src";
 import { logger } from "./logger";
 import type {
   RouterJobItem,

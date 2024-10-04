@@ -3,12 +3,8 @@
 
 import type { ServiceBusSender, ServiceBusMessage } from "../../src";
 import { TestClientType } from "../public/utils/testUtils";
-import type {
-  ServiceBusClientForTests,
-  EntityName} from "../public/utils/testutils2";
-import {
-  createServiceBusClientForTests,
-} from "../public/utils/testutils2";
+import type { ServiceBusClientForTests, EntityName } from "../public/utils/testutils2";
+import { createServiceBusClientForTests } from "../public/utils/testutils2";
 import { assert } from "@azure-tools/test-utils";
 
 describe(`Tracing for send`, function (): void {

@@ -1,9 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import assert from "assert";
-import type {
-  IndexingPolicy,
-  VectorEmbeddingPolicy} from "../../../src/documents";
+import type { IndexingPolicy, VectorEmbeddingPolicy } from "../../../src/documents";
 import {
   VectorEmbeddingDataType,
   VectorEmbeddingDistanceFunction,

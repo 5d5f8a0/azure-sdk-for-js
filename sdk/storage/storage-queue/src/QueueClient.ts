@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { isNode } from "@azure/core-util";
 import type {
@@ -32,12 +32,11 @@ import type {
 } from "./generatedModels";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import type { Messages, MessageId, Queue } from "./generated/src/operationsInterfaces";
-import type { StoragePipelineOptions, Pipeline} from "./Pipeline";
+import type { StoragePipelineOptions, Pipeline } from "./Pipeline";
 import { newPipeline, isPipelineLike } from "./Pipeline";
-import type { CommonOptions} from "./StorageClient";
+import type { CommonOptions } from "./StorageClient";
 import { StorageClient, getStorageClientContext } from "./StorageClient";
-import type {
-  WithResponse} from "./utils/utils.common";
+import type { WithResponse } from "./utils/utils.common";
 import {
   appendToURLPath,
   extractConnectionStringParts,

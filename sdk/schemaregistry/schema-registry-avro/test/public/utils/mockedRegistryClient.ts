@@ -8,24 +8,20 @@ import type {
   Schema,
   SchemaDescription,
   SchemaProperties,
-  SchemaRegistry} from "@azure/schema-registry";
-import {
-  SchemaRegistryClient,
+  SchemaRegistry,
 } from "@azure/schema-registry";
+import { SchemaRegistryClient } from "@azure/schema-registry";
 import { createTestCredential } from "@azure-tools/test-credential";
 import { testGroup, testSchemaIds } from "./dummies";
 import { v4 as uuid } from "uuid";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable, env, isLiveMode } from "@azure-tools/test-recorder";
-import type {
-  Pipeline,
-  HttpClient,
-  PipelineRequest} from "@azure/core-rest-pipeline";
+import type { Pipeline, HttpClient, PipelineRequest } from "@azure/core-rest-pipeline";
 import {
   createPipelineRequest,
   createHttpHeaders,
   bearerTokenAuthenticationPolicy,
-  createEmptyPipeline
+  createEmptyPipeline,
 } from "@azure/core-rest-pipeline";
 type UpdatedSchemaDescription = Required<Omit<SchemaDescription, "version">>;
 

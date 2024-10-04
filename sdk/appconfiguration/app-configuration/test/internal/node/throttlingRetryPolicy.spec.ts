@@ -6,10 +6,9 @@ import type {
   HttpClient,
   PipelineRequest,
   RestError,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders
+  SendRequest,
 } from "@azure/core-rest-pipeline";
+import { createHttpHeaders } from "@azure/core-rest-pipeline";
 import chai from "chai";
 import { randomUUID } from "@azure/core-util";
 import { NoOpCredential } from "@azure-tools/test-credential";

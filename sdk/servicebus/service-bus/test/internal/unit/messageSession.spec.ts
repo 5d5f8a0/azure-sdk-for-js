@@ -16,11 +16,9 @@ import { EventEmitter } from "events";
 import type {
   EventContext,
   Message as RheaMessage,
-  Receiver as RheaPromiseReceiver} from "rhea-promise";
-import {
-  ReceiverEvents,
-  SessionEvents
+  Receiver as RheaPromiseReceiver,
 } from "rhea-promise";
+import { ReceiverEvents, SessionEvents } from "rhea-promise";
 import type { OnAmqpEventAsPromise } from "../../../src/core/messageReceiver";
 import type { ServiceBusMessageImpl } from "../../../src/serviceBusMessage";
 import type { ProcessErrorArgs, ServiceBusError } from "../../../src";

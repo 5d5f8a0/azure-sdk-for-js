@@ -9,14 +9,15 @@ import type {
   CommunicationIdentifier,
   SerializedCommunicationIdentifier,
   MicrosoftTeamsUserIdentifier,
-  MicrosoftTeamsAppIdentifier} from "@azure/communication-common";
+  MicrosoftTeamsAppIdentifier,
+} from "@azure/communication-common";
 import {
   serializeCommunicationIdentifier,
   isCommunicationUserIdentifier,
   isPhoneNumberIdentifier,
   isUnknownIdentifier,
   isMicrosoftTeamsUserIdentifier,
-  isMicrosoftTeamsAppIdentifier
+  isMicrosoftTeamsAppIdentifier,
 } from "@azure/communication-common";
 import type {
   CallParticipantInternal,
@@ -24,10 +25,9 @@ import type {
   CommunicationIdentifierModelKind,
   KnownCommunicationCloudEnvironmentModel,
   PhoneNumberIdentifierModel,
-  CommunicationUserIdentifierModel} from "../generated/src";
-import {
-  KnownCommunicationIdentifierModelKind
+  CommunicationUserIdentifierModel,
 } from "../generated/src";
+import { KnownCommunicationIdentifierModelKind } from "../generated/src";
 import type { CallParticipant } from "../models/models";
 
 function extractKind(

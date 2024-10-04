@@ -4,7 +4,7 @@
 import * as arcMsi from "../../../src/credentials/managedIdentityCredential/arcMsi";
 
 import { AzureLogger, setLogLevel } from "@azure/logger";
-import type { IdentityTestContextInterface} from "../../httpRequestsCommon";
+import type { IdentityTestContextInterface } from "../../httpRequestsCommon";
 import { createResponse } from "../../httpRequestsCommon";
 import {
   imdsApiVersion,

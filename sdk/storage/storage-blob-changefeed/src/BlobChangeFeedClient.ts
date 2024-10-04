@@ -4,11 +4,9 @@
 import type {
   StoragePipelineOptions,
   StorageSharedKeyCredential,
-  AnonymousCredential} from "@azure/storage-blob";
-import {
-  BlobServiceClient,
-  Pipeline,
+  AnonymousCredential,
 } from "@azure/storage-blob";
+import { BlobServiceClient, Pipeline } from "@azure/storage-blob";
 import type { PagedAsyncIterableIterator, PageSettings } from "@azure/core-paging";
 import type { BlobChangeFeedEvent } from "./models/BlobChangeFeedEvent";
 import { ChangeFeedFactory } from "./ChangeFeedFactory";

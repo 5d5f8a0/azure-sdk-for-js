@@ -13,11 +13,9 @@ import { PollOperationState, PollerLike } from "@azure/core-lro";
 import type {
   DeletedSecretBundle,
   GetSecretsOptionalParams,
-  SecretBundle} from "./generated/models/index.js";
-import {
-  DeletionRecoveryLevel,
-  KnownDeletionRecoveryLevel
+  SecretBundle,
 } from "./generated/models/index.js";
+import { DeletionRecoveryLevel, KnownDeletionRecoveryLevel } from "./generated/models/index.js";
 import { KeyVaultClient } from "./generated/keyVaultClient.js";
 import { createKeyVaultChallengeCallbacks } from "@azure/keyvault-common";
 

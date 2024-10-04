@@ -4,11 +4,10 @@
 import type {
   EventGridContext as Client,
   PublishCloudEvent200Response,
-  PublishCloudEventDefaultResponse} from "./cadl-generated/rest/index";
-import {
-  isUnexpected
+  PublishCloudEventDefaultResponse,
 } from "./cadl-generated/rest/index";
-import type { StreamableMethod} from "@azure-rest/core-client";
+import { isUnexpected } from "./cadl-generated/rest/index";
+import type { StreamableMethod } from "@azure-rest/core-client";
 import { operationOptionsToRequestParameters } from "@azure-rest/core-client";
 import type { PublishCloudEventOptionalParams } from "./cadl-generated/models/options";
 import type { RawHttpHeadersInput } from "@azure/core-rest-pipeline";

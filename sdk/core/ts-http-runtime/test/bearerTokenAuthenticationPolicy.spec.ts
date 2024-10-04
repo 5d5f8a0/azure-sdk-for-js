@@ -7,7 +7,8 @@ import type {
   AuthorizeRequestOnChallengeOptions,
   PipelinePolicy,
   PipelineResponse,
-  SendRequest} from "../src/index.js";
+  SendRequest,
+} from "../src/index.js";
 import {
   bearerTokenAuthenticationPolicy,
   createHttpHeaders,

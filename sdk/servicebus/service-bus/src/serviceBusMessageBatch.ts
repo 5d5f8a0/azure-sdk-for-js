@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { ServiceBusMessage} from "./serviceBusMessage";
+import type { ServiceBusMessage } from "./serviceBusMessage";
 import { toRheaMessage } from "./serviceBusMessage";
 import {
   errorInvalidMessageTypeSingle,
@@ -9,12 +9,10 @@ import {
   throwTypeErrorIfParameterMissing,
 } from "./util/errors";
 import type { ConnectionContext } from "./connectionContext";
-import type {
-  MessageAnnotations,
-  Message as RheaMessage} from "rhea-promise";
+import type { MessageAnnotations, Message as RheaMessage } from "rhea-promise";
 import {
   messageProperties as RheaMessagePropertiesList,
-  message as RheaMessageUtil
+  message as RheaMessageUtil,
 } from "rhea-promise";
 import type { TracingContext } from "@azure/core-tracing";
 import type { TryAddOptions } from "./modelsToBeSharedWithEventHubs";

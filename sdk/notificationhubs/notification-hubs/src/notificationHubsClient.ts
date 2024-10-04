@@ -18,7 +18,7 @@ import type {
   NotificationHubsResponse,
 } from "./models/notificationDetails.js";
 import type { NotificationHubJob, NotificationHubJobPoller } from "./models/notificationHubJob.js";
-import type { NotificationHubsClientContext} from "./api/clientContext.js";
+import type { NotificationHubsClientContext } from "./api/clientContext.js";
 import { createClientContext } from "./api/clientContext.js";
 import type { RegistrationDescription, RegistrationChannel } from "./models/registration.js";
 import type { Notification } from "./models/notification.js";

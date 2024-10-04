@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { Context } from "mocha";
-import type { RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
 import { Recorder, env } from "@azure-tools/test-recorder";
 import "./env";
 import type { ClientOptions } from "@azure-rest/core-client";

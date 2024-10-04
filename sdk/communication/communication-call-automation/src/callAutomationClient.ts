@@ -1,16 +1,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { CommonClientOptions } from "@azure/core-client";
 import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
 import type {
   CommunicationIdentifier,
-  CommunicationUserIdentifier} from "@azure/communication-common";
-import {
-  parseClientArguments,
-  isKeyCredential
+  CommunicationUserIdentifier,
 } from "@azure/communication-common";
+import { parseClientArguments, isKeyCredential } from "@azure/communication-common";
 import { logger } from "./models/logger";
 import type {
   AnswerCallRequest,

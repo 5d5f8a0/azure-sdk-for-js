@@ -10,7 +10,8 @@ import type {
   /* eslint-disable-next-line @typescript-eslint/no-redeclare */
   Request,
   Exception,
-  Trace} from "../../../../src/generated";
+  Trace,
+} from "../../../../src/generated";
 import {
   KnownPredicateType,
   KnownTelemetryType,
@@ -29,7 +30,8 @@ import type {
   RequestData,
   DependencyData,
   ExceptionData,
-  TraceData} from "../../../../src/metrics/quickpulse/types";
+  TraceData,
+} from "../../../../src/metrics/quickpulse/types";
 import {
   KnownRequestColumns,
   KnownDependencyColumns,

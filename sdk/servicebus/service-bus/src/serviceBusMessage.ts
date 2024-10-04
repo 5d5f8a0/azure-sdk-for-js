@@ -9,10 +9,9 @@ import type {
   Delivery,
   DeliveryAnnotations,
   MessageAnnotations,
-  Message as RheaMessage} from "rhea-promise";
-import {
-  uuid_to_string
+  Message as RheaMessage,
 } from "rhea-promise";
+import { uuid_to_string } from "rhea-promise";
 import { defaultDataTransformer } from "./dataTransformer";
 import { messageLogger as logger } from "./log";
 import type { ReceiveMode } from "./models";

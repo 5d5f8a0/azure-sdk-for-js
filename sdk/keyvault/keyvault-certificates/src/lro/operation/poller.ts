@@ -4,12 +4,8 @@
 import type { CertificateOperationState } from "./operation.js";
 import { CertificateOperationPollOperation } from "./operation.js";
 import type { KeyVaultCertificateWithPolicy } from "../../certificatesModels.js";
-import type {
-  KeyVaultCertificatePollerOptions} from "../keyVaultCertificatePoller.js";
-import {
-  KeyVaultCertificatePoller,
-  cleanState,
-} from "../keyVaultCertificatePoller.js";
+import type { KeyVaultCertificatePollerOptions } from "../keyVaultCertificatePoller.js";
+import { KeyVaultCertificatePoller, cleanState } from "../keyVaultCertificatePoller.js";
 
 export interface CertificateOperationPollerOptions extends KeyVaultCertificatePollerOptions {}
 

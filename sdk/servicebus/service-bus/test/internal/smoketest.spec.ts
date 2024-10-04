@@ -6,19 +6,15 @@ import type {
   ServiceBusReceiver,
   ServiceBusMessage,
   ProcessErrorArgs,
-  ServiceBusSender} from "../../src";
-import {
-  delay
+  ServiceBusSender,
 } from "../../src";
+import { delay } from "../../src";
 import { TestClientType } from "../public/utils/testUtils";
 import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
 import { getEntityNameFromConnectionString } from "../../src/constructorHelpers";
-import type {
-  ServiceBusClientForTests} from "../public/utils/testutils2";
-import {
-  createServiceBusClientForTests,
-} from "../public/utils/testutils2";
+import type { ServiceBusClientForTests } from "../public/utils/testutils2";
+import { createServiceBusClientForTests } from "../public/utils/testutils2";
 chai.use(chaiAsPromised);
 const assert: typeof chai.assert = chai.assert;
 

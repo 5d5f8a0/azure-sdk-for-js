@@ -3,8 +3,7 @@
 
 import { describe, it, assert, expect, vi, beforeEach, type Mock } from "vitest";
 import type { AccessToken, GetTokenOptions } from "@azure/core-auth";
-import type {
-  PipelineResponse} from "@azure/core-rest-pipeline";
+import type { PipelineResponse } from "@azure/core-rest-pipeline";
 import {
   bearerTokenAuthenticationPolicy,
   createHttpHeaders,

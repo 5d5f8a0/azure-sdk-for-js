@@ -3,12 +3,8 @@
 
 import type { Pipeline } from "@azure/core-rest-pipeline";
 import "./models/options";
-import type {
-  SystemEventsClientOptionalParams,
-  SystemEventsContext} from "./api/index";
-import {
-  createSystemEvents
-} from "./api/index";
+import type { SystemEventsClientOptionalParams, SystemEventsContext } from "./api/index";
+import { createSystemEvents } from "./api/index";
 
 export { SystemEventsClientOptionalParams } from "./api/systemEventsContext";
 

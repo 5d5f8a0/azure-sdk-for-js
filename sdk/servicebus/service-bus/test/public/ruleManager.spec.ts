@@ -12,11 +12,8 @@ import type {
 import { TestClientType } from "../public/utils/testUtils";
 import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
-import type {
-  ServiceBusClientForTests} from "../public/utils/testutils2";
-import {
-  createServiceBusClientForTests,
-} from "../public/utils/testutils2";
+import type { ServiceBusClientForTests } from "../public/utils/testutils2";
+import { createServiceBusClientForTests } from "../public/utils/testutils2";
 import { recreateSubscription } from "./utils/managementUtils";
 
 chai.use(chaiAsPromised);

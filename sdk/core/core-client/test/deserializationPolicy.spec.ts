@@ -7,19 +7,11 @@ import type {
   FullOperationResponse,
   OperationRequest,
   OperationSpec,
-  SerializerOptions} from "../src/index.js";
-import {
-  createSerializer,
-  deserializationPolicy,
+  SerializerOptions,
 } from "../src/index.js";
-import type {
-  PipelineResponse,
-  RawHttpHeaders,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-  createPipelineRequest,
-} from "@azure/core-rest-pipeline";
+import { createSerializer, deserializationPolicy } from "../src/index.js";
+import type { PipelineResponse, RawHttpHeaders, SendRequest } from "@azure/core-rest-pipeline";
+import { createHttpHeaders, createPipelineRequest } from "@azure/core-rest-pipeline";
 import { getOperationRequestInfo } from "../src/operationHelpers.js";
 import { parseXML } from "@azure/core-xml";
 

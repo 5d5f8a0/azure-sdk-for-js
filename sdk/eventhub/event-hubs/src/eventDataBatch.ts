@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { AmqpAnnotatedMessage } from "@azure/core-amqp";
-import type { EventData} from "./eventData.js";
+import type { EventData } from "./eventData.js";
 import { populateIdempotentMessageAnnotations, toRheaMessage } from "./eventData.js";
 import type { ConnectionContext } from "./connectionContext.js";
 import type { MessageAnnotations, Message as RheaMessage } from "rhea-promise";

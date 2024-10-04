@@ -3,11 +3,10 @@
 
 import type {
   BearerTokenAuthenticationPolicyOptions,
-  PipelinePolicy} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
+  PipelinePolicy,
 } from "@azure/core-rest-pipeline";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { createCallAutomationAccessKeyCredentialPolicy } from "./callAutomationAccessKeyCredentialPolicy";
 import type { CallAutomationApiClientOptionalParams } from "./../generated/src";

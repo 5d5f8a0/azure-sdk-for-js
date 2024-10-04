@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { ServiceClientOptions} from "@azure/core-client";
+import type { ServiceClientOptions } from "@azure/core-client";
 import { ServiceClient } from "@azure/core-client";
 import { DEFAULT_API_VERSION } from "./utils/constants";
 

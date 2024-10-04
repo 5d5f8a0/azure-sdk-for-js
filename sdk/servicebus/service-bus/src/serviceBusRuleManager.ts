@@ -3,16 +3,12 @@
 
 import type { OperationOptionsBase } from "./modelsToBeSharedWithEventHubs";
 import type { ConnectionContext } from "./connectionContext";
-import type { RetryConfig, RetryOptions} from "@azure/core-amqp";
+import type { RetryConfig, RetryOptions } from "@azure/core-amqp";
 import { RetryOperationType, retry } from "@azure/core-amqp";
 import type { CorrelationRuleFilter } from "./core/managementClient";
 import { ruleManagerLogger as logger } from "./log";
-import type {
-  RuleProperties,
-  SqlRuleAction} from "./serializers/ruleResourceSerializer";
-import {
-  isSqlRuleAction
-} from "./serializers/ruleResourceSerializer";
+import type { RuleProperties, SqlRuleAction } from "./serializers/ruleResourceSerializer";
+import { isSqlRuleAction } from "./serializers/ruleResourceSerializer";
 import { getUniqueName } from "./util/utils";
 import { throwErrorIfConnectionClosed } from "./util/errors";
 import type { SqlRuleFilter } from "./serializers/ruleResourceSerializer";

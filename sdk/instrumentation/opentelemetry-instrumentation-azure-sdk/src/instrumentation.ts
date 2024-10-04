@@ -4,7 +4,8 @@
 import type {
   Instrumentation,
   InstrumentationConfig,
-  InstrumentationModuleDefinition} from "@opentelemetry/instrumentation";
+  InstrumentationModuleDefinition,
+} from "@opentelemetry/instrumentation";
 import {
   InstrumentationBase,
   InstrumentationNodeModuleDefinition,

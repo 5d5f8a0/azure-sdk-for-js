@@ -31,23 +31,12 @@ import {
   getMessageIterator,
   wrapProcessErrorHandler,
 } from "./receiverCommon";
-import type {
-  ServiceBusReceiver} from "./receiver";
-import {
-  defaultMaxTimeAfterFirstMessageForBatchingMs,
-  MaxDeleteMessageCount
-} from "./receiver";
+import type { ServiceBusReceiver } from "./receiver";
+import { defaultMaxTimeAfterFirstMessageForBatchingMs, MaxDeleteMessageCount } from "./receiver";
 import type Long from "long";
 import type { ServiceBusMessageImpl, DeadLetterOptions } from "../serviceBusMessage";
-import type {
-  RetryConfig,
-  RetryOptions} from "@azure/core-amqp";
-import {
-  Constants,
-  RetryOperationType,
-  retry,
-  ErrorNameConditionMapper,
-} from "@azure/core-amqp";
+import type { RetryConfig, RetryOptions } from "@azure/core-amqp";
+import { Constants, RetryOperationType, retry, ErrorNameConditionMapper } from "@azure/core-amqp";
 import type { OperationOptionsBase } from "../modelsToBeSharedWithEventHubs";
 import type { AmqpError } from "rhea-promise";
 import { toProcessingSpanOptions } from "../diagnostics/instrumentServiceBusMessage";

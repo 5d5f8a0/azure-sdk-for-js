@@ -2,12 +2,8 @@
 // Licensed under the MIT License.
 
 import https from "https";
-import type {
-  PipelineRequestOptions} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-  createPipelineRequest,
-} from "@azure/core-rest-pipeline";
+import type { PipelineRequestOptions } from "@azure/core-rest-pipeline";
+import { createHttpHeaders, createPipelineRequest } from "@azure/core-rest-pipeline";
 import type { GetTokenOptions } from "@azure/core-auth";
 import { credentialLogger } from "../../util/logging";
 import type { MSI, MSIConfiguration, MSIToken } from "./models";

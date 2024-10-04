@@ -6,12 +6,9 @@
 
 import type { TokenCachePersistenceOptions } from "../../../../identity/src";
 import { DeviceCodeCredential } from "../../../../identity/src";
-import type {
-  MsalTestCleanup} from "../../../../identity/test/node/msalNodeTestSetup";
-import {
-  msalNodeTestSetup,
-} from "../../../../identity/test/node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { MsalTestCleanup } from "../../../../identity/test/node/msalNodeTestSetup";
+import { msalNodeTestSetup } from "../../../../identity/test/node/msalNodeTestSetup";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isLiveMode } from "@azure-tools/test-recorder";
 
 import { PublicClientApplication } from "@azure/msal-node";

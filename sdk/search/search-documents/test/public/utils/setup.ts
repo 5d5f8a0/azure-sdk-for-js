@@ -14,11 +14,9 @@ import type {
   VectorSearchAlgorithmConfiguration,
   VectorSearchCompression,
   VectorSearchProfile,
-  VectorSearchVectorizer} from "../../../src";
-import {
-  GeographyPoint,
-  KnownAnalyzerNames
+  VectorSearchVectorizer,
 } from "../../../src";
+import { GeographyPoint, KnownAnalyzerNames } from "../../../src";
 import type { Hotel } from "./interfaces";
 
 export const WAIT_TIME = isPlaybackMode() ? 0 : 4000;

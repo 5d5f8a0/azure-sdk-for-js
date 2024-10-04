@@ -22,11 +22,10 @@ import {
   MonitorManagementClient as GeneratedMetricsDefinitionsClient,
   KnownApiVersion20240201 as MetricDefinitionsApiVersion,
 } from "./generated/metricsdefinitions/src";
-import type {
-  MetricNamespacesListOptionalParams} from "./generated/metricsnamespaces/src";
+import type { MetricNamespacesListOptionalParams } from "./generated/metricsnamespaces/src";
 import {
   MonitorManagementClient as GeneratedMetricsNamespacesClient,
-  KnownApiVersion20240201 as MetricNamespacesApiVersion
+  KnownApiVersion20240201 as MetricNamespacesApiVersion,
 } from "./generated/metricsnamespaces/src";
 import {
   convertRequestForMetrics,

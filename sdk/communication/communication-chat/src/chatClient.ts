@@ -22,12 +22,8 @@ import type {
   TypingIndicatorReceivedEvent,
 } from "./models/events";
 import type { ChatThreadItem, CreateChatThreadResult, ListPageSettings } from "./models/models";
-import type {
-  SignalingClient,
-  SignalingClientOptions} from "@azure/communication-signaling";
-import {
-  ConnectionState
-} from "@azure/communication-signaling";
+import type { SignalingClient, SignalingClientOptions } from "@azure/communication-signaling";
+import { ConnectionState } from "@azure/communication-signaling";
 import {
   mapToChatParticipantRestModel,
   mapToCreateChatThreadOptionsRestModel,

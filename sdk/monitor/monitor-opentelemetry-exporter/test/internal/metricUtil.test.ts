@@ -7,11 +7,9 @@ import path from "path";
 import * as os from "os";
 import type {
   ResourceMetrics,
-  PeriodicExportingMetricReaderOptions} from "@opentelemetry/sdk-metrics";
-import {
-  MeterProvider,
-  PeriodicExportingMetricReader,
+  PeriodicExportingMetricReaderOptions,
 } from "@opentelemetry/sdk-metrics";
+import { MeterProvider, PeriodicExportingMetricReader } from "@opentelemetry/sdk-metrics";
 import { resourceMetricsToEnvelope } from "../../src/utils/metricUtils";
 import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
 import { AzureMonitorMetricExporter } from "../../src/export/metric";
@@ -19,10 +17,9 @@ import type { AzureMonitorExporterOptions } from "../../src/config";
 import type {
   TelemetryItem as Envelope,
   RemoteDependencyData,
-  RequestData} from "../../src/generated";
-import {
-  KnownContextTagKeys
+  RequestData,
 } from "../../src/generated";
+import { KnownContextTagKeys } from "../../src/generated";
 import assert from "assert";
 import type { Tags } from "../../src/types";
 import { BreezePerformanceCounterNames, OTelPerformanceCounterNames } from "../../src/types";

@@ -8,12 +8,8 @@ import type {
   RoomParticipant,
   RoomParticipantPatch,
 } from "./models";
-import type {
-  CommunicationIdentifier} from "@azure/communication-common";
-import {
-  getIdentifierKind,
-  getIdentifierRawId,
-} from "@azure/communication-common";
+import type { CommunicationIdentifier } from "@azure/communication-common";
+import { getIdentifierKind, getIdentifierRawId } from "@azure/communication-common";
 import type {
   ParticipantProperties,
   RoomParticipant as RESTRoomParticipant,

@@ -4,11 +4,9 @@
 import type {
   CommunicationIdentifier,
   CommunicationIdentifierKind,
-  SerializedCommunicationIdentifier} from "../../src";
-import {
-  deserializeCommunicationIdentifier,
-  serializeCommunicationIdentifier,
+  SerializedCommunicationIdentifier,
 } from "../../src";
+import { deserializeCommunicationIdentifier, serializeCommunicationIdentifier } from "../../src";
 import { assert } from "chai";
 
 const assertSerialize = (

@@ -2,9 +2,7 @@
 // Licensed under the MIT License.
 import assert from "assert";
 import type { Suite } from "mocha";
-import type {
-  ChangeFeedIteratorOptions,
-  RequestOptions} from "../../../src";
+import type { ChangeFeedIteratorOptions, RequestOptions } from "../../../src";
 import {
   ChangeFeedStartFrom,
   ChangeFeedRetentionTimeSpan,

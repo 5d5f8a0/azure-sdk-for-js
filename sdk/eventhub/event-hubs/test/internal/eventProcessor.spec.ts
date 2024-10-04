@@ -8,12 +8,9 @@ import type {
   EventHubProducerClient,
   PartitionOwnership,
   ReceivedEventData,
-  SubscriptionEventHandlers} from "../../src/index.js";
-import {
-  CloseReason,
-  earliestEventPosition,
-  latestEventPosition,
+  SubscriptionEventHandlers,
 } from "../../src/index.js";
+import { CloseReason, earliestEventPosition, latestEventPosition } from "../../src/index.js";
 import type { Dictionary } from "rhea-promise";
 import { loopUntil } from "../utils/testUtils.js";
 import type { EventProcessor, FullEventProcessorOptions } from "../../src/eventProcessor.js";

@@ -16,15 +16,10 @@ import type {
   PagedAnalyzeBatchResult,
   PollerLike,
 } from "./models";
-import type {
-  FullOperationResponse,
-  OperationOptions,
-  OperationSpec} from "@azure/core-client";
-import {
-  createSerializer,
-} from "@azure/core-client";
+import type { FullOperationResponse, OperationOptions, OperationSpec } from "@azure/core-client";
+import { createSerializer } from "@azure/core-client";
 import type { LongRunningOperation, LroResponse, SimplePollerLike } from "@azure/core-lro";
-import type { PagedResult} from "@azure/core-paging";
+import type { PagedResult } from "@azure/core-paging";
 import { getPagedAsyncIterator } from "@azure/core-paging";
 import { throwError, transformAnalyzeBatchResults } from "./transforms";
 import type { HttpMethods } from "@azure/core-rest-pipeline";

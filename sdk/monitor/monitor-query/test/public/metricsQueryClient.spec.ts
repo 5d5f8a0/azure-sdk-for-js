@@ -7,8 +7,7 @@ import { getYieldedValue } from "@azure-tools/test-utils";
 import type { MetricsQueryClient } from "../../src";
 import { Durations } from "../../src";
 
-import type {
-  RecorderAndMetricsClient} from "./shared/testShared";
+import type { RecorderAndMetricsClient } from "./shared/testShared";
 import {
   createRecorderAndMetricsClient,
   getMetricsArmResourceId,

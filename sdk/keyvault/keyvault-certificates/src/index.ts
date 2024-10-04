@@ -85,7 +85,8 @@ import type {
   GetCertificateIssuersOptionalParams,
   GetCertificateVersionsOptionalParams,
   SetCertificateIssuerOptionalParams,
-  GetDeletedCertificatesOptionalParams} from "./generated/models/index.js";
+  GetDeletedCertificatesOptionalParams,
+} from "./generated/models/index.js";
 import {
   BackupCertificateResult,
   IssuerParameters,

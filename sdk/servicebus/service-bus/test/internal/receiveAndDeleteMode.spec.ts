@@ -17,9 +17,7 @@ import type {
 import { TestClientType, TestMessage, checkWithTimeout } from "../public/utils/testUtils";
 
 import { InvalidOperationInReceiveAndDeleteMode } from "../../src/util/errors";
-import type {
-  EntityName,
-  ServiceBusClientForTests} from "../public/utils/testutils2";
+import type { EntityName, ServiceBusClientForTests } from "../public/utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,

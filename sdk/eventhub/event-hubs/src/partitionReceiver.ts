@@ -3,30 +3,26 @@
 
 import type { AbortSignalLike } from "@azure/abort-controller";
 import { AbortError } from "@azure/abort-controller";
-import type {
-  MessagingError,
-  RetryConfig} from "@azure/core-amqp";
+import type { MessagingError, RetryConfig } from "@azure/core-amqp";
 import {
   Constants,
   RetryOperationType,
   StandardAbortMessage,
   retry,
-  translate
+  translate,
 } from "@azure/core-amqp";
 import type {
   EventContext,
   Receiver as Link,
   ReceiverOptions as RheaReceiverOptions,
-  Source} from "rhea-promise";
-import {
-  types,
+  Source,
 } from "rhea-promise";
-import type { EventDataInternal, ReceivedEventData} from "./eventData.js";
+import { types } from "rhea-promise";
+import type { EventDataInternal, ReceivedEventData } from "./eventData.js";
 import { fromRheaMessage } from "./eventData.js";
-import type { EventPosition} from "./eventPosition.js";
+import type { EventPosition } from "./eventPosition.js";
 import { getEventPositionFilter } from "./eventPosition.js";
-import type {
-  SimpleLogger} from "./logger.js";
+import type { SimpleLogger } from "./logger.js";
 import {
   createSimpleLogger,
   logErrorStackTrace,

@@ -15,7 +15,7 @@ import type { EventHubProperties, PartitionProperties } from "./managementClient
 import type { NamedKeyCredential, SASCredential, TokenCredential } from "@azure/core-auth";
 import { isDefined } from "@azure/core-util";
 import { isCredential } from "./util/typeGuards.js";
-import type { AmqpAnnotatedMessage} from "@azure/core-amqp";
+import type { AmqpAnnotatedMessage } from "@azure/core-amqp";
 import { delay } from "@azure/core-amqp";
 import { BatchingPartitionChannel } from "./batchingPartitionChannel.js";
 import { PartitionAssigner } from "./impl/partitionAssigner.js";

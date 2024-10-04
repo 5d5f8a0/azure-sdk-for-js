@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { Checkpoint, CheckpointStore, PartitionOwnership } from "@azure/event-hubs";
-import type { TableClient, TableInsertEntityHeaders} from "@azure/data-tables";
+import type { TableClient, TableInsertEntityHeaders } from "@azure/data-tables";
 import { odata } from "@azure/data-tables";
 import { logErrorStackTrace, logger } from "./log.js";
 

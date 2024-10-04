@@ -16,14 +16,8 @@ import {
 } from "./util/errors";
 import type { ServiceBusMessageBatch } from "./serviceBusMessageBatch";
 import type { CreateMessageBatchOptions } from "./models";
-import type {
-  RetryConfig,
-  RetryOptions,
-  AmqpAnnotatedMessage} from "@azure/core-amqp";
-import {
-  RetryOperationType,
-  retry
-} from "@azure/core-amqp";
+import type { RetryConfig, RetryOptions, AmqpAnnotatedMessage } from "@azure/core-amqp";
+import { RetryOperationType, retry } from "@azure/core-amqp";
 import type { OperationOptionsBase } from "./modelsToBeSharedWithEventHubs";
 import type { TracingSpanLink } from "@azure/core-tracing";
 import { senderLogger as logger } from "./log";

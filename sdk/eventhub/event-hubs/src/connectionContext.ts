@@ -6,30 +6,19 @@
 
 import type { Connection, Dictionary, EventContext, OnAmqpEvent } from "rhea-promise";
 import { ConnectionEvents } from "rhea-promise";
-import type {
-  CreateConnectionContextBaseParameters,
-  SasTokenProvider} from "@azure/core-amqp";
+import type { CreateConnectionContextBaseParameters, SasTokenProvider } from "@azure/core-amqp";
 import {
   ConnectionConfig,
   ConnectionContextBase,
   Constants,
   createSasTokenProvider,
 } from "@azure/core-amqp";
-import type {
-  EventHubConnectionStringProperties} from "./util/connectionStringUtils.js";
-import {
-  parseEventHubConnectionString,
-} from "./util/connectionStringUtils.js";
+import type { EventHubConnectionStringProperties } from "./util/connectionStringUtils.js";
+import { parseEventHubConnectionString } from "./util/connectionStringUtils.js";
 import type { ManagementClientOptions } from "./managementClient.js";
 import { ManagementClient } from "./managementClient.js";
-import type {
-  NamedKeyCredential,
-  SASCredential,
-  TokenCredential} from "@azure/core-auth";
-import {
-  isNamedKeyCredential,
-  isSASCredential,
-} from "@azure/core-auth";
+import type { NamedKeyCredential, SASCredential, TokenCredential } from "@azure/core-auth";
+import { isNamedKeyCredential, isSASCredential } from "@azure/core-auth";
 import { logErrorStackTrace, logger } from "./logger.js";
 import type { EventHubClientOptions } from "./models/public.js";
 import { EventHubConnectionConfig } from "./eventhubConnectionConfig.js";

@@ -26,7 +26,7 @@ import type { OfferDefinition } from "../Offer";
 import { Offer } from "../Offer";
 import { OfferResponse } from "../Offer/OfferResponse";
 import type { Resource } from "../Resource";
-import type { FeedRange} from "../ChangeFeed";
+import type { FeedRange } from "../ChangeFeed";
 import { FeedRangeInternal } from "../ChangeFeed";
 import type { DiagnosticNodeInternal } from "../../diagnostics/DiagnosticNodeInternal";
 import {

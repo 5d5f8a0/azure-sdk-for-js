@@ -6,13 +6,8 @@
  */
 
 import { DefaultAzureCredential } from "@azure/identity";
-import type {
-  SelectFields} from "@azure/search-documents";
-import {
-  GeographyPoint,
-  SearchClient,
-  SearchIndexClient
-} from "@azure/search-documents";
+import type { SelectFields } from "@azure/search-documents";
+import { GeographyPoint, SearchClient, SearchIndexClient } from "@azure/search-documents";
 import type { Hotel } from "./interfaces";
 import { createIndex, delay, WAIT_TIME } from "./setup";
 

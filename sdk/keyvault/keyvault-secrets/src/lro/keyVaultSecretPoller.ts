@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { OperationOptions } from "@azure/core-client";
-import type { PollOperation, PollOperationState} from "@azure/core-lro";
+import type { PollOperation, PollOperationState } from "@azure/core-lro";
 import { Poller } from "@azure/core-lro";
 import type { KeyVaultClient } from "../generated/keyVaultClient.js";
 import { delay } from "@azure/core-util";

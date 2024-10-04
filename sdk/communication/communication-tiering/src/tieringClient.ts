@@ -9,7 +9,7 @@ import type {
   AssetDetailsModel,
 } from "./models";
 import type { CommonClientOptions, InternalClientPipelineOptions } from "@azure/core-client";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { createCommunicationAuthPolicy } from "@azure/communication-common";
 import { isKeyCredential, parseClientArguments } from "@azure/communication-common";

@@ -5,22 +5,18 @@ import type {
   HttpClient,
   HttpMethods,
   PipelineRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  RestError,
-  createHttpHeaders,
+  PipelineResponse,
 } from "@azure/core-rest-pipeline";
+import { RestError, createHttpHeaders } from "@azure/core-rest-pipeline";
 import type {
   ImplementationName,
   LroResponseSpec,
   Result,
   RouteProcessor,
-  State} from "./utils.js";
-import {
-  createProcessor,
-  generate,
+  State,
 } from "./utils.js";
-import type { PollerLike} from "../../src/index.js";
+import { createProcessor, generate } from "./utils.js";
+import type { PollerLike } from "../../src/index.js";
 import { createHttpPoller } from "../../src/index.js";
 import type {
   OperationResponse,

@@ -7,7 +7,8 @@ import type {
   Container,
   ContainerRequest,
   OperationResponse,
-  PluginConfig} from "../../../../src";
+  PluginConfig,
+} from "../../../../src";
 import {
   Constants,
   CosmosClient,
@@ -21,12 +22,8 @@ import { addEntropy, getTestContainer, testForDiagnostics } from "../../common/T
 import type { OperationInput } from "../../../../src";
 import { BulkOperationType } from "../../../../src";
 import { generateOperationOfSize } from "../../../internal/unit/utils/batch.spec";
-import type {
-  PartitionKey} from "../../../../src/documents";
-import {
-  PartitionKeyDefinitionVersion,
-  PartitionKeyKind,
-} from "../../../../src/documents";
+import type { PartitionKey } from "../../../../src/documents";
+import { PartitionKeyDefinitionVersion, PartitionKeyKind } from "../../../../src/documents";
 import { endpoint } from "../../common/_testConfig";
 import { masterKey } from "../../common/_fakeTestSecrets";
 import { getCurrentTimestampInMs } from "../../../../src/utils/time";

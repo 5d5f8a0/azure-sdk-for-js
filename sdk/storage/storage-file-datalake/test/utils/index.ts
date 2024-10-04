@@ -10,11 +10,10 @@ import * as fs from "fs";
 import * as path from "path";
 
 import { DataLakeServiceClient } from "../../src/DataLakeServiceClient";
-import type { StoragePipelineOptions} from "../../src";
+import type { StoragePipelineOptions } from "../../src";
 import { newPipeline, StorageSharedKeyCredential } from "../../src";
 import { getUniqueName, SimpleTokenCredential, configureStorageClient } from "./testutils.common";
-import type {
-  DataLakeSASSignatureValues} from "../../src";
+import type { DataLakeSASSignatureValues } from "../../src";
 import {
   AccountSASPermissions,
   AccountSASResourceTypes,

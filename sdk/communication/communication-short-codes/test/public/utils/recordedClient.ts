@@ -4,8 +4,7 @@ import * as dotenv from "dotenv";
 
 import type { TokenCredential } from "@azure/identity";
 import { ClientSecretCredential, DefaultAzureCredential } from "@azure/identity";
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
 import {
   Recorder,
   assertEnvironmentVariable,

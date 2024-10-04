@@ -1,12 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  CreateTestSerializerOptions} from "./utils/mockedSerializer";
-import {
-  createTestSerializer,
-  registerTestSchema,
-} from "./utils/mockedSerializer";
+import type { CreateTestSerializerOptions } from "./utils/mockedSerializer";
+import { createTestSerializer, registerTestSchema } from "./utils/mockedSerializer";
 import { assert, use as chaiUse } from "chai";
 import { testAvroType, testGroup, testSchema, testValue, testSchemaName } from "./utils/dummies";
 import type { Context } from "mocha";
@@ -21,7 +17,7 @@ import {
 import { v4 as uuid } from "uuid";
 import { Recorder, isLiveMode } from "@azure-tools/test-recorder";
 import type { SchemaRegistry } from "@azure/schema-registry";
-import type { HttpClient, Pipeline} from "@azure/core-rest-pipeline";
+import type { HttpClient, Pipeline } from "@azure/core-rest-pipeline";
 import { createDefaultHttpClient } from "@azure/core-rest-pipeline";
 chaiUse(chaiPromises);
 

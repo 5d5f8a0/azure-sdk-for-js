@@ -8,7 +8,7 @@ import { config } from "dotenv";
 
 import { SimpleTokenCredential } from "./testutils.common";
 import { createTestCredential } from "@azure-tools/test-credential";
-import type { StoragePipelineOptions} from "../../src";
+import type { StoragePipelineOptions } from "../../src";
 import { StorageSharedKeyCredential } from "../../src";
 import { BlobServiceClient } from "../../src";
 import { getUniqueName, configureBlobStorageClient } from "./testutils.common";

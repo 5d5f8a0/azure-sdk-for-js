@@ -8,12 +8,8 @@ import type * as http from "http";
 import * as sinon from "sinon";
 import { BrowserSdkLoader } from "../../../../src/browserSdkLoader/browserSdkLoader";
 import * as BrowserSdkLoaderHelper from "../../../../src/browserSdkLoader/browserSdkLoaderHelper";
-import type {
-  AzureMonitorOpenTelemetryOptions} from "../../../../src/index";
-import {
-  shutdownAzureMonitor,
-  useAzureMonitor,
-} from "../../../../src/index";
+import type { AzureMonitorOpenTelemetryOptions } from "../../../../src/index";
+import { shutdownAzureMonitor, useAzureMonitor } from "../../../../src/index";
 import { getOsPrefix } from "../../../../src/utils/common";
 import { metrics, trace } from "@opentelemetry/api";
 import { logs } from "@opentelemetry/api-logs";

@@ -12,9 +12,7 @@ import type {
   WebPubSubMessage,
   JSONTypes,
 } from "@azure/web-pubsub-client";
-import type {
-  IMessageData,
-  IUpstreamMessage} from "./generated/clientProto.js";
+import type { IMessageData, IUpstreamMessage } from "./generated/clientProto.js";
 import {
   DownstreamMessage,
   MessageData,

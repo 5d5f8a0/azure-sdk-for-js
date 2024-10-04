@@ -8,10 +8,9 @@ import type { SenderResult } from "../../types";
 import type {
   TelemetryItem as Envelope,
   ApplicationInsightsClientOptionalParams,
-  TrackOptionalParams} from "../../generated";
-import {
-  ApplicationInsightsClient
+  TrackOptionalParams,
 } from "../../generated";
+import { ApplicationInsightsClient } from "../../generated";
 import type { AzureMonitorExporterOptions } from "../../config";
 import { BaseSender } from "./baseSender";
 

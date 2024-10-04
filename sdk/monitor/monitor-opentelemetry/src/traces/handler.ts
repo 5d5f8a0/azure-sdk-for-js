@@ -8,10 +8,9 @@ import type { BufferConfig } from "@opentelemetry/sdk-trace-base";
 import { BatchSpanProcessor } from "@opentelemetry/sdk-trace-base";
 import type {
   HttpInstrumentationConfig,
-  IgnoreOutgoingRequestFunction} from "@opentelemetry/instrumentation-http";
-import {
-  HttpInstrumentation
+  IgnoreOutgoingRequestFunction,
 } from "@opentelemetry/instrumentation-http";
+import { HttpInstrumentation } from "@opentelemetry/instrumentation-http";
 import { MongoDBInstrumentation } from "@opentelemetry/instrumentation-mongodb";
 import { MySQLInstrumentation } from "@opentelemetry/instrumentation-mysql";
 import { PgInstrumentation } from "@opentelemetry/instrumentation-pg";

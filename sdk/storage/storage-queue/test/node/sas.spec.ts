@@ -3,8 +3,7 @@
 
 import { assert } from "chai";
 
-import type {
-  StorageSharedKeyCredential} from "../../src";
+import type { StorageSharedKeyCredential } from "../../src";
 import {
   AccountSASPermissions,
   AccountSASResourceTypes,

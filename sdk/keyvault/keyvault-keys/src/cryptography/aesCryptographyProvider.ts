@@ -21,12 +21,8 @@ import type {
   WrapResult,
 } from "..";
 import type { AesCbcDecryptParameters } from "../cryptographyClientModels";
-import type {
-  CryptographyProvider,
-  CryptographyProviderOperation} from "./models";
-import {
-  LocalCryptographyUnsupportedError,
-} from "./models";
+import type { CryptographyProvider, CryptographyProviderOperation } from "./models";
+import { LocalCryptographyUnsupportedError } from "./models";
 
 /**
  * An AES cryptography provider supporting AES algorithms.

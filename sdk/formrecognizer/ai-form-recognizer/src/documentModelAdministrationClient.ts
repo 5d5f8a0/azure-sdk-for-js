@@ -3,7 +3,7 @@
 
 import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import type { PagedAsyncIterableIterator } from "@azure/core-paging";
-import type { TracingClient} from "@azure/core-tracing";
+import type { TracingClient } from "@azure/core-tracing";
 import { createTracingClient } from "@azure/core-tracing";
 import { SDK_VERSION } from "./constants";
 import type {
@@ -24,11 +24,10 @@ import type {
   DocumentModelBuildResponse,
   AdministrationOperationState,
   DocumentClassifierPoller,
-  DocumentClassifierOperationState} from "./lro/administration";
-import {
-  toTrainingPollOperationState
+  DocumentClassifierOperationState,
 } from "./lro/administration";
-import type { OperationContext} from "./lro/util/poller";
+import { toTrainingPollOperationState } from "./lro/administration";
+import type { OperationContext } from "./lro/util/poller";
 import { lro } from "./lro/util/poller";
 import type {
   BeginCopyModelOptions,

@@ -7,14 +7,10 @@ import type {
   AwaitableSenderOptions,
   EventContext,
   OnAmqpEvent,
-  Message as RheaMessage} from "rhea-promise";
-import {
-  message,
-  types,
+  Message as RheaMessage,
 } from "rhea-promise";
-import type {
-  RetryConfig,
-  RetryOptions} from "@azure/core-amqp";
+import { message, types } from "rhea-promise";
+import type { RetryConfig, RetryOptions } from "@azure/core-amqp";
 import {
   Constants,
   ErrorNameConditionMapper,
@@ -24,28 +20,20 @@ import {
   retry,
   translate,
 } from "@azure/core-amqp";
-import type {
-  EventData,
-  EventDataInternal} from "./eventData.js";
-import {
-  populateIdempotentMessageAnnotations,
-  toRheaMessage,
-} from "./eventData.js";
-import type { EventDataBatch, EventDataBatchImpl} from "./eventDataBatch.js";
+import type { EventData, EventDataInternal } from "./eventData.js";
+import { populateIdempotentMessageAnnotations, toRheaMessage } from "./eventData.js";
+import type { EventDataBatch, EventDataBatchImpl } from "./eventDataBatch.js";
 import { isEventDataBatch } from "./eventDataBatch.js";
-import type {
-  SimpleLogger} from "./logger.js";
-import {
-  logErrorStackTrace,
-  createSimpleLogger,
-  logger,
-  createSenderLogPrefix,
-} from "./logger.js";
+import type { SimpleLogger } from "./logger.js";
+import { logErrorStackTrace, createSimpleLogger, logger, createSenderLogPrefix } from "./logger.js";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import type { ConnectionContext } from "./connectionContext.js";
 import type { EventHubProducerOptions, IdempotentLinkProperties } from "./models/private.js";
 import type { SendOptions } from "./models/public.js";
-import type { PartitionPublishingOptions, PartitionPublishingProperties } from "./models/private.js";
+import type {
+  PartitionPublishingOptions,
+  PartitionPublishingProperties,
+} from "./models/private.js";
 import { getRetryAttemptTimeoutInMs } from "./util/retries.js";
 import {
   idempotentProducerAmqpPropertyNames,

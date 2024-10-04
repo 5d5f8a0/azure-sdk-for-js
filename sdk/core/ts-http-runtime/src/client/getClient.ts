@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { TokenCredential} from "../auth/tokenCredential.js";
+import type { TokenCredential } from "../auth/tokenCredential.js";
 import { isTokenCredential } from "../auth/tokenCredential.js";
-import type { KeyCredential} from "../auth/keyCredential.js";
+import type { KeyCredential } from "../auth/keyCredential.js";
 import { isKeyCredential } from "../auth/keyCredential.js";
 import type { HttpClient, HttpMethods } from "../interfaces.js";
 import type { Pipeline } from "../pipeline.js";

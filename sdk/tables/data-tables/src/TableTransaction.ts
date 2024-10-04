@@ -11,22 +11,10 @@ import type {
   UpdateTableEntityOptions,
 } from "./models";
 import type { NamedKeyCredential, SASCredential, TokenCredential } from "@azure/core-auth";
-import type {
-  OperationOptions,
-  ServiceClient} from "@azure/core-client";
-import {
-  serializationPolicy,
-  serializationPolicyName,
-} from "@azure/core-client";
-import type {
-  Pipeline,
-  PipelineRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  RestError,
-  createHttpHeaders,
-  createPipelineRequest,
-} from "@azure/core-rest-pipeline";
+import type { OperationOptions, ServiceClient } from "@azure/core-client";
+import { serializationPolicy, serializationPolicyName } from "@azure/core-client";
+import type { Pipeline, PipelineRequest, PipelineResponse } from "@azure/core-rest-pipeline";
+import { RestError, createHttpHeaders, createPipelineRequest } from "@azure/core-rest-pipeline";
 import {
   getInitialTransactionBody,
   getTransactionHttpRequestBody,

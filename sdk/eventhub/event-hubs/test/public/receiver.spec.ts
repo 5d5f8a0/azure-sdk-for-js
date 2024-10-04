@@ -6,11 +6,9 @@ import type {
   EventHubConsumerClient,
   EventHubProducerClient,
   ReceivedEventData,
-  Subscription} from "../../src/index.js";
-import {
-  earliestEventPosition,
-  latestEventPosition,
+  Subscription,
 } from "../../src/index.js";
+import { earliestEventPosition, latestEventPosition } from "../../src/index.js";
 import debugModule from "debug";
 import { should } from "../utils/chai.js";
 import { describe, it, afterEach, beforeEach } from "vitest";

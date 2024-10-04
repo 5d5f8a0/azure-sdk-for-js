@@ -17,10 +17,9 @@ import { ServiceBusError, translateServiceBusError } from "../../../src/serviceB
 import { MessagingError, RetryOperationType } from "@azure/core-amqp";
 import type {
   ServiceBusMessageImpl,
-  ServiceBusReceivedMessage} from "../../../src/serviceBusMessage";
-import {
-  DispositionType
+  ServiceBusReceivedMessage,
 } from "../../../src/serviceBusMessage";
+import { DispositionType } from "../../../src/serviceBusMessage";
 import type { ConnectionContext } from "../../../src/connectionContext";
 import type { DispositionStatusOptions } from "../../../src/core/managementClient";
 import type { Delivery } from "rhea-promise";

@@ -1,21 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  Recorder,
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  assertEnvironmentVariable,
-  env,
-  isPlaybackMode,
-} from "@azure-tools/test-recorder";
+import type { Recorder, RecorderStartOptions } from "@azure-tools/test-recorder";
+import { assertEnvironmentVariable, env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { createTestCredential } from "@azure-tools/test-credential";
-import type {
-  AttestationClientOptions} from "../../src/";
-import {
-  AttestationAdministrationClient,
-  AttestationClient
-} from "../../src/";
+import type { AttestationClientOptions } from "../../src/";
+import { AttestationAdministrationClient, AttestationClient } from "../../src/";
 import "./env";
 import { pemFromBase64 } from "../utils/helpers";
 

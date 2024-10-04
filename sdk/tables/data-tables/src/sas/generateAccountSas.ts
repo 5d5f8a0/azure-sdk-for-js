@@ -1,15 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { AccountSasPermissions} from "./accountSasPermissions";
+import type { AccountSasPermissions } from "./accountSasPermissions";
 import { accountSasPermissionsFromString } from "./accountSasPermissions";
-import type {
-  AccountSasServices} from "./accountSasServices";
-import {
-  accountSasServicesFromString,
-  accountSasServicesToString,
-} from "./accountSasServices";
-import type { NamedKeyCredential} from "@azure/core-auth";
+import type { AccountSasServices } from "./accountSasServices";
+import { accountSasServicesFromString, accountSasServicesToString } from "./accountSasServices";
+import type { NamedKeyCredential } from "@azure/core-auth";
 import { isNamedKeyCredential } from "@azure/core-auth";
 import type { SasIPRange } from "./sasIPRange";
 import type { SasProtocol } from "./sasQueryParameters";

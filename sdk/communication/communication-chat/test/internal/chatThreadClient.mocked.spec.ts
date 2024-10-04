@@ -3,19 +3,15 @@
 
 import sinon from "sinon";
 import { assert } from "chai";
-import type {
-  CommunicationUserIdentifier} from "@azure/communication-common";
-import {
-  AzureCommunicationTokenCredential
-} from "@azure/communication-common";
+import type { CommunicationUserIdentifier } from "@azure/communication-common";
+import { AzureCommunicationTokenCredential } from "@azure/communication-common";
 import type {
   AddParticipantsRequest,
   SendMessageOptions,
   SendMessageRequest,
-  UpdateMessageOptions} from "../../src";
-import {
-  ChatThreadClient
+  UpdateMessageOptions,
 } from "../../src";
+import { ChatThreadClient } from "../../src";
 import type * as RestModel from "../../src/generated/src/models";
 import { apiVersion } from "../../src/generated/src/models/parameters";
 import { baseUri, generateToken } from "../public/utils/connectionUtils";

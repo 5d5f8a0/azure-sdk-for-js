@@ -8,10 +8,9 @@ import type {
   GetKeyOptions,
   JsonWebKey,
   KeyOperation,
-  KeyVaultKey} from "./keysModels";
-import {
-  KnownKeyOperations,
+  KeyVaultKey,
 } from "./keysModels";
+import { KnownKeyOperations } from "./keysModels";
 import type {
   AesCbcEncryptParameters,
   AesCbcEncryptionAlgorithm,

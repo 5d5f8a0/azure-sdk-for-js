@@ -5,12 +5,13 @@ import type {
   StatsbeatEnvironmentConfig,
   StatsbeatFeatures,
   StatsbeatInstrumentations,
-  StatsbeatOption} from "../types";
+  StatsbeatOption,
+} from "../types";
 import {
   AZURE_MONITOR_STATSBEAT_FEATURES,
   StatsbeatFeature,
   StatsbeatFeaturesMap,
-  StatsbeatInstrumentation
+  StatsbeatInstrumentation,
 } from "../types";
 import { Logger as InternalLogger } from "../shared/logging";
 

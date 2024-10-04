@@ -2,16 +2,10 @@
 // Licensed under the MIT License.
 
 import type { FullOperationResponse } from "@azure/core-client";
-import type { PipelineResponse} from "@azure/core-rest-pipeline";
+import type { PipelineResponse } from "@azure/core-rest-pipeline";
 import { createHttpHeaders } from "@azure/core-rest-pipeline";
-import type {
-  HttpHeadersLike,
-  WebResourceLike} from "./util.js";
-import {
-  toHttpHeadersLike,
-  toPipelineRequest,
-  toWebResourceLike,
-} from "./util.js";
+import type { HttpHeadersLike, WebResourceLike } from "./util.js";
+import { toHttpHeadersLike, toPipelineRequest, toWebResourceLike } from "./util.js";
 /**
  * Http Response that is compatible with the core-v1(core-http).
  */

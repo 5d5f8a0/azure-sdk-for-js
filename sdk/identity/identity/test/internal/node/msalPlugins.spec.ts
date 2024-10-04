@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import type { ICachePlugin, INativeBrokerPlugin } from "@azure/msal-node";
-import type {
-  PluginConfiguration} from "../../../src/msal/nodeFlows/msalPlugins";
+import type { PluginConfiguration } from "../../../src/msal/nodeFlows/msalPlugins";
 import {
   msalNodeFlowCacheControl,
   msalNodeFlowNativeBrokerControl,

@@ -32,11 +32,9 @@ import type {
   TargetConfidenceScores,
   TextDocumentBatchStatistics,
   TextDocumentStatistics,
-  TokenSentimentLabel} from "./generated";
-import {
-  KnownErrorCode,
-  KnownInnerErrorCode
+  TokenSentimentLabel,
 } from "./generated";
+import { KnownErrorCode, KnownInnerErrorCode } from "./generated";
 import type { CommonClientOptions, OperationOptions } from "@azure/core-client";
 import type { OperationState, SimplePollerLike } from "@azure/core-lro";
 import type { PagedAsyncIterableIterator } from "@azure/core-paging";

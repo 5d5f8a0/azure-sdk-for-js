@@ -8,7 +8,7 @@
  *  These tests will be skipped in Live Mode since the public tests run in live mode only.
  */
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isLiveMode, isPlaybackMode } from "@azure-tools/test-recorder";
 import { matrix } from "@azure-tools/test-utils";
 import type { Context } from "mocha";

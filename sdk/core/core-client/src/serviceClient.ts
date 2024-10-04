@@ -11,10 +11,9 @@ import type {
   HttpClient,
   Pipeline,
   PipelineRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  createPipelineRequest,
+  PipelineResponse,
 } from "@azure/core-rest-pipeline";
+import { createPipelineRequest } from "@azure/core-rest-pipeline";
 import type { TokenCredential } from "@azure/core-auth";
 import { createClientPipeline } from "./pipeline.js";
 import { flattenResponse } from "./utils.js";

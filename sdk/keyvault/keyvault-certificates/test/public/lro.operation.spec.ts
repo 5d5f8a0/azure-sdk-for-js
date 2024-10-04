@@ -6,10 +6,9 @@ import { env } from "@azure-tools/test-recorder";
 import type {
   CertificateClient,
   CertificateOperation,
-  KeyVaultCertificateWithPolicy} from "../../src/index.js";
-import {
-  DefaultCertificatePolicy
+  KeyVaultCertificateWithPolicy,
 } from "../../src/index.js";
+import { DefaultCertificatePolicy } from "../../src/index.js";
 import { testPollerProperties } from "./utils/recorderUtils.js";
 import { authenticate } from "./utils/testAuthentication.js";
 import type TestClient from "./utils/testClient.js";

@@ -7,11 +7,9 @@ import type {
   PipelineRequest,
   PipelineRequestOptions,
   PipelineResponse,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-  createPipelineRequest
+  SendRequest,
 } from "@azure/core-rest-pipeline";
+import { createHttpHeaders, createPipelineRequest } from "@azure/core-rest-pipeline";
 import type { DeleteRecordingOptions, DownloadRecordingOptions } from "./models/options";
 
 /** Class containing ContentDownloading operations. */

@@ -7,10 +7,9 @@ import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
 import type { ServiceBusMessage } from "../../src";
 import { delay } from "../../src";
-import type { TestClientType} from "./utils/testUtils";
+import type { TestClientType } from "./utils/testUtils";
 import { TestMessage } from "./utils/testUtils";
-import type {
-  EntityName} from "./utils/testutils2";
+import type { EntityName } from "./utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,

@@ -8,7 +8,7 @@ import {
   isKeyCredential,
   parseClientArguments,
 } from "@azure/communication-common";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
 import type { PollOperationState, PollerLike } from "@azure/core-lro";

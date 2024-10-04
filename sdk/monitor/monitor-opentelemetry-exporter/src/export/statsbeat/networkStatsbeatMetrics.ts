@@ -5,28 +5,20 @@ import type {
   BatchObservableResult,
   Meter,
   ObservableGauge,
-  ObservableResult} from "@opentelemetry/api";
-import {
-  diag
+  ObservableResult,
 } from "@opentelemetry/api";
-import type {
-  PeriodicExportingMetricReaderOptions} from "@opentelemetry/sdk-metrics";
-import {
-  MeterProvider,
-  PeriodicExportingMetricReader
-} from "@opentelemetry/sdk-metrics";
+import { diag } from "@opentelemetry/api";
+import type { PeriodicExportingMetricReaderOptions } from "@opentelemetry/sdk-metrics";
+import { MeterProvider, PeriodicExportingMetricReader } from "@opentelemetry/sdk-metrics";
 import type { AzureMonitorExporterOptions } from "../../index";
 import * as ai from "../../utils/constants/applicationinsights";
 import { StatsbeatMetrics } from "./statsbeatMetrics";
 import type {
   CommonStatsbeatProperties,
   NetworkStatsbeatProperties,
-  StatsbeatOptions} from "./types";
-import {
-  StatsbeatCounter,
-  STATSBEAT_LANGUAGE,
-  NetworkStatsbeat
+  StatsbeatOptions,
 } from "./types";
+import { StatsbeatCounter, STATSBEAT_LANGUAGE, NetworkStatsbeat } from "./types";
 import { AzureMonitorStatsbeatExporter } from "./statsbeatExporter";
 
 export class NetworkStatsbeatMetrics extends StatsbeatMetrics {

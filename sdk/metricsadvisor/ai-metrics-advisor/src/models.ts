@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  IngestionStatusType} from "./generated/models";
+import type { IngestionStatusType } from "./generated/models";
 import {
   EntityStatus as DataFeedDetailStatus,
   EmailHookParameter,

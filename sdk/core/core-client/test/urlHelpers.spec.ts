@@ -5,10 +5,9 @@ import { describe, it, assert } from "vitest";
 import type {
   OperationQueryParameter,
   OperationSpec,
-  OperationURLParameter} from "../src/index.js";
-import {
-  createSerializer,
+  OperationURLParameter,
 } from "../src/index.js";
+import { createSerializer } from "../src/index.js";
 import { appendQueryParams, getRequestUrl } from "../src/urlHelpers.js";
 
 describe("getRequestUrl", function () {

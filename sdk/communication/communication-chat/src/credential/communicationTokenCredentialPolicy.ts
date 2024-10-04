@@ -4,10 +4,9 @@
 import type { CommunicationTokenCredential } from "@azure/communication-common";
 import type {
   BearerTokenAuthenticationPolicyOptions,
-  PipelinePolicy} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
+  PipelinePolicy,
 } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
 
 /**
  * Creates a new CommunicationTokenCredentialPolicy factory.

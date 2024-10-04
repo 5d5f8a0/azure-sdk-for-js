@@ -10,13 +10,8 @@ import {
   recorderEnvSetup,
   SimpleTokenCredential,
 } from "../utils";
-import type {
-  StorageSharedKeyCredential} from "../../src";
-import {
-  BlobServiceClient,
-  getBlobServiceAccountAudience,
-  newPipeline
-} from "../../src";
+import type { StorageSharedKeyCredential } from "../../src";
+import { BlobServiceClient, getBlobServiceAccountAudience, newPipeline } from "../../src";
 import { Recorder } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";
 import { createTestCredential } from "@azure-tools/test-credential";

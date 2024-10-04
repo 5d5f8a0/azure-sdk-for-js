@@ -18,7 +18,7 @@ import type { AuthenticationRecord } from "../msal/types";
 import { credentialLogger } from "../util/logging";
 import { ensureScopes } from "../util/scopeUtils";
 import { tracingClient } from "../util/tracing";
-import type { MsalClient, MsalClientOptions} from "../msal/nodeFlows/msalClient";
+import type { MsalClient, MsalClientOptions } from "../msal/nodeFlows/msalClient";
 import { createMsalClient } from "../msal/nodeFlows/msalClient";
 import { DeveloperSignOnClientId } from "../constants";
 

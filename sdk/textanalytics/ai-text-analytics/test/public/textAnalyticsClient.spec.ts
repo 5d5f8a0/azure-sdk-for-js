@@ -9,10 +9,10 @@ import chaiPromises from "chai-as-promised";
 chaiUse(chaiPromises);
 
 import { matrix } from "@azure-tools/test-utils";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isPlaybackMode } from "@azure-tools/test-recorder";
 
-import type { AuthMethod} from "./utils/recordedClient";
+import type { AuthMethod } from "./utils/recordedClient";
 import { createClient, startRecorder } from "./utils/recordedClient";
 import type {
   AnalyzeSentimentResultArray,
@@ -23,10 +23,9 @@ import type {
   Opinion,
   SentenceSentiment,
   TextAnalyticsClient,
-  TextDocumentInput} from "../../src";
-import {
-  PiiEntityDomain
+  TextDocumentInput,
 } from "../../src";
+import { PiiEntityDomain } from "../../src";
 import { assertAllSuccess, assertRestError, isSuccess } from "./utils/resultHelper";
 import { checkEntityTextOffset, checkOffsetAndLength } from "./utils/stringIndexTypeHelpers";
 

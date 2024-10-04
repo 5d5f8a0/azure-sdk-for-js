@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import * as dotenv from "dotenv";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import { JobRouterAdministrationClient, JobRouterClient } from "../../../src";
 import type { Context } from "mocha";

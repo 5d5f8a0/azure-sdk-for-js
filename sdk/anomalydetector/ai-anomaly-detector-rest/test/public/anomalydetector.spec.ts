@@ -8,10 +8,9 @@ import type { Context } from "mocha";
 import type {
   AnomalyDetectorRestClient,
   TrainMultivariateModelParameters,
-  DetectMultivariateBatchAnomalyParameters} from "../../src";
-import {
-  isUnexpected
+  DetectMultivariateBatchAnomalyParameters,
 } from "../../src";
+import { isUnexpected } from "../../src";
 import { createClient, createRecorder } from "./utils/recordedClient";
 
 describe("AnomalyDetectorClient", () => {

@@ -24,13 +24,8 @@ import { SDK_VERSION } from "../constants";
 import type { UnwrapResult } from "../cryptographyClientModels";
 import { KeyVaultClient } from "../generated";
 import { parseKeyVaultKeyIdentifier } from "../identifier";
-import type {
-  CryptographyClientOptions,
-  GetKeyOptions,
-  KeyVaultKey} from "../keysModels";
-import {
-  LATEST_API_VERSION,
-} from "../keysModels";
+import type { CryptographyClientOptions, GetKeyOptions, KeyVaultKey } from "../keysModels";
+import { LATEST_API_VERSION } from "../keysModels";
 import { getKeyFromKeyBundle } from "../transformations";
 import { createHash } from "./crypto";
 import type { CryptographyProvider, CryptographyProviderOperation } from "./models";

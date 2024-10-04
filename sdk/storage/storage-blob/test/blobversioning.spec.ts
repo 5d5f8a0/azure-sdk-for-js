@@ -18,10 +18,9 @@ import type {
   BlobServiceClient,
   BlobClient,
   BlockBlobClient,
-  BlockBlobUploadResponse} from "../src";
-import {
-  BlobBatch,
+  BlockBlobUploadResponse,
 } from "../src";
+import { BlobBatch } from "../src";
 import { setURLParameter } from "../src/utils/utils.common";
 import type { Context } from "mocha";
 

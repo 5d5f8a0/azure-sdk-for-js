@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { PipelinePolicy} from "@azure/core-rest-pipeline";
+import type { PipelinePolicy } from "@azure/core-rest-pipeline";
 import { retryPolicy } from "@azure/core-rest-pipeline";
 
 import type { MSIConfiguration } from "./models";

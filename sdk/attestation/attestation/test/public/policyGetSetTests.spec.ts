@@ -14,14 +14,13 @@ chaiUse(chaiAsPromised);
 
 import { Recorder, isLiveMode } from "@azure-tools/test-recorder";
 
-import type {
-  EndpointType} from "../utils/recordedClient";
+import type { EndpointType } from "../utils/recordedClient";
 import {
   createRecordedAdminClient,
   getIsolatedSigningKey,
   recorderOptions,
 } from "../utils/recordedClient";
-import type { AttestationType} from "../../src";
+import type { AttestationType } from "../../src";
 import { KnownAttestationType, createAttestationPolicyToken } from "../../src";
 import { createRSAKey, createX509Certificate, generateSha256Hash } from "../utils/cryptoUtils";
 import { KnownPolicyModification } from "../../src/generated";

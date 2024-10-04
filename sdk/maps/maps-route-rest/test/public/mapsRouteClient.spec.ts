@@ -2,14 +2,9 @@
 // Licensed under the MIT License.
 
 import type { Context, Suite } from "mocha";
-import type {
-  RouteDirectionParameters,
-  RouteMatrixQuery} from "../../src";
-import {
-  createRouteDirectionsBatchRequest,
-  toColonDelimitedLatLonString,
-} from "../../src";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { RouteDirectionParameters, RouteMatrixQuery } from "../../src";
+import { createRouteDirectionsBatchRequest, toColonDelimitedLatLonString } from "../../src";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isPlaybackMode } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import { createClient, createRecorder, testLogger } from "./utils/recordedClient";
@@ -17,11 +12,9 @@ import type {
   MapsRouteClient,
   RouteGetRouteDirectionsBatch200Response,
   RouteGetRouteDirectionsQueryParamProperties,
-  RouteGetRouteMatrix200Response} from "../../src/generated";
-import {
-  getLongRunningPoller,
-  isUnexpected,
+  RouteGetRouteMatrix200Response,
 } from "../../src/generated";
+import { getLongRunningPoller, isUnexpected } from "../../src/generated";
 import type { LatLon } from "@azure/maps-common";
 
 describe("Endpoint can be overwritten", function (this: Suite) {

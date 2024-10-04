@@ -4,7 +4,8 @@
 import type {
   KeepAliveOptions,
   ExtendedServiceClientOptions,
-  HttpPipelineLogLevel} from "@azure/core-http-compat";
+  HttpPipelineLogLevel,
+} from "@azure/core-http-compat";
 import {
   CompatResponse as HttpOperationResponse,
   RequestPolicy as IHttpClient,
@@ -14,30 +15,28 @@ import {
   RequestPolicyOptionsLike as RequestPolicyOptions,
   WebResourceLike as WebResource,
   convertHttpClient,
-  createRequestPolicyFactoryPolicy
+  createRequestPolicyFactoryPolicy,
 } from "@azure/core-http-compat";
 import type {
   ProxySettings as ProxyOptions,
   UserAgentPolicyOptions as UserAgentOptions,
   Pipeline as CorePipeline,
   PipelinePolicy,
-  HttpClient} from "@azure/core-rest-pipeline";
+  HttpClient,
+} from "@azure/core-rest-pipeline";
 import {
   RequestBodyType as HttpRequestBody,
   bearerTokenAuthenticationPolicy,
-  decompressResponsePolicyName
+  decompressResponsePolicyName,
 } from "@azure/core-rest-pipeline";
 import { authorizeRequestOnTenantChallenge, createClientPipeline } from "@azure/core-client";
 import { parseXML, stringifyXML } from "@azure/core-xml";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 
 import { logger } from "./log";
-import type {
-  StorageRetryOptions} from "../../storage-blob/src/StorageRetryPolicyFactory";
-import {
-  StorageRetryPolicyFactory,
-} from "../../storage-blob/src/StorageRetryPolicyFactory";
+import type { StorageRetryOptions } from "../../storage-blob/src/StorageRetryPolicyFactory";
+import { StorageRetryPolicyFactory } from "../../storage-blob/src/StorageRetryPolicyFactory";
 import { StorageSharedKeyCredential } from "../../storage-blob/src/credentials/StorageSharedKeyCredential";
 import { AnonymousCredential } from "../../storage-blob/src/credentials/AnonymousCredential";
 import {

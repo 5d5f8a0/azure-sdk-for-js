@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Attributes} from "@opentelemetry/api";
+import type { Attributes } from "@opentelemetry/api";
 import { SpanStatusCode } from "@opentelemetry/api";
 import type { ReadableSpan } from "@opentelemetry/sdk-trace-base";
 import {
@@ -29,11 +29,9 @@ import type {
   MetricDependencyDimensions,
   MetricDimensionTypeKeys,
   MetricRequestDimensions,
-  StandardMetricBaseDimensions} from "./types";
-import {
-  StandardMetricIds,
-  StandardMetricPropertyNames,
+  StandardMetricBaseDimensions,
 } from "./types";
+import { StandardMetricIds, StandardMetricPropertyNames } from "./types";
 import type { LogRecord } from "@opentelemetry/sdk-logs";
 import type { Resource } from "@opentelemetry/resources";
 

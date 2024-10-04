@@ -7,11 +7,8 @@ import type {
   DeletedSecret,
   GetDeletedSecretOptions,
 } from "../../secretsModels.js";
-import type {
-  KeyVaultSecretPollOperationState} from "../keyVaultSecretPoller.js";
-import {
-  KeyVaultSecretPollOperation
-} from "../keyVaultSecretPoller.js";
+import type { KeyVaultSecretPollOperationState } from "../keyVaultSecretPoller.js";
+import { KeyVaultSecretPollOperation } from "../keyVaultSecretPoller.js";
 import type { KeyVaultClient } from "../../generated/keyVaultClient.js";
 import { getSecretFromSecretBundle } from "../../transformations.js";
 import type { OperationOptions } from "@azure/core-client";

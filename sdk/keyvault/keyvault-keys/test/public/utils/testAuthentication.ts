@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { KeyClient } from "../../../src";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, assertEnvironmentVariable, isLiveMode } from "@azure-tools/test-recorder";
 import { uniqueString } from "./recorderUtils";
 import TestClient from "./testClient";

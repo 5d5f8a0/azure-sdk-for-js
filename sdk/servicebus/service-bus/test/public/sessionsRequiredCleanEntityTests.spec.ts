@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import chai from "chai";
-import type {
-  ServiceBusClientForTests} from "./utils/testutils2";
+import type { ServiceBusClientForTests } from "./utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,
@@ -11,7 +10,7 @@ import {
 } from "./utils/testutils2";
 import type { ServiceBusSender } from "../../src";
 import type { ServiceBusMessage, ServiceBusSessionReceiver } from "../../src";
-import type { TestClientType} from "./utils/testUtils";
+import type { TestClientType } from "./utils/testUtils";
 import { TestMessage } from "./utils/testUtils";
 const should = chai.should();
 

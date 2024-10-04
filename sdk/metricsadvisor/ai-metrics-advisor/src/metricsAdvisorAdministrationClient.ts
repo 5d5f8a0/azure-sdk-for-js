@@ -4,21 +4,15 @@
 /// <reference lib="esnext.asynciterable" />
 
 /* eslint-disable @azure/azure-sdk/ts-naming-options */
-import type {
-  InternalPipelineOptions} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
-} from "@azure/core-rest-pipeline";
+import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
 import type { FullOperationResponse, OperationOptions } from "@azure/core-client";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { PageSettings, PagedAsyncIterableIterator } from "@azure/core-paging";
 import { logger } from "./logger";
-import type {
-  MetricsAdvisorKeyCredential} from "./metricsAdvisorKeyCredentialPolicy";
-import {
-  createMetricsAdvisorKeyCredentialPolicy,
-} from "./metricsAdvisorKeyCredentialPolicy";
+import type { MetricsAdvisorKeyCredential } from "./metricsAdvisorKeyCredentialPolicy";
+import { createMetricsAdvisorKeyCredentialPolicy } from "./metricsAdvisorKeyCredentialPolicy";
 import { GeneratedClient } from "./generated/generatedClient";
 import type {
   AlertConfigurationsPageResponse,

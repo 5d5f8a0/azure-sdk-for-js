@@ -17,15 +17,8 @@ import {
   SimpleTokenCredential,
   getTokenBSUWithDefaultCredential,
 } from "../utils";
-import type {
-  ShareServiceClient,
-  SignedIdentifier,
-  StorageSharedKeyCredential} from "../../src";
-import {
-  getFileServiceAccountAudience,
-  newPipeline,
-  ShareClient
-} from "../../src";
+import type { ShareServiceClient, SignedIdentifier, StorageSharedKeyCredential } from "../../src";
+import { getFileServiceAccountAudience, newPipeline, ShareClient } from "../../src";
 import { createTestCredential } from "@azure-tools/test-credential";
 
 describe("ShareClient Node.js only", () => {

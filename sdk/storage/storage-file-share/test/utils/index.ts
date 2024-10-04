@@ -11,15 +11,13 @@ import { createTestCredential } from "@azure-tools/test-credential";
 import type { TokenCredential } from "@azure/core-auth";
 import { BlobServiceClient } from "@azure/storage-blob";
 
-import type {
-  ShareClientConfig,
-  ShareClientOptions} from "../../src";
+import type { ShareClientConfig, ShareClientOptions } from "../../src";
 import {
   AccountSASPermissions,
   AccountSASResourceTypes,
   AccountSASServices,
   generateAccountSASQueryParameters,
-  SASProtocol
+  SASProtocol,
 } from "../../src";
 import { StorageSharedKeyCredential } from "../../../storage-blob/src/credentials/StorageSharedKeyCredential";
 import { newPipeline } from "../../src/Pipeline";

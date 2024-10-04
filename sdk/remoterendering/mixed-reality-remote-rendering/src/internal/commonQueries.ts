@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { AssetConversion} from "./assetConversion";
+import type { AssetConversion } from "./assetConversion";
 import { assetConversionFromConversion } from "./assetConversion";
-import type { RenderingSession} from "./renderingSession";
+import type { RenderingSession } from "./renderingSession";
 import { renderingSessionFromSessionProperties } from "./renderingSession";
 import type { OperationOptions } from "@azure/core-client";
 import type { RemoteRendering } from "../generated/operationsInterfaces";

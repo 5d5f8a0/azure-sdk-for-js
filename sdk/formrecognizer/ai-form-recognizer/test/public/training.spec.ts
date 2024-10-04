@@ -6,7 +6,7 @@ import type { Context } from "mocha";
 
 import { getYieldedValue, matrix } from "@azure-tools/test-utils";
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable } from "@azure-tools/test-recorder";
 
 import {
@@ -16,12 +16,8 @@ import {
   testPollingOptions,
 } from "../utils/recordedClients";
 
-import type {
-  DocumentModelDetails} from "../../src";
-import {
-  DocumentAnalysisClient,
-  DocumentModelAdministrationClient
-} from "../../src";
+import type { DocumentModelDetails } from "../../src";
+import { DocumentAnalysisClient, DocumentModelAdministrationClient } from "../../src";
 import { DocumentModelBuildMode } from "../../src/options/BuildModelOptions";
 
 const endpoint = (): string => assertEnvironmentVariable("FORM_RECOGNIZER_ENDPOINT");

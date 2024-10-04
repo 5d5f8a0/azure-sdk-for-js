@@ -3,16 +3,11 @@
 
 /* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 
-import type {
-  AccessToken,
-  TokenCredential} from "../../../src";
-import {
-  DeviceCodeCredential,
-  UsernamePasswordCredential,
-} from "../../../src";
-import type { MsalTestCleanup} from "../../node/msalNodeTestSetup";
+import type { AccessToken, TokenCredential } from "../../../src";
+import { DeviceCodeCredential, UsernamePasswordCredential } from "../../../src";
+import type { MsalTestCleanup } from "../../node/msalNodeTestSetup";
 import { msalNodeTestSetup } from "../../node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { delay, env } from "@azure-tools/test-recorder";
 import {
   bearerTokenAuthenticationPolicy,

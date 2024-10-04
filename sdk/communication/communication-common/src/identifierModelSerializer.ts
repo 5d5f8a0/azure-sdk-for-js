@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  CommunicationIdentifier,
-  CommunicationIdentifierKind} from "./identifierModels";
-import {
-  getIdentifierKind,
-  getIdentifierRawId,
-} from "./identifierModels";
+import type { CommunicationIdentifier, CommunicationIdentifierKind } from "./identifierModels";
+import { getIdentifierKind, getIdentifierRawId } from "./identifierModels";
 
 /**
  * @hidden

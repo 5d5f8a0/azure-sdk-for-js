@@ -23,7 +23,10 @@ import type {
 } from "../src/models/options";
 import { apiVersion } from "../src/generated/src/models/parameters";
 import type { ChannelAffinity } from "@azure/communication-call-automation";
-import type { CommunicationIdentifier, CommunicationUserIdentifier } from "@azure/communication-common";
+import type {
+  CommunicationIdentifier,
+  CommunicationUserIdentifier,
+} from "@azure/communication-common";
 import type { CallAutomationClient, CallInvite, CallConnection } from "../src";
 import type { Recorder } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";

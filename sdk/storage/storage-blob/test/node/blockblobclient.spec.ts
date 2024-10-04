@@ -22,7 +22,8 @@ import type {
   StorageSharedKeyCredential,
   BlobClient,
   ContainerClient,
-  BlobServiceClient} from "../../src";
+  BlobServiceClient,
+} from "../../src";
 import {
   BlockBlobClient,
   newPipeline,

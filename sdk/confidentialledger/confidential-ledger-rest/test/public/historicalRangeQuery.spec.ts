@@ -1,13 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type {
-  ConfidentialLedgerClient,
-  CreateLedgerEntryParameters,
-  LedgerEntry} from "../../src";
-import {
-  isUnexpected,
-  paginate,
-} from "../../src";
+import type { ConfidentialLedgerClient, CreateLedgerEntryParameters, LedgerEntry } from "../../src";
+import { isUnexpected, paginate } from "../../src";
 
 import { createClient, createRecorder, getRecorderUniqueVariable } from "./utils/recordedClient";
 

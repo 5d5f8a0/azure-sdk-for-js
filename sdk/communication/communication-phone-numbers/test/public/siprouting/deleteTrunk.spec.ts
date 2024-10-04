@@ -6,7 +6,7 @@ import type { Context } from "mocha";
 
 import type { SipRoutingClient } from "../../../src";
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isPlaybackMode } from "@azure-tools/test-recorder";
 import type { SipTrunk } from "../../../src/models";
 import {

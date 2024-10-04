@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { EmailClient, EmailMessage} from "../../src";
+import type { EmailClient, EmailMessage } from "../../src";
 import { KnownEmailSendStatus } from "../../src";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import type { Context } from "mocha";
 import { assert } from "chai";

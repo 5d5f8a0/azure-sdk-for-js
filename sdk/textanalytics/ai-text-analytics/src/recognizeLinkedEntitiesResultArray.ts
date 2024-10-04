@@ -6,8 +6,7 @@ import type {
   TextDocumentBatchStatistics,
   TextDocumentInput,
 } from "./generated/models";
-import type {
-  RecognizeLinkedEntitiesResult} from "./recognizeLinkedEntitiesResult";
+import type { RecognizeLinkedEntitiesResult } from "./recognizeLinkedEntitiesResult";
 import {
   makeRecognizeLinkedEntitiesErrorResult,
   makeRecognizeLinkedEntitiesResult,

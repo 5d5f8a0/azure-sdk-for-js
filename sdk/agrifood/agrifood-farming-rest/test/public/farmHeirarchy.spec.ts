@@ -3,11 +3,9 @@
 import type {
   FarmBeatsClient,
   SatelliteDataIngestionJobOutput,
-  SceneListResponseOutput} from "../../src";
-import {
-  getLongRunningPoller,
-  isUnexpected,
+  SceneListResponseOutput,
 } from "../../src";
+import { getLongRunningPoller, isUnexpected } from "../../src";
 import { createClient, createRecorder } from "./utils/recordedClient";
 
 import type { Context } from "mocha";

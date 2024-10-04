@@ -10,21 +10,18 @@ import { translateServiceBusError } from "../serviceBusError";
 import type {
   DeadLetterOptions,
   ServiceBusMessageImpl,
-  ServiceBusReceivedMessage} from "../serviceBusMessage";
-import {
-  DispositionType
+  ServiceBusReceivedMessage,
 } from "../serviceBusMessage";
+import { DispositionType } from "../serviceBusMessage";
 import type { DispositionStatusOptions } from "../core/managementClient";
 import type { ConnectionContext } from "../connectionContext";
-import type {
-  RetryConfig,
-  RetryOptions} from "@azure/core-amqp";
+import type { RetryConfig, RetryOptions } from "@azure/core-amqp";
 import {
   Constants,
   ErrorNameConditionMapper,
   retry,
   RetryMode,
-  RetryOperationType
+  RetryOperationType,
 } from "@azure/core-amqp";
 import { MessageAlreadySettled } from "../util/errors";
 import { delay, isDefined } from "@azure/core-util";

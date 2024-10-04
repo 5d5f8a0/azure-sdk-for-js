@@ -9,10 +9,9 @@ import type {
   ModelClient,
   ChatCompletionsToolCall,
   ChatMessageContentItem,
-  ChatMessageImageContentItem} from "../../src/index.js";
-import {
-  isUnexpected,
+  ChatMessageImageContentItem,
 } from "../../src/index.js";
+import { isUnexpected } from "../../src/index.js";
 
 describe("chat test suite", () => {
   let recorder: Recorder;

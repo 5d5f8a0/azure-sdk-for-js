@@ -8,18 +8,16 @@ import type {
   OperationSpec,
   RequiredSerializerOptions,
   SerializerOptions,
-  XmlOptions} from "./interfaces.js";
-import {
-  XML_CHARKEY
+  XmlOptions,
 } from "./interfaces.js";
+import { XML_CHARKEY } from "./interfaces.js";
 import type {
   PipelinePolicy,
   PipelineRequest,
   PipelineResponse,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  RestError
+  SendRequest,
 } from "@azure/core-rest-pipeline";
+import { RestError } from "@azure/core-rest-pipeline";
 import { MapperTypeNames } from "./serializer.js";
 import { getOperationRequestInfo } from "./operationHelpers.js";
 

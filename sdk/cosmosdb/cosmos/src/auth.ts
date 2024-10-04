@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import { generateHeaders } from "./utils/headers";
-import type {
-  HTTPMethod} from "./common";
+import type { HTTPMethod } from "./common";
 import {
   Constants,
   getResourceIdFromPath,

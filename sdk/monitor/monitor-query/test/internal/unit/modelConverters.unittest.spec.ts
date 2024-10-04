@@ -27,10 +27,9 @@ import type { OperationTracingOptions } from "@azure/core-tracing";
 import type {
   ListMetricDefinitionsOptions,
   MetricsQueryOptions,
-  MetricsQueryResult} from "../../../src";
-import {
-  Durations
+  MetricsQueryResult,
 } from "../../../src";
+import { Durations } from "../../../src";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import {
   convertIntervalToTimeIntervalObject,

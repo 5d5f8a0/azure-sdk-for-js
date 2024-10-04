@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 import type { Suite, Context } from "mocha";
 import { assert } from "@azure-tools/test-utils";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import type {
   EventGridSenderClient,
@@ -10,10 +10,9 @@ import type {
   CloudEvent,
   ReceiveResult,
   RejectResult,
-  RenewLocksResult} from "../../src";
-import {
-  EventGridDeserializer,
+  RenewLocksResult,
 } from "../../src";
+import { EventGridDeserializer } from "../../src";
 import { createRecordedClient } from "./utils/recordedClient";
 // eslint-disable-next-line @typescript-eslint/no-redeclare
 import { Buffer } from "buffer";

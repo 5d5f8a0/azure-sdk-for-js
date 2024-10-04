@@ -3,7 +3,7 @@
 
 import { createSerializer } from "@azure/core-client";
 import type { CloudEvent as WireCloudEvent } from "./generated/models";
-import type { CloudEvent, EventGridEvent} from "./models";
+import type { CloudEvent, EventGridEvent } from "./models";
 import { cloudEventReservedPropertyNames } from "./models";
 import {
   EventGridEvent as EventGridEventMapper,

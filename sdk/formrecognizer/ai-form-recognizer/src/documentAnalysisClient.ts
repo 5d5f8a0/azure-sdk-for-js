@@ -12,12 +12,10 @@ import type {
   AnalysisPoller,
   AnalyzeResult,
   DocumentAnalysisPollOperationState,
-  FormRecognizerRequestBody} from "./lro/analysis";
-import {
-  toAnalyzeResultFromGenerated,
-  toDocumentAnalysisPollOperationState,
+  FormRecognizerRequestBody,
 } from "./lro/analysis";
-import type { OperationContext} from "./lro/util/poller";
+import { toAnalyzeResultFromGenerated, toDocumentAnalysisPollOperationState } from "./lro/analysis";
+import type { OperationContext } from "./lro/util/poller";
 import { lro } from "./lro/util/poller";
 import type { AnalyzeDocumentOptions } from "./options/AnalyzeDocumentOptions";
 import type { DocumentAnalysisClientOptions } from "./options/FormRecognizerClientOptions";

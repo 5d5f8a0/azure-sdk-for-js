@@ -25,12 +25,13 @@ import type {
   OperationResponse,
   OperationInput,
   BulkOptions,
-  BulkOperationResponse} from "../../utils/batch";
+  BulkOperationResponse,
+} from "../../utils/batch";
 import {
   isKeyInRange,
   prepareOperations,
   decorateBatchOperation,
-  splitBatchBasedOnBodySize
+  splitBatchBasedOnBodySize,
 } from "../../utils/batch";
 import { assertNotUndefined, isPrimitivePartitionKeyValue } from "../../utils/typeChecks";
 import { hashPartitionKey } from "../../utils/hashing/hash";
@@ -38,16 +39,12 @@ import type { PartitionKey, PartitionKeyDefinition } from "../../documents";
 import { PartitionKeyRangeCache, QueryRange } from "../../routing";
 import type {
   ChangeFeedPullModelIterator,
-  ChangeFeedIteratorOptions} from "../../client/ChangeFeed";
-import {
-  changeFeedIteratorBuilder,
+  ChangeFeedIteratorOptions,
 } from "../../client/ChangeFeed";
+import { changeFeedIteratorBuilder } from "../../client/ChangeFeed";
 import { validateChangeFeedIteratorOptions } from "../../client/ChangeFeed/changeFeedUtils";
-import type {
-  DiagnosticNodeInternal} from "../../diagnostics/DiagnosticNodeInternal";
-import {
-  DiagnosticNodeType,
-} from "../../diagnostics/DiagnosticNodeInternal";
+import type { DiagnosticNodeInternal } from "../../diagnostics/DiagnosticNodeInternal";
+import { DiagnosticNodeType } from "../../diagnostics/DiagnosticNodeInternal";
 import {
   getEmptyCosmosDiagnostics,
   withDiagnostics,

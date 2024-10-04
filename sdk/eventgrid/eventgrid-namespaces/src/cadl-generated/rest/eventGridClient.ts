@@ -4,7 +4,7 @@
 import type { ClientOptions } from "@azure-rest/core-client";
 import { getClient } from "@azure-rest/core-client";
 import { logger } from "../logger";
-import type { TokenCredential, KeyCredential} from "@azure/core-auth";
+import type { TokenCredential, KeyCredential } from "@azure/core-auth";
 import { isKeyCredential } from "@azure/core-auth";
 import type { EventGridContext } from "./clientDefinitions";
 

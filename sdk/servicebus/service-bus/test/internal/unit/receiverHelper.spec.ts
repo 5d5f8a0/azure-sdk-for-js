@@ -3,7 +3,7 @@
 
 import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
-import type { Receiver} from "rhea-promise";
+import type { Receiver } from "rhea-promise";
 import { ReceiverEvents, delay } from "rhea-promise";
 import { ReceiverHelper } from "../../../src/core/receiverHelper";
 import { assertThrows } from "../../public/utils/testUtils";

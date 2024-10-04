@@ -5,9 +5,9 @@ import * as msal from "@azure/msal-node";
 
 import type { AccessToken, GetTokenOptions } from "@azure/core-auth";
 import type { AuthenticationRecord, CertificateParts } from "../types";
-import type { CredentialLogger} from "../../util/logging";
+import type { CredentialLogger } from "../../util/logging";
 import { credentialLogger, formatSuccess } from "../../util/logging";
-import type { PluginConfiguration} from "./msalPlugins";
+import type { PluginConfiguration } from "./msalPlugins";
 import { msalPlugins } from "./msalPlugins";
 import {
   defaultLoggerCallback,

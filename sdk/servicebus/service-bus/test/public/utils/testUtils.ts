@@ -3,7 +3,7 @@
 
 import chai from "chai";
 const assert: typeof chai.assert = chai.assert;
-import type { ServiceBusReceivedMessage, ServiceBusMessage} from "../../../src";
+import type { ServiceBusReceivedMessage, ServiceBusMessage } from "../../../src";
 import { delay } from "../../../src";
 
 export class TestMessage {

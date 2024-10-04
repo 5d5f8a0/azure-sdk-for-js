@@ -2,14 +2,8 @@
 // Licensed under the MIT License.
 
 import type { RestError } from "@azure/core-rest-pipeline";
-import type {
-  CampaignBrief,
-  CampaignBriefSummary,
-  TollFreeVerificationClient} from "../../../src";
-import {
-  BusinessInformationMapper,
-  BusinessPointOfContactMapper
-} from "../../../src";
+import type { CampaignBrief, CampaignBriefSummary, TollFreeVerificationClient } from "../../../src";
+import { BusinessInformationMapper, BusinessPointOfContactMapper } from "../../../src";
 import { assert } from "chai";
 import type { CompositeMapper } from "@azure/core-client";
 import { isPlaybackMode } from "@azure-tools/test-recorder";

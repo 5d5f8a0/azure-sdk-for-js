@@ -3,16 +3,15 @@
 
 import * as msalClient from "../../../src/msal/nodeFlows/msalClient";
 
-import type {
-  AuthenticationResult} from "@azure/msal-node";
+import type { AuthenticationResult } from "@azure/msal-node";
 import {
   ClientApplication,
   ConfidentialClientApplication,
   PublicClientApplication,
 } from "@azure/msal-node";
-import type { MsalTestCleanup} from "../../node/msalNodeTestSetup";
+import type { MsalTestCleanup } from "../../node/msalNodeTestSetup";
 import { msalNodeTestSetup } from "../../node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isLiveMode } from "@azure-tools/test-recorder";
 
 import { AbortError } from "@azure/abort-controller";

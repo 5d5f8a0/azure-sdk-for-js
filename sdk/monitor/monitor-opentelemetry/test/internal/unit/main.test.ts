@@ -6,15 +6,10 @@ import * as sinon from "sinon";
 import type { Context, TracerProvider } from "@opentelemetry/api";
 import { metrics, trace } from "@opentelemetry/api";
 import { logs } from "@opentelemetry/api-logs";
-import type {
-  AzureMonitorOpenTelemetryOptions} from "../../../src/index";
-import {
-  useAzureMonitor,
-  shutdownAzureMonitor,
-} from "../../../src/index";
+import type { AzureMonitorOpenTelemetryOptions } from "../../../src/index";
+import { useAzureMonitor, shutdownAzureMonitor } from "../../../src/index";
 import type { MeterProvider } from "@opentelemetry/sdk-metrics";
-import type {
-  StatsbeatEnvironmentConfig} from "../../../src/types";
+import type { StatsbeatEnvironmentConfig } from "../../../src/types";
 import {
   AZURE_MONITOR_STATSBEAT_FEATURES,
   StatsbeatFeature,

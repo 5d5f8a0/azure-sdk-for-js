@@ -20,11 +20,9 @@ import type { ServiceBusMessageImpl } from "../../../src/serviceBusMessage";
 import type {
   Receiver as RheaPromiseReceiver,
   EventContext,
-  Message as RheaMessage} from "rhea-promise";
-import {
-  ReceiverEvents,
-  SessionEvents
+  Message as RheaMessage,
 } from "rhea-promise";
+import { ReceiverEvents, SessionEvents } from "rhea-promise";
 import type { ConnectionContext } from "../../../src/connectionContext";
 import { ServiceBusReceiverImpl } from "../../../src/receivers/receiver";
 import type { OperationOptionsBase } from "../../../src/modelsToBeSharedWithEventHubs";

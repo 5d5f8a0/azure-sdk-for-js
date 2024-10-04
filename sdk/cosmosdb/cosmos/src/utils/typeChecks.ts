@@ -4,11 +4,9 @@
 import type {
   NonePartitionKeyType,
   NullPartitionKeyType,
-  PrimitivePartitionKeyValue} from "../documents";
-import {
-  NonePartitionKeyLiteral,
-  NullPartitionKeyLiteral
+  PrimitivePartitionKeyValue,
 } from "../documents";
+import { NonePartitionKeyLiteral, NullPartitionKeyLiteral } from "../documents";
 
 /**
  * A type which could be any type but undefined

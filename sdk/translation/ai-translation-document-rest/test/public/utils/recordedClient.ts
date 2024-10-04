@@ -4,7 +4,7 @@
 import type { Context } from "mocha";
 import { Recorder, env } from "@azure-tools/test-recorder";
 import type { ClientOptions } from "@azure-rest/core-client";
-import type { DocumentTranslationClient} from "../../../src";
+import type { DocumentTranslationClient } from "../../../src";
 import { default as createClient } from "../../../src";
 import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { createTestCredential } from "@azure-tools/test-credential";

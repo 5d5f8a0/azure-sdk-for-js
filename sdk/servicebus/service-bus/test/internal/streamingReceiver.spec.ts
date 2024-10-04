@@ -8,17 +8,14 @@ import type {
   ServiceBusReceivedMessage,
   ProcessErrorArgs,
   ServiceBusReceiver,
-  ServiceBusSender} from "../../src";
-import {
-  delay
+  ServiceBusSender,
 } from "../../src";
+import { delay } from "../../src";
 import { getAlreadyReceivingErrorMsg, MessageAlreadySettled } from "../../src/util/errors";
 import { TestMessage, checkWithTimeout, TestClientType } from "../public/utils/testUtils";
 import type { ServiceBusMessageImpl } from "../../src/serviceBusMessage";
 import { DispositionType } from "../../src/serviceBusMessage";
-import type {
-  EntityName,
-  ServiceBusClientForTests} from "../public/utils/testutils2";
+import type { EntityName, ServiceBusClientForTests } from "../public/utils/testutils2";
 import {
   createServiceBusClientForTests,
   drainReceiveAndDeleteReceiver,

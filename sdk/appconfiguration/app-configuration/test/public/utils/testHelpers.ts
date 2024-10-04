@@ -6,22 +6,16 @@ import type {
   ListSnapshotsPage,
   ConfigurationSnapshot,
   SettingLabel,
-  ListLabelsPage} from "../../../src";
-import {
-  AppConfigurationClient
+  ListLabelsPage,
 } from "../../../src";
+import { AppConfigurationClient } from "../../../src";
 import type {
   ConfigurationSetting,
   ListConfigurationSettingPage,
   ListRevisionsPage,
 } from "../../../src";
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  assertEnvironmentVariable,
-  isPlaybackMode,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
+import { Recorder, assertEnvironmentVariable, isPlaybackMode } from "@azure-tools/test-recorder";
 import type { PagedAsyncIterableIterator, PageSettings } from "@azure/core-paging";
 import type { RestError } from "@azure/core-rest-pipeline";
 import type { TokenCredential } from "@azure/identity";

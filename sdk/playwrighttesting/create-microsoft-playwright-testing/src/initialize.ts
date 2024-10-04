@@ -5,7 +5,11 @@ import type { PromptObject } from "prompts";
 import prompts from "prompts";
 import fs from "node:fs";
 import { Extensions, Languages, Messages } from "./constants.js";
-import type { OverridePromptResponse, PackageManager, PlaywrightServiceInitConfig } from "./types.js";
+import type {
+  OverridePromptResponse,
+  PackageManager,
+  PlaywrightServiceInitConfig,
+} from "./types.js";
 import { executeCommand, getFileReferenceForImport } from "./utils.js";
 import { getPackageManager } from "./packageManager.js";
 

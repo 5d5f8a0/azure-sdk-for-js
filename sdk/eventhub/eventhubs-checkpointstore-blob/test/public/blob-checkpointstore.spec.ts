@@ -6,7 +6,7 @@ const debug = debugModule("azure:event-hubs:partitionPump");
 import { addToOffset } from "../util/testUtils.js";
 import { BlobCheckpointStore } from "../../src/index.js";
 import type { ContainerClient } from "@azure/storage-blob";
-import type { PartitionOwnership, Checkpoint} from "@azure/event-hubs";
+import type { PartitionOwnership, Checkpoint } from "@azure/event-hubs";
 import { EventHubConsumerClient } from "@azure/event-hubs";
 import { parseIntOrThrow } from "../../src/blobCheckpointStore.js";
 import { describe, it, beforeEach, afterEach } from "vitest";

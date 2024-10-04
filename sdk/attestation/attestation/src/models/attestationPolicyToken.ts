@@ -3,7 +3,7 @@
 
 import { StoredAttestationPolicy } from "./storedAttestationPolicy";
 // import { AttestationSigningKey } from "./attestationSigningKey";
-import type { AttestationToken} from "./attestationToken";
+import type { AttestationToken } from "./attestationToken";
 import { AttestationTokenImpl } from "./attestationToken";
 
 /**

@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { EmailClientOptions, EmailMessage, EmailSendOptionalParams } from "./models";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { PollerLike, PollOperationState } from "@azure/core-lro";
 import {

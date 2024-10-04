@@ -41,7 +41,7 @@ import {
   isSqlDB,
   serializeAttribute,
 } from "./common";
-import type { Tags, Properties, MSLink, Measurements} from "../types";
+import type { Tags, Properties, MSLink, Measurements } from "../types";
 import { MaxPropertyLengths } from "../types";
 import { parseEventHubSpan } from "./eventhub";
 import { AzureMonitorSampleRate, DependencyTypes, MS_LINKS } from "./constants/applicationinsights";
@@ -52,10 +52,9 @@ import type {
   RemoteDependencyData,
   RequestData,
   TelemetryItem as Envelope,
-  TelemetryExceptionDetails} from "../generated";
-import {
-  KnownContextTagKeys
+  TelemetryExceptionDetails,
 } from "../generated";
+import { KnownContextTagKeys } from "../generated";
 import { msToTimeSpan } from "./breezeUtils";
 
 function createTagsFromSpan(span: ReadableSpan): Tags {

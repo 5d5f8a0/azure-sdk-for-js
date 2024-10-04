@@ -40,11 +40,9 @@ import type {
   MetricAvailability,
   MetricDefinition,
   MetricNamespace,
-  TimeSeriesElement} from "../models/publicMetricsModels";
-import {
-  createMetricsQueryResult,
-  getMetricByName,
+  TimeSeriesElement,
 } from "../models/publicMetricsModels";
+import { createMetricsQueryResult, getMetricByName } from "../models/publicMetricsModels";
 import type { FullOperationResponse } from "@azure/core-client";
 import {
   convertIntervalToTimeIntervalObject,
@@ -54,10 +52,9 @@ import type {
   LogsErrorInfo,
   LogsQueryError,
   LogsQueryPartialResult,
-  LogsQuerySuccessfulResult} from "../models/publicLogsModels";
-import {
-  LogsQueryResultStatus
+  LogsQuerySuccessfulResult,
 } from "../models/publicLogsModels";
+import { LogsQueryResultStatus } from "../models/publicLogsModels";
 import type {
   MetricsBatchBatchResponse as GeneratedMetricsBatchResponse,
   MetricsBatchBatchOptionalParams as GeneratedMetricsBatchOptionalParams,

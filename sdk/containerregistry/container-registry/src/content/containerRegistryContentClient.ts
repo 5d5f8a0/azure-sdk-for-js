@@ -1,12 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  InternalPipelineOptions} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
-  RestError,
-} from "@azure/core-rest-pipeline";
+import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy, RestError } from "@azure/core-rest-pipeline";
 import type { TokenCredential } from "@azure/core-auth";
 import { GeneratedClient } from "../generated";
 import { ChallengeHandler } from "../containerRegistryChallengeHandler";
@@ -24,10 +20,9 @@ import type {
   UploadBlobResult,
   SetManifestOptions,
   SetManifestResult,
-  OciImageManifest} from "./models";
-import {
-  KnownManifestMediaType
+  OciImageManifest,
 } from "./models";
+import { KnownManifestMediaType } from "./models";
 import type { CommonClientOptions } from "@azure/core-client";
 import { isDigest, readChunksFromStream, readStreamToEnd } from "../utils/helpers";
 import { Readable } from "stream";

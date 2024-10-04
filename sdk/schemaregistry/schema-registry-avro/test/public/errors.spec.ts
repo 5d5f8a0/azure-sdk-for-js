@@ -16,7 +16,7 @@ import { createTestSerializer } from "./utils/mockedSerializer";
 import { testGroup, testSchemaName } from "./utils/dummies";
 import { v4 as uuid } from "uuid";
 import { isLiveMode, Recorder } from "@azure-tools/test-recorder";
-import type { HttpClient, Pipeline} from "@azure/core-rest-pipeline";
+import type { HttpClient, Pipeline } from "@azure/core-rest-pipeline";
 import { createDefaultHttpClient } from "@azure/core-rest-pipeline";
 
 chaiUse(chaiPromises);

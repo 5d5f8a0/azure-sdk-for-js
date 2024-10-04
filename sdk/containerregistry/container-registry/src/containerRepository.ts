@@ -14,7 +14,7 @@ import type {
   ArtifactManifestProperties,
   ManifestPageResponse,
 } from "./models";
-import type { RegistryArtifact} from "./registryArtifact";
+import type { RegistryArtifact } from "./registryArtifact";
 import { RegistryArtifactImpl } from "./registryArtifact";
 import { toArtifactManifestProperties, toServiceManifestOrderBy } from "./transformations";
 import { extractNextLink } from "./utils/helpers";

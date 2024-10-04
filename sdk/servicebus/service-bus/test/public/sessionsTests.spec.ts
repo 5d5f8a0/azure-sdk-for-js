@@ -6,21 +6,13 @@ import Long from "long";
 const should = chai.should();
 import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
-import type {
-  ServiceBusReceivedMessage,
-  ProcessErrorArgs,
-  ServiceBusError} from "../../src";
-import {
-  delay,
-  isServiceBusError
-} from "../../src";
+import type { ServiceBusReceivedMessage, ProcessErrorArgs, ServiceBusError } from "../../src";
+import { delay, isServiceBusError } from "../../src";
 
 import { TestClientType, TestMessage, checkWithTimeout } from "./utils/testUtils";
 import type { ServiceBusSender } from "../../src";
 import type { ServiceBusSessionReceiver } from "../../src";
-import type {
-  EntityName,
-  ServiceBusClientForTests} from "./utils/testutils2";
+import type { EntityName, ServiceBusClientForTests } from "./utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,

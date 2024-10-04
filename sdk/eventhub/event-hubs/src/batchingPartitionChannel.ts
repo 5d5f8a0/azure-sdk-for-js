@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { AmqpAnnotatedMessage} from "@azure/core-amqp";
+import type { AmqpAnnotatedMessage } from "@azure/core-amqp";
 import { delay } from "@azure/core-amqp";
 import type {
   EventData,

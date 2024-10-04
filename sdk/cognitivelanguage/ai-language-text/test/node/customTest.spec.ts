@@ -7,7 +7,7 @@ import type { TextAnalysisClient } from "../../src";
 import { AnalyzeBatchActionNames, AzureKeyCredential } from "../../src";
 import { matrix } from "@azure-tools/test-utils";
 import type { Context, Suite } from "mocha";
-import type { AuthMethod} from "../public/utils/recordedClient";
+import type { AuthMethod } from "../public/utils/recordedClient";
 import { createClient, startRecorder } from "../public/utils/recordedClient";
 import type { TextAuthoringClient } from "@azure/ai-language-textauthoring";
 import createAuthoringClient from "@azure/ai-language-textauthoring";

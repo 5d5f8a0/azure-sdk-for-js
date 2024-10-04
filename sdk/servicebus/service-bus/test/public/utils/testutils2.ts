@@ -7,10 +7,9 @@ import type {
   ServiceBusReceiver,
   ServiceBusSessionReceiver,
   ServiceBusClientOptions,
-  ServiceBusSender} from "../../../src";
-import {
-  ServiceBusClient
+  ServiceBusSender,
 } from "../../../src";
+import { ServiceBusClient } from "../../../src";
 
 import { TestClientType, TestMessage } from "./testUtils";
 import { EnvVarNames, getEnvVars } from "./envVarUtils";

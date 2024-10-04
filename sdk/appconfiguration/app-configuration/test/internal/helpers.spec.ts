@@ -6,11 +6,9 @@ import type {
   ConfigurationSettingParam,
   HttpResponseField,
   HttpResponseFields,
-  ConfigurationSettingId} from "../../src";
-import {
-  featureFlagContentType,
-  secretReferenceContentType
+  ConfigurationSettingId,
 } from "../../src";
+import { featureFlagContentType, secretReferenceContentType } from "../../src";
 import {
   checkAndFormatIfAndIfNoneMatch,
   extractAfterTokenFromLinkHeader,
@@ -187,9 +185,9 @@ describe("helper methods", () => {
         url: "unused",
         abortSignal: {
           aborted: true,
-           
+
           addEventListener: () => {},
-           
+
           removeEventListener: () => {},
         },
         method: "GET",

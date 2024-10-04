@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { PollOperation, PollOperationState} from "@azure/core-lro";
+import type { PollOperation, PollOperationState } from "@azure/core-lro";
 import { Poller } from "@azure/core-lro";
 import type { TracingClient } from "@azure/core-tracing";
 import type { GeneratedClient } from "../generated/generatedClient";

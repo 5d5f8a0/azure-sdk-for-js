@@ -7,28 +7,23 @@ import type {
   AwaitableSender,
   AwaitableSenderOptions,
   EventContext,
-  OnAmqpEvent} from "rhea-promise";
-import {
-  message as RheaMessageUtil,
+  OnAmqpEvent,
 } from "rhea-promise";
+import { message as RheaMessageUtil } from "rhea-promise";
 import type {
   MessagingError,
   RetryConfig,
   RetryOptions,
-  AmqpAnnotatedMessage} from "@azure/core-amqp";
-import {
-  Constants,
-  ErrorNameConditionMapper,
-  RetryOperationType,
-  retry
+  AmqpAnnotatedMessage,
 } from "@azure/core-amqp";
-import type { ServiceBusMessage} from "../serviceBusMessage";
+import { Constants, ErrorNameConditionMapper, RetryOperationType, retry } from "@azure/core-amqp";
+import type { ServiceBusMessage } from "../serviceBusMessage";
 import { toRheaMessage } from "../serviceBusMessage";
 import type { ConnectionContext } from "../connectionContext";
 import { LinkEntity } from "./linkEntity";
 import { getUniqueName, waitForSendable, waitForTimeoutOrAbortOrResolve } from "../util/utils";
 import { throwErrorIfConnectionClosed } from "../util/errors";
-import type { ServiceBusMessageBatch} from "../serviceBusMessageBatch";
+import type { ServiceBusMessageBatch } from "../serviceBusMessageBatch";
 import { ServiceBusMessageBatchImpl } from "../serviceBusMessageBatch";
 import type { CreateMessageBatchOptions } from "../models";
 import type { OperationOptionsBase } from "../modelsToBeSharedWithEventHubs";

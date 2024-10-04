@@ -8,11 +8,9 @@ import type {
   CorrelationRuleFilter,
   ServiceBusReceivedMessage,
   ServiceBusMessage,
-  SqlRuleFilter} from "../../src";
-import {
-  ServiceBusClient,
-  ServiceBusAdministrationClient,
+  SqlRuleFilter,
 } from "../../src";
+import { ServiceBusClient, ServiceBusAdministrationClient } from "../../src";
 import { DEFAULT_RULE_NAME } from "../../src/util/constants";
 import { recreateSubscription, recreateTopic } from "../public/utils/managementUtils";
 import { getFullyQualifiedNamespace } from "../public/utils/testutils2";

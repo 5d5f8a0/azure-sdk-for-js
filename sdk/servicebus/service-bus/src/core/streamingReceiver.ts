@@ -8,13 +8,8 @@ import type { ConnectionContext } from "../connectionContext";
 import { ReceiverHelper } from "./receiverHelper";
 
 import { throwErrorIfConnectionClosed } from "../util/errors";
-import type {
-  MessagingError,
-  RetryOptions} from "@azure/core-amqp";
-import {
-  RetryOperationType,
-  ConditionErrorNameMapper,
-} from "@azure/core-amqp";
+import type { MessagingError, RetryOptions } from "@azure/core-amqp";
+import { RetryOperationType, ConditionErrorNameMapper } from "@azure/core-amqp";
 import type { OperationOptionsBase } from "../modelsToBeSharedWithEventHubs";
 import { receiverLogger as logger } from "../log";
 import type { AmqpError, EventContext, OnAmqpEvent } from "rhea-promise";

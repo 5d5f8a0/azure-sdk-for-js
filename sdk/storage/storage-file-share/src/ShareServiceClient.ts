@@ -23,8 +23,7 @@ import { StorageClient } from "./StorageClient";
 import { ShareClientInternal } from "./ShareClientInternal";
 import type { ShareCreateOptions, ShareDeleteMethodOptions } from "./Clients";
 import { ShareClient } from "./Clients";
-import type {
-  WithResponse} from "./utils/utils.common";
+import type { WithResponse } from "./utils/utils.common";
 import {
   appendToURLPath,
   extractConnectionStringParts,
@@ -37,7 +36,7 @@ import { AnonymousCredential } from "../../storage-blob/src/credentials/Anonymou
 import type { PagedAsyncIterableIterator, PageSettings } from "@azure/core-paging";
 import { isNode } from "@azure/core-util";
 import { tracingClient } from "./utils/tracing";
-import type { ShareClientConfig, ShareClientOptions, ShareProtocols} from "./models";
+import type { ShareClientConfig, ShareClientOptions, ShareProtocols } from "./models";
 import { toShareProtocols } from "./models";
 import { AccountSASPermissions } from "./AccountSASPermissions";
 import {
@@ -48,7 +47,7 @@ import { AccountSASServices } from "./AccountSASServices";
 import type { SASProtocol } from "./SASQueryParameters";
 import type { SasIPRange } from "./SasIPRange";
 import { appendToURLQuery } from "./utils/utils.common";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 
 /**

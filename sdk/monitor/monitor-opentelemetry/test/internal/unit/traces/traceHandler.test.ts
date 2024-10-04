@@ -11,8 +11,12 @@ import { TraceHandler } from "../../../../src/traces";
 import { MetricHandler } from "../../../../src/metrics";
 import { InternalConfig } from "../../../../src/shared";
 import type { HttpInstrumentationConfig } from "@opentelemetry/instrumentation-http";
-import type { BasicTracerProvider, ReadableSpan, SpanProcessor } from "@opentelemetry/sdk-trace-base";
-import type { ProxyTracerProvider, Span} from "@opentelemetry/api";
+import type {
+  BasicTracerProvider,
+  ReadableSpan,
+  SpanProcessor,
+} from "@opentelemetry/sdk-trace-base";
+import type { ProxyTracerProvider, Span } from "@opentelemetry/api";
 import { metrics, trace } from "@opentelemetry/api";
 import { NodeTracerProvider } from "@opentelemetry/sdk-trace-node";
 

@@ -7,7 +7,7 @@ import { assert } from "chai";
 import { createRecorder, createClient } from "./utils/recordedClient";
 import type { Context } from "mocha";
 import * as fs from "fs";
-import type { AzureLoadTestingClient} from "../../src";
+import type { AzureLoadTestingClient } from "../../src";
 import { isUnexpected } from "../../src";
 import { isNodeLike } from "@azure/core-util";
 import { getLongRunningPoller } from "../../src/pollingHelper";

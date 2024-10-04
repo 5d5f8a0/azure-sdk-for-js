@@ -6,7 +6,11 @@ import type {
   DocumentKeyValuePair as GeneratedDocumentKeyValuePair,
   DocumentTable as GeneratedDocumentTable,
 } from "../generated";
-import type { BoundingRegion, DocumentKeyValuePair, DocumentTable } from "../models/documentElements";
+import type {
+  BoundingRegion,
+  DocumentKeyValuePair,
+  DocumentTable,
+} from "../models/documentElements";
 
 /**
  * Represents a point used to define bounding polygons. The unit is either 'pixel' or 'inch' (See {@link LengthUnit}).

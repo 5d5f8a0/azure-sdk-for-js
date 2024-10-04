@@ -3,11 +3,11 @@
 
 import type { AbortSignalLike } from "@azure/abort-controller";
 import { AbortError } from "@azure/abort-controller";
-import type { Checkpoint} from "./partitionProcessor.js";
+import type { Checkpoint } from "./partitionProcessor.js";
 import { PartitionProcessor } from "./partitionProcessor.js";
-import type { EventPosition} from "./eventPosition.js";
+import type { EventPosition } from "./eventPosition.js";
 import { isEventPosition, latestEventPosition } from "./eventPosition.js";
-import type { PumpManager} from "./pumpManager.js";
+import type { PumpManager } from "./pumpManager.js";
 import { PumpManagerImpl } from "./pumpManager.js";
 import { logErrorStackTrace, logger } from "./logger.js";
 import { CloseReason } from "./models/public.js";

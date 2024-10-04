@@ -8,10 +8,9 @@ import type {
   MonitorBase,
   RequestData,
   TelemetryItem as Envelope,
-  MonitorDomain} from "../../src/generated";
-import {
-  KnownContextTagKeys
+  MonitorDomain,
 } from "../../src/generated";
+import { KnownContextTagKeys } from "../../src/generated";
 import { TelemetryItem as EnvelopeMapper } from "../../src/generated/models/mappers";
 
 export const assertData = (actual: MonitorBase, expected: MonitorBase): void => {

@@ -3,7 +3,7 @@
 import { Constants } from "../common/constants";
 import { sleep } from "../common/helper";
 import { StatusCodes, SubStatusCodes } from "../common/statusCodes";
-import type { DiagnosticNodeInternal} from "../diagnostics/DiagnosticNodeInternal";
+import type { DiagnosticNodeInternal } from "../diagnostics/DiagnosticNodeInternal";
 import { DiagnosticNodeType } from "../diagnostics/DiagnosticNodeInternal";
 import type { Response } from "../request";
 import type { RequestContext } from "../request/RequestContext";

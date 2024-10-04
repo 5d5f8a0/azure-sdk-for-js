@@ -1,9 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  TextAnalyticsErrorResult,
-  TextAnalyticsSuccessResult} from "./textAnalyticsResult";
+import type { TextAnalyticsErrorResult, TextAnalyticsSuccessResult } from "./textAnalyticsResult";
 import {
   makeTextAnalyticsErrorResult,
   makeTextAnalyticsSuccessResult,
@@ -21,7 +19,7 @@ import type {
   TargetRelation,
   TextAnalyticsError,
 } from "./generated/models";
-import type { AssessmentIndex} from "./util";
+import type { AssessmentIndex } from "./util";
 import { parseAssessmentIndex } from "./util";
 
 /**

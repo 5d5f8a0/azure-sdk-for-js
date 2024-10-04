@@ -21,9 +21,7 @@ import type {
   RejectCloudEventsOptionalParams,
   RenewCloudEventLocksOptionalParams,
 } from "./models/options";
-import type {
-  EventGridClientOptions,
-  EventGridContext} from "./api/index";
+import type { EventGridClientOptions, EventGridContext } from "./api/index";
 import {
   createEventGrid,
   publishCloudEvent,

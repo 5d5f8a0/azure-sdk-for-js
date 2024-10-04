@@ -10,7 +10,7 @@
  */
 
 import type { ClientOptions } from "@azure-rest/core-client";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { WidgetServiceContext } from "../rest/index.js";
 import getClient from "../rest/widgetServiceClient.js";

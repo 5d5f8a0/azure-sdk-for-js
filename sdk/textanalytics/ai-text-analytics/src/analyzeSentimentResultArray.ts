@@ -6,8 +6,7 @@ import type {
   TextDocumentBatchStatistics,
   TextDocumentInput,
 } from "./generated/models";
-import type {
-  AnalyzeSentimentResult} from "./analyzeSentimentResult";
+import type { AnalyzeSentimentResult } from "./analyzeSentimentResult";
 import {
   makeAnalyzeSentimentErrorResult,
   makeAnalyzeSentimentResult,

@@ -7,7 +7,7 @@ import { Recorder, env, isPlaybackMode } from "@azure-tools/test-recorder";
 import type { KeyClient } from "../../src";
 import { authenticate, envSetupForPlayback } from "./utils/testAuthentication";
 import TestClient from "./utils/testClient";
-import type { CreateOctKeyOptions} from "../../src/keysModels";
+import type { CreateOctKeyOptions } from "../../src/keysModels";
 import { KnownKeyExportEncryptionAlgorithm } from "../../src/keysModels";
 import { getServiceVersion, onVersions } from "./utils/common";
 import { createRsaKey, stringToUint8Array, uint8ArrayToString } from "./utils/crypto";

@@ -11,12 +11,9 @@ import type {
   EnvironmentDefinitionOutput,
   EnvironmentTypeOutput,
   CreateOrReplaceEnvironmentParameters,
-  EnvironmentOutput} from "../../src/index.js";
-import {
-  isUnexpected,
-  paginate,
-  getLongRunningPoller
+  EnvironmentOutput,
 } from "../../src/index.js";
+import { isUnexpected, paginate, getLongRunningPoller } from "../../src/index.js";
 
 const testPollingOptions = {
   intervalInMs: isPlaybackMode() ? 0 : undefined,

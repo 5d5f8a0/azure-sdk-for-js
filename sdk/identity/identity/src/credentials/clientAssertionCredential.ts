@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { AccessToken, GetTokenOptions, TokenCredential } from "@azure/core-auth";
-import type { MsalClient} from "../msal/nodeFlows/msalClient";
+import type { MsalClient } from "../msal/nodeFlows/msalClient";
 import { createMsalClient } from "../msal/nodeFlows/msalClient";
 import {
   processMultiTenantRequest,

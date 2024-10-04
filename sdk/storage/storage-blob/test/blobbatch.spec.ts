@@ -18,11 +18,9 @@ import type {
   ContainerClient,
   BlockBlobClient,
   BlobBatchClient,
-  StorageSharedKeyCredential} from "../src";
-import {
-  BlobServiceClient,
-  newPipeline
+  StorageSharedKeyCredential,
 } from "../src";
+import { BlobServiceClient, newPipeline } from "../src";
 import type { Context } from "mocha";
 
 describe("BlobBatch", () => {

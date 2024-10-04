@@ -3,7 +3,7 @@
 import PriorityQueue from "priorityqueuejs";
 import semaphore from "semaphore";
 import type { ClientContext } from "../ClientContext";
-import type { AzureLogger} from "@azure/logger";
+import type { AzureLogger } from "@azure/logger";
 import { createClientLogger } from "@azure/logger";
 import { StatusCodes, SubStatusCodes } from "../common/statusCodes";
 import type { FeedOptions, Response } from "../request";

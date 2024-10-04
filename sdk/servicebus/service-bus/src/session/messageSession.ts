@@ -1,23 +1,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  MessagingError,
-  RetryOptions} from "@azure/core-amqp";
-import {
-  Constants,
-  ErrorNameConditionMapper,
-  StandardAbortMessage,
-} from "@azure/core-amqp";
-import type {
-  AmqpError,
-  EventContext,
-  OnAmqpEvent,
-  Receiver,
-  ReceiverOptions} from "rhea-promise";
-import {
-  ReceiverEvents
-} from "rhea-promise";
+import type { MessagingError, RetryOptions } from "@azure/core-amqp";
+import { Constants, ErrorNameConditionMapper, StandardAbortMessage } from "@azure/core-amqp";
+import type { AmqpError, EventContext, OnAmqpEvent, Receiver, ReceiverOptions } from "rhea-promise";
+import { ReceiverEvents } from "rhea-promise";
 import type { ConnectionContext } from "../connectionContext";
 import { LinkEntity } from "../core/linkEntity";
 import type { DispositionStatusOptions } from "../core/managementClient";
@@ -28,7 +15,7 @@ import { throwErrorIfConnectionClosed } from "../util/errors";
 import { calculateRenewAfterDuration, convertTicksToDate } from "../util/utils";
 import type { MinimalReceiver } from "../core/batchingReceiver";
 import { BatchingReceiverLite } from "../core/batchingReceiver";
-import type { DeferredPromiseAndTimer} from "../core/shared";
+import type { DeferredPromiseAndTimer } from "../core/shared";
 import { onMessageSettled, createReceiverOptions } from "../core/shared";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import { AbortError } from "@azure/abort-controller";

@@ -5,10 +5,9 @@ import type { ConnectionContext } from "../../../src/connectionContext";
 import type {
   AwaitableSender,
   Receiver as RheaPromiseReceiver,
-  ReceiverOptions} from "rhea-promise";
-import {
-  ReceiverEvents
+  ReceiverOptions,
 } from "rhea-promise";
+import { ReceiverEvents } from "rhea-promise";
 import { Constants } from "@azure/core-amqp";
 import type { AccessToken } from "@azure/core-auth";
 import { EventEmitter } from "events";

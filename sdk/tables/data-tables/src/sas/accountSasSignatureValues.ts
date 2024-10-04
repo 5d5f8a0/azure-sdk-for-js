@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { AccountSasPermissions} from "./accountSasPermissions";
+import type { AccountSasPermissions } from "./accountSasPermissions";
 import { accountSasPermissionsToString } from "./accountSasPermissions";
-import type { SasIPRange} from "./sasIPRange";
+import type { SasIPRange } from "./sasIPRange";
 import { ipRangeToString } from "./sasIPRange";
-import type { SasProtocol} from "./sasQueryParameters";
+import type { SasProtocol } from "./sasQueryParameters";
 import { SasQueryParameters } from "./sasQueryParameters";
 import {
   accountSasResourceTypesFromString,

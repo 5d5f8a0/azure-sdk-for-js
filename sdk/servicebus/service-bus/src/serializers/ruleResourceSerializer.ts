@@ -3,12 +3,8 @@
 
 import type { FullOperationResponse } from "@azure/core-client";
 import type { CorrelationRuleFilter } from "../core/managementClient";
-import type {
-  AtomXmlSerializer} from "../util/atomXmlHelper";
-import {
-  deserializeAtomXmlResponse,
-  serializeToAtomXmlRequest,
-} from "../util/atomXmlHelper";
+import type { AtomXmlSerializer } from "../util/atomXmlHelper";
+import { deserializeAtomXmlResponse, serializeToAtomXmlRequest } from "../util/atomXmlHelper";
 import * as Constants from "../util/constants";
 import { isDefined, isObjectWithProperties } from "@azure/core-util";
 import { getString, getStringOrUndefined } from "../util/utils";

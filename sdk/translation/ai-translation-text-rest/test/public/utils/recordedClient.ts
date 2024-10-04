@@ -2,13 +2,8 @@
 // Licensed under the MIT License.
 
 import type { Context } from "mocha";
-import type {
-  RecorderStartOptions} from "@azure-tools/test-recorder";
-import {
-  Recorder,
-  isPlaybackMode,
-  assertEnvironmentVariable,
-} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
+import { Recorder, isPlaybackMode, assertEnvironmentVariable } from "@azure-tools/test-recorder";
 import { StaticAccessTokenCredential } from "./StaticAccessTokenCredential";
 import type {
   TranslatorCredential,

@@ -4,10 +4,9 @@
 import type {
   PipelineResponse,
   PipelineRequest,
-  TransferProgressEvent} from "@azure/core-rest-pipeline";
-import {
-  RestError
+  TransferProgressEvent,
 } from "@azure/core-rest-pipeline";
+import { RestError } from "@azure/core-rest-pipeline";
 import type { ServiceClient, OperationOptions, FullOperationResponse } from "@azure/core-client";
 import { parseXML, stringifyXML } from "@azure/core-xml";
 

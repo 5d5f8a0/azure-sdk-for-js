@@ -10,10 +10,9 @@ import type {
   FileStartCopyOptions,
   ShareClient,
   ShareDirectoryClient,
-  ShareServiceClient} from "../src";
-import {
-  ShareFileClient
+  ShareServiceClient,
 } from "../src";
+import { ShareFileClient } from "../src";
 import { FileSystemAttributes } from "../src/FileSystemAttributes";
 import type { DirectoryCreateResponse } from "../src/generated/src/models";
 import { FILE_MAX_SIZE_BYTES } from "../src/utils/constants";

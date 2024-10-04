@@ -8,12 +8,9 @@ import { useFakeTimers } from "sinon";
 import type {
   FileSystemListPathsResponse,
   DataLakeServiceClient,
-  FileSystemListDeletedPathsResponse} from "../src";
-import {
-  DataLakeFileSystemClient,
-  DataLakeFileClient,
-  DataLakeDirectoryClient,
+  FileSystemListDeletedPathsResponse,
 } from "../src";
+import { DataLakeFileSystemClient, DataLakeFileClient, DataLakeDirectoryClient } from "../src";
 import {
   getDataLakeServiceClient,
   getEncryptionScope,

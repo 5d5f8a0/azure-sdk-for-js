@@ -20,7 +20,8 @@ import type {
   XiaomiRegistrationDescription,
   XiaomiTemplateRegistrationDescription,
   WindowsRegistrationDescription,
-  WindowsTemplateRegistrationDescription} from "../../../src/models/registration.js";
+  WindowsTemplateRegistrationDescription,
+} from "../../../src/models/registration.js";
 import {
   createAdmRegistrationDescription,
   createAdmTemplateRegistrationDescription,

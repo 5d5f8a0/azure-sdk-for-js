@@ -7,10 +7,9 @@ import type {
   ContainerDefinition,
   ContainerRequest,
   PatchOperation,
-  RequestOptions} from "../../../../src";
-import {
-  CosmosClient
+  RequestOptions,
 } from "../../../../src";
+import { CosmosClient } from "../../../../src";
 import type { ItemDefinition } from "../../../../src";
 import {
   bulkDeleteItems,
@@ -28,13 +27,8 @@ import {
 } from "../../common/TestHelpers";
 import { endpoint } from "../../common/_testConfig";
 import { masterKey } from "../../common/_fakeTestSecrets";
-import type {
-  PartitionKey,
-  PartitionKeyDefinition} from "../../../../src/documents";
-import {
-  PartitionKeyDefinitionVersion,
-  PartitionKeyKind,
-} from "../../../../src/documents";
+import type { PartitionKey, PartitionKeyDefinition } from "../../../../src/documents";
+import { PartitionKeyDefinitionVersion, PartitionKeyKind } from "../../../../src/documents";
 import { PriorityLevel } from "../../../../src/documents/PriorityLevel";
 import { getCurrentTimestampInMs } from "../../../../src/utils/time";
 

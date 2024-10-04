@@ -15,7 +15,7 @@
  */
 
 import type { JsonSchemaSerializer } from "../../src";
-import type { EventData} from "@azure/event-hubs";
+import type { EventData } from "@azure/event-hubs";
 import { createEventDataAdapter } from "@azure/event-hubs";
 import type { MessagingTestClient } from "./clients/models";
 import { assert, matrix } from "@azure-tools/test-utils";

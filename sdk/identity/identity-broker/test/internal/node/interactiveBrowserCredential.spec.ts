@@ -1,19 +1,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-import type {
-  InteractiveBrowserCredentialNodeOptions} from "@azure/identity";
-import {
-  InteractiveBrowserCredential,
-  useIdentityPlugin,
-} from "@azure/identity";
-import type {
-  MsalTestCleanup} from "../../../../identity/test/node/msalNodeTestSetup";
-import {
-  msalNodeTestSetup,
-} from "../../../../identity/test/node/msalNodeTestSetup";
+import type { InteractiveBrowserCredentialNodeOptions } from "@azure/identity";
+import { InteractiveBrowserCredential, useIdentityPlugin } from "@azure/identity";
+import type { MsalTestCleanup } from "../../../../identity/test/node/msalNodeTestSetup";
+import { msalNodeTestSetup } from "../../../../identity/test/node/msalNodeTestSetup";
 import { PublicClientApplication } from "@azure/msal-node";
 import type Sinon from "sinon";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isLiveMode, env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { nativeBrokerPlugin } from "../../../src";
 import { isNodeLike } from "@azure/core-util";

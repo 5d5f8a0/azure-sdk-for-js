@@ -3,16 +3,10 @@
 
 import type { FullOperationResponse, OperationOptions } from "@azure/core-client";
 import type { CorrelationRuleFilter } from "..";
-import type {
-  AtomXmlSerializer} from "../util/atomXmlHelper";
-import {
-  deserializeAtomXmlResponse,
-  serializeToAtomXmlRequest,
-} from "../util/atomXmlHelper";
+import type { AtomXmlSerializer } from "../util/atomXmlHelper";
+import { deserializeAtomXmlResponse, serializeToAtomXmlRequest } from "../util/atomXmlHelper";
 import * as Constants from "../util/constants";
-import type {
-  EntityStatus,
-  EntityAvailabilityStatus} from "../util/utils";
+import type { EntityStatus, EntityAvailabilityStatus } from "../util/utils";
 import {
   getBoolean,
   getMessageCountDetails,
@@ -21,13 +15,8 @@ import {
   getStringOrUndefined,
   getDate,
 } from "../util/utils";
-import type {
-  InternalRuleOptions,
-  SqlRuleAction,
-  SqlRuleFilter} from "./ruleResourceSerializer";
-import {
-  buildInternalRuleResource
-} from "./ruleResourceSerializer";
+import type { InternalRuleOptions, SqlRuleAction, SqlRuleFilter } from "./ruleResourceSerializer";
+import { buildInternalRuleResource } from "./ruleResourceSerializer";
 
 /**
  * @internal

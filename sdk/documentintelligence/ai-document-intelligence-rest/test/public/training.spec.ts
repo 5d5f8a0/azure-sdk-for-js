@@ -1,12 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  Recorder} from "@azure-tools/test-recorder";
-import {
-  assertEnvironmentVariable,
-  testPollingOptions,
-} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
+import { assertEnvironmentVariable, testPollingOptions } from "@azure-tools/test-recorder";
 import { createRecorder } from "./utils/recorderUtils.js";
 import DocumentIntelligence from "../../src/documentIntelligence.js";
 import { assert, describe, beforeEach, afterEach, it, Context } from "vitest";
@@ -18,12 +14,9 @@ import type {
   DocumentModelComposeOperationDetailsOutput,
   DocumentModelCopyToOperationDetailsOutput,
   DocumentModelDetailsOutput,
-  DocumentTypeDetails} from "../../src/index.js";
-import {
-  getLongRunningPoller,
-  isUnexpected,
-  paginate,
+  DocumentTypeDetails,
 } from "../../src/index.js";
+import { getLongRunningPoller, isUnexpected, paginate } from "../../src/index.js";
 
 describe("model management", () => {
   let recorder: Recorder;

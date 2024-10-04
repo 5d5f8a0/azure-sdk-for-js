@@ -9,7 +9,7 @@
  * Changes may cause incorrect behavior and will be lost if the code is regenerated.
  */
 
-import type { RecorderStartOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions } from "@azure-tools/test-recorder";
 import { Recorder, env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { createTestCredential } from "@azure-tools/test-credential";
 import { assert } from "chai";
@@ -28,12 +28,9 @@ import type {
   VirtualNetworksDeleteParameters,
   VirtualNetworksGetParameters,
   VirtualNetworksListParameters,
-  VirtualNetworksUpdateTagsParameters} from "../../src";
-import {
-  getLongRunningPoller,
-  isUnexpected,
-  paginate,
+  VirtualNetworksUpdateTagsParameters,
 } from "../../src";
+import { getLongRunningPoller, isUnexpected, paginate } from "../../src";
 import { createTestNetworkManagementClient } from "./utils/recordedClient";
 
 const replaceableVariables: Record<string, string> = {

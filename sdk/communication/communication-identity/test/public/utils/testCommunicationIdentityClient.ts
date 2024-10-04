@@ -5,10 +5,9 @@ import type {
   CommunicationAccessToken,
   CommunicationIdentityClientOptions,
   CommunicationUserToken,
-  TokenScope} from "../../../src";
-import {
-  CommunicationIdentityClient
+  TokenScope,
 } from "../../../src";
+import { CommunicationIdentityClient } from "../../../src";
 import {
   createUserAndTokenHttpClient,
   createUserHttpClient,

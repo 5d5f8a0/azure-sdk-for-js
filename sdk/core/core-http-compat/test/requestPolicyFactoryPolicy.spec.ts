@@ -2,8 +2,7 @@
 // Licensed under the MIT License.
 
 import { describe, it, assert } from "vitest";
-import type {
-  HttpClient} from "@azure/core-rest-pipeline";
+import type { HttpClient } from "@azure/core-rest-pipeline";
 import {
   createEmptyPipeline,
   createHttpHeaders,

@@ -13,7 +13,7 @@ import * as Mappers from "../generated/models/mappers";
 import type { PolicyResult as GeneratedPolicyResult } from "../generated/models";
 
 import { TypeDeserializer } from "../utils/typeDeserializer";
-import type { AttestationSigner} from "./attestationSigner";
+import type { AttestationSigner } from "./attestationSigner";
 import { _attestationSignerFromGenerated } from "./attestationSigner";
 
 /**

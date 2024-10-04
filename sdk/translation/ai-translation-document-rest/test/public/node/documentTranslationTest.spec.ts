@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isLiveMode, isPlaybackMode } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import type {
@@ -10,11 +10,9 @@ import type {
   GetDocumentStatus200Response,
   GetTranslationStatus200Response,
   StartTranslationDefaultResponse,
-  TranslationStatusOutput} from "../../../src";
-import {
-  getLongRunningPoller,
-  isUnexpected,
+  TranslationStatusOutput,
 } from "../../../src";
+import { getLongRunningPoller, isUnexpected } from "../../../src";
 import {
   createDocumentTranslationClient,
   createDocumentTranslationClientWithEndpointAndCredentials,

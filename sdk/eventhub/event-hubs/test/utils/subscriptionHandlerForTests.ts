@@ -7,10 +7,9 @@ import type {
   EventPosition,
   PartitionContext,
   ReceivedEventData,
-  SubscriptionEventHandlers} from "../../src/index.js";
-import {
-  CloseReason
+  SubscriptionEventHandlers,
 } from "../../src/index.js";
+import { CloseReason } from "../../src/index.js";
 import { delay } from "@azure/core-amqp";
 import { loggerForTest } from "./logHelpers.js";
 import { loopUntil } from "./testUtils.js";

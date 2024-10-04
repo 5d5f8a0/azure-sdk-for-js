@@ -12,7 +12,7 @@ import type {
   ContainerRegistryGetTokenOptions,
   ContainerRegistryRefreshTokenCredential,
 } from "./containerRegistryTokenCredential";
-import type { AccessTokenRefresher} from "./utils/tokenCycler";
+import type { AccessTokenRefresher } from "./utils/tokenCycler";
 import { createTokenCycler } from "./utils/tokenCycler";
 
 const fiveMinutesInMs = 5 * 60 * 1000;

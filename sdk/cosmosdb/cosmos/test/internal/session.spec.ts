@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-expressions */
 import assert from "assert";
 import type { Suite } from "mocha";
-import type { ClientContext, Container, PluginConfig} from "../../src";
+import type { ClientContext, Container, PluginConfig } from "../../src";
 import { PluginOn } from "../../src";
 import { OperationType, ResourceType } from "../../src/common";
 import { ConsistencyLevel } from "../../src";

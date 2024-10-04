@@ -14,18 +14,11 @@ import type {
   AssetConversionSettings,
   RenderingSession,
   RenderingSessionPollerLike,
-  RenderingSessionSettings} from "../../src";
-import {
-  KnownAssetConversionStatus,
-  RemoteRenderingClient
+  RenderingSessionSettings,
 } from "../../src";
-import type {
-  AccessToken,
-  GetTokenOptions,
-  TokenCredential} from "@azure/core-auth";
-import {
-  AzureKeyCredential
-} from "@azure/core-auth";
+import { KnownAssetConversionStatus, RemoteRenderingClient } from "../../src";
+import type { AccessToken, GetTokenOptions, TokenCredential } from "@azure/core-auth";
+import { AzureKeyCredential } from "@azure/core-auth";
 import { createClient, createRecorder, recorderStartOptions } from "../utils/recordedClient";
 
 import { assertEnvironmentVariable, isPlaybackMode } from "@azure-tools/test-recorder";

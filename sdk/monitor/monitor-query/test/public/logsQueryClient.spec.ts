@@ -4,12 +4,8 @@
 import { assert } from "chai";
 import type { Context } from "mocha";
 import { env } from "process";
-import type {
-  RecorderAndLogsClient} from "./shared/testShared";
-import {
-  createRecorderAndLogsClient,
-  getLogsArmResourceId,
-} from "./shared/testShared";
+import type { RecorderAndLogsClient } from "./shared/testShared";
+import { createRecorderAndLogsClient, getLogsArmResourceId } from "./shared/testShared";
 import { Recorder } from "@azure-tools/test-recorder";
 import type { LogsQueryClient, QueryBatch } from "../../src";
 import { Durations, LogsQueryResultStatus } from "../../src";

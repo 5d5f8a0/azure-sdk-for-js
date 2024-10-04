@@ -7,29 +7,29 @@ import type {
   ReceiverOptions,
   SenderOptions,
   Typed,
-  Message as RheaMessage} from "rhea-promise";
+  Message as RheaMessage,
+} from "rhea-promise";
 import {
   message as RheaMessageUtil,
   generate_uuid,
   string_to_uuid,
   types,
-  ReceiverEvents
+  ReceiverEvents,
 } from "rhea-promise";
 import type {
   MessagingError,
   SendRequestOptions,
   RetryOptions,
-  AmqpAnnotatedMessage} from "@azure/core-amqp";
+  AmqpAnnotatedMessage,
+} from "@azure/core-amqp";
 import {
   ConditionErrorNameMapper,
   Constants,
   defaultCancellableLock,
-  RequestResponseLink
+  RequestResponseLink,
 } from "@azure/core-amqp";
 import type { ConnectionContext } from "../connectionContext";
-import type {
-  ServiceBusReceivedMessage,
-  ServiceBusMessage} from "../serviceBusMessage";
+import type { ServiceBusReceivedMessage, ServiceBusMessage } from "../serviceBusMessage";
 import {
   DispositionType,
   ServiceBusMessageImpl,

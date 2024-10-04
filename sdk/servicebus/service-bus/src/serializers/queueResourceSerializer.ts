@@ -2,17 +2,10 @@
 // Licensed under the MIT License.
 
 import type { FullOperationResponse, OperationOptions } from "@azure/core-client";
-import type {
-  AtomXmlSerializer} from "../util/atomXmlHelper";
-import {
-  deserializeAtomXmlResponse,
-  serializeToAtomXmlRequest,
-} from "../util/atomXmlHelper";
+import type { AtomXmlSerializer } from "../util/atomXmlHelper";
+import { deserializeAtomXmlResponse, serializeToAtomXmlRequest } from "../util/atomXmlHelper";
 import * as Constants from "../util/constants";
-import type {
-  AuthorizationRule,
-  EntityStatus,
-  EntityAvailabilityStatus} from "../util/utils";
+import type { AuthorizationRule, EntityStatus, EntityAvailabilityStatus } from "../util/utils";
 import {
   getAuthorizationRulesOrUndefined,
   getBoolean,
@@ -22,7 +15,7 @@ import {
   getRawAuthorizationRules,
   getString,
   getStringOrUndefined,
-  getDate
+  getDate,
 } from "../util/utils";
 
 /**

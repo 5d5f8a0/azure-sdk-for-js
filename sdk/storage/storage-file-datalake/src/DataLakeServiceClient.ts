@@ -8,11 +8,10 @@ import { isNode } from "@azure/core-util";
 import type {
   ServiceGetPropertiesOptions,
   ServiceSetPropertiesOptions,
-  ServiceSetPropertiesResponse} from "@azure/storage-blob";
-import {
-  BlobServiceClient
+  ServiceSetPropertiesResponse,
 } from "@azure/storage-blob";
-import type { Pipeline, StoragePipelineOptions} from "./Pipeline";
+import { BlobServiceClient } from "@azure/storage-blob";
+import type { Pipeline, StoragePipelineOptions } from "./Pipeline";
 import { isPipelineLike, newPipeline } from "./Pipeline";
 import { AnonymousCredential } from "@azure/storage-blob";
 import { StorageSharedKeyCredential } from "./credentials/StorageSharedKeyCredential";
@@ -35,7 +34,10 @@ import {
   extractConnectionStringParts,
 } from "./utils/utils.common";
 import { toDfsEndpointUrl, toFileSystemPagedAsyncIterableIterator } from "./transforms";
-import type { ServiceGetUserDelegationKeyOptions, ServiceGetUserDelegationKeyResponse } from "./models";
+import type {
+  ServiceGetUserDelegationKeyOptions,
+  ServiceGetUserDelegationKeyResponse,
+} from "./models";
 import { tracingClient } from "./utils/tracing";
 import { AccountSASPermissions } from "./sas/AccountSASPermissions";
 import {
@@ -71,7 +73,7 @@ export class DataLakeServiceClient extends StorageClient {
    * @param options - Optional. Options to configure the HTTP pipeline.
    */
   // Legacy, no way to fix the eslint error without breaking. Disable the rule for this line.
-   
+
   public static fromConnectionString(
     connectionString: string,
     // Legacy, no way to fix the eslint error without breaking. Disable the rule for this line.

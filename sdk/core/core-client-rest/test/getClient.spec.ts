@@ -9,10 +9,9 @@ import type {
   PipelinePolicy,
   PipelineRequest,
   PipelineResponse,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
+  SendRequest,
 } from "@azure/core-rest-pipeline";
+import { createHttpHeaders } from "@azure/core-rest-pipeline";
 
 describe("getClient", () => {
   afterEach(() => {

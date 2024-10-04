@@ -9,10 +9,9 @@ import { isNodeLike } from "@azure/core-util";
 import type {
   DataLakeServiceProperties,
   FileSystemItem,
-  ServiceListFileSystemsSegmentResponse} from "../src";
-import {
-  DataLakeServiceClient
+  ServiceListFileSystemsSegmentResponse,
 } from "../src";
+import { DataLakeServiceClient } from "../src";
 import {
   getDataLakeServiceClient,
   getSASConnectionStringFromEnvironment,

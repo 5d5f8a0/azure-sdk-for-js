@@ -2,12 +2,8 @@
 // Licensed under the MIT License.
 
 import type { MSI, MSIConfiguration, MSIToken } from "./models";
-import type {
-  PipelineRequestOptions} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-  createPipelineRequest,
-} from "@azure/core-rest-pipeline";
+import type { PipelineRequestOptions } from "@azure/core-rest-pipeline";
+import { createHttpHeaders, createPipelineRequest } from "@azure/core-rest-pipeline";
 
 import { AuthenticationError } from "../../errors";
 import type { GetTokenOptions } from "@azure/core-auth";

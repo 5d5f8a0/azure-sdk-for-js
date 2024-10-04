@@ -7,7 +7,7 @@ import { delay } from "../util/helpers.js";
 import type { RetryStrategy } from "../retryStrategies/retryStrategy.js";
 import type { RestError } from "../restError.js";
 import { AbortError } from "../abort-controller/AbortError.js";
-import type { TypeSpecRuntimeLogger} from "../logger/logger.js";
+import type { TypeSpecRuntimeLogger } from "../logger/logger.js";
 import { createClientLogger } from "../logger/logger.js";
 import { DEFAULT_RETRY_POLICY_COUNT } from "../constants.js";
 

@@ -3,12 +3,8 @@
 
 import * as opentelemetry from "@opentelemetry/api";
 import { BasicTracerProvider } from "@opentelemetry/sdk-trace-base";
-import type {
-  PeriodicExportingMetricReaderOptions} from "@opentelemetry/sdk-metrics";
-import {
-  MeterProvider,
-  PeriodicExportingMetricReader
-} from "@opentelemetry/sdk-metrics";
+import type { PeriodicExportingMetricReaderOptions } from "@opentelemetry/sdk-metrics";
+import { MeterProvider, PeriodicExportingMetricReader } from "@opentelemetry/sdk-metrics";
 
 import { AzureMonitorTraceExporter, AzureMonitorMetricExporter } from "../../src";
 import type { Expectation, Scenario } from "./types";

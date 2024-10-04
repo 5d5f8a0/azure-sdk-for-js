@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { Recorder, VitestTestContext} from "@azure-tools/test-recorder";
+import type { Recorder, VitestTestContext } from "@azure-tools/test-recorder";
 import { isPlaybackMode } from "@azure-tools/test-recorder";
 import { createBatchClient, createRecorder } from "./utils/recordedClient.js";
 import type {
@@ -9,11 +9,9 @@ import type {
   BatchTask,
   CreateJobParameters,
   CreatePoolParameters,
-  CreateTaskParameters} from "../src/index.js";
-import {
-  isUnexpected,
-  paginate,
+  CreateTaskParameters,
 } from "../src/index.js";
+import { isUnexpected, paginate } from "../src/index.js";
 import { fakeTestPasswordPlaceholder1 } from "./utils/fakeTestSecrets.js";
 import { getResourceName, waitForNotNull } from "./utils/helpers.js";
 import { describe, it, beforeAll, afterAll, beforeEach, afterEach, assert } from "vitest";

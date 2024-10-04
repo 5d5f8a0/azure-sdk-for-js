@@ -2,13 +2,13 @@
 // Licensed under the MIT License.
 import { ChangeFeedRange } from "./ChangeFeedRange";
 import { ChangeFeedIteratorResponse } from "./ChangeFeedIteratorResponse";
-import type { PartitionKeyRangeCache} from "../../routing";
+import type { PartitionKeyRangeCache } from "../../routing";
 import { QueryRange } from "../../routing";
 import { FeedRangeQueue } from "./FeedRangeQueue";
 import type { ClientContext } from "../../ClientContext";
 import type { Container, Resource } from "../../client";
 import { Constants, SubStatusCodes, StatusCodes, ResourceType } from "../../common";
-import type { Response, FeedOptions} from "../../request";
+import type { Response, FeedOptions } from "../../request";
 import { ErrorResponse } from "../../request";
 import { CompositeContinuationToken } from "./CompositeContinuationToken";
 import type { ChangeFeedPullModelIterator } from "./ChangeFeedPullModelIterator";

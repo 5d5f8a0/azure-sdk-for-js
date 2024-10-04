@@ -4,11 +4,9 @@
 import type {
   AuthorizeRequestOptions,
   ChallengeCallbacks,
-  PipelineRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-  createPipelineRequest,
+  PipelineRequest,
 } from "@azure/core-rest-pipeline";
+import { createHttpHeaders, createPipelineRequest } from "@azure/core-rest-pipeline";
 import { createKeyVaultChallengeCallbacks } from "../../src/index.js";
 import { parseWWWAuthenticateHeader } from "../../src/parseWWWAuthenticate.js";
 import { describe, it, beforeEach, expect } from "vitest";

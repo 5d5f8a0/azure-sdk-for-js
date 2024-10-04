@@ -14,7 +14,7 @@ import {
   recorderEnvSetup,
   uriSanitizers,
 } from "./utils";
-import type { ContainerClient, BlobClient} from "../src";
+import type { ContainerClient, BlobClient } from "../src";
 import { BlockBlobClient } from "../src";
 import { Test_CPK_INFO } from "./utils/fakeTestSecrets";
 import { BlockBlobTier } from "../src";

@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { AbortError } from "@azure/abort-controller";
-import type { Receiver} from "rhea-promise";
+import type { Receiver } from "rhea-promise";
 import { ReceiverEvents } from "rhea-promise";
 import { receiverLogger as logger } from "../log";
 import { ServiceBusError } from "../serviceBusError";

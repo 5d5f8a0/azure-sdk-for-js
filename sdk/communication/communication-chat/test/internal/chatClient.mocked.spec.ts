@@ -8,11 +8,8 @@ import { ChatClient } from "../../src";
 import type * as RestModel from "../../src/generated/src/models";
 import { apiVersion } from "../../src/generated/src/models/parameters";
 import { baseUri, generateToken } from "../public/utils/connectionUtils";
-import type {
-  CommunicationUserIdentifier} from "@azure/communication-common";
-import {
-  AzureCommunicationTokenCredential
-} from "@azure/communication-common";
+import type { CommunicationUserIdentifier } from "@azure/communication-common";
+import { AzureCommunicationTokenCredential } from "@azure/communication-common";
 import {
   createChatClient,
   generateHttpClient,

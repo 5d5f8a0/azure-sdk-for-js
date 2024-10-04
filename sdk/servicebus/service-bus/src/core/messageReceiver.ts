@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  MessagingError,
-  RetryOptions} from "@azure/core-amqp";
-import {
-  Constants,
-  ErrorNameConditionMapper
-} from "@azure/core-amqp";
+import type { MessagingError, RetryOptions } from "@azure/core-amqp";
+import { Constants, ErrorNameConditionMapper } from "@azure/core-amqp";
 import type { AmqpError, EventContext, OnAmqpEvent, Receiver, ReceiverOptions } from "rhea-promise";
 import { receiverLogger as logger } from "../log";
 import type { ReceiverType } from "./linkEntity";
@@ -19,13 +14,8 @@ import { getUniqueName } from "../util/utils";
 import type { ProcessErrorArgs, ReceiveMode, SubscribeOptions } from "../models";
 import type { DispositionStatusOptions } from "./managementClient";
 import type { AbortSignalLike } from "@azure/abort-controller";
-import type {
-  DeferredPromiseAndTimer,
-  ReceiverHandlers} from "./shared";
-import {
-  onMessageSettled,
-  createReceiverOptions,
-} from "./shared";
+import type { DeferredPromiseAndTimer, ReceiverHandlers } from "./shared";
+import { onMessageSettled, createReceiverOptions } from "./shared";
 import type { LockRenewer } from "./autoLockRenewer";
 import { translateServiceBusError } from "../serviceBusError";
 

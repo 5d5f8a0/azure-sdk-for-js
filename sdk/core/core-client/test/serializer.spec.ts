@@ -8,10 +8,9 @@ import type {
   DictionaryMapper,
   EnumMapper,
   Mapper,
-  SequenceMapper} from "../src/index.js";
-import {
-  createSerializer,
+  SequenceMapper,
 } from "../src/index.js";
+import { createSerializer } from "../src/index.js";
 import { Mappers } from "./testMappers1.js";
 
 const Serializer = createSerializer(Mappers);

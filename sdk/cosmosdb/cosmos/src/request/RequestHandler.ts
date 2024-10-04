@@ -1,12 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  createPipelineRequest,
-  createHttpHeaders
-} from "@azure/core-rest-pipeline";
+import type { PipelineResponse } from "@azure/core-rest-pipeline";
+import { createPipelineRequest, createHttpHeaders } from "@azure/core-rest-pipeline";
 import { prepareURL } from "../common";
 import { Constants } from "../common/constants";
 import { executePlugins, PluginOn } from "../plugins/Plugin";
@@ -18,9 +14,9 @@ import type { RequestContext } from "./RequestContext";
 import type { Response as CosmosResponse } from "./Response";
 import { TimeoutError } from "./TimeoutError";
 import { getCachedDefaultHttpClient } from "../utils/cachedClient";
-import type { AzureLogger} from "@azure/logger";
+import type { AzureLogger } from "@azure/logger";
 import { createClientLogger } from "@azure/logger";
-import type { DiagnosticNodeInternal} from "../diagnostics/DiagnosticNodeInternal";
+import type { DiagnosticNodeInternal } from "../diagnostics/DiagnosticNodeInternal";
 import { DiagnosticNodeType } from "../diagnostics/DiagnosticNodeInternal";
 import { addDignosticChild } from "../utils/diagnostics";
 import { getCurrentTimestampInMs } from "../utils/time";

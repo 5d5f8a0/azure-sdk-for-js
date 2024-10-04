@@ -7,11 +7,9 @@ import type {
   EventContext,
   OnAmqpEvent,
   Receiver as RheaPromiseReceiver,
-  Session} from "rhea-promise";
-import {
-  ReceiverEvents,
-  SessionEvents
+  Session,
 } from "rhea-promise";
+import { ReceiverEvents, SessionEvents } from "rhea-promise";
 import { ServiceBusMessageImpl } from "../serviceBusMessage";
 import type { OnAmqpEventAsPromise, ReceiveOptions } from "./messageReceiver";
 import { MessageReceiver } from "./messageReceiver";

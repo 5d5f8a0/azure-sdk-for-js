@@ -4,7 +4,7 @@
 import { createTestCredential } from "@azure-tools/test-credential";
 import type { DeviceUpdateClient } from "../../../src";
 import DeviceUpdate from "../../../src";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { assertEnvironmentVariable } from "@azure-tools/test-recorder";
 
 export function createRecordedClient(recorder: Recorder): DeviceUpdateClient {

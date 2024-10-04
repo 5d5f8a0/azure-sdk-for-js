@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { AccessToken, GetTokenOptions } from "@azure/core-auth";
-import type { AppTokenProviderParameters} from "@azure/msal-node";
+import type { AppTokenProviderParameters } from "@azure/msal-node";
 import { ConfidentialClientApplication } from "@azure/msal-node";
 import {
   AuthenticationError,

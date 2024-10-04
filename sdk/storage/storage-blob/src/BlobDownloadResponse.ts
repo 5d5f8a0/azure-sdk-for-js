@@ -14,10 +14,9 @@ import type {
 import type { BlobDownloadResponseParsed, Metadata, ObjectReplicationPolicy } from "./models";
 import type {
   ReadableStreamGetter,
-  RetriableReadableStreamOptions} from "./utils/RetriableReadableStream";
-import {
-  RetriableReadableStream
+  RetriableReadableStreamOptions,
 } from "./utils/RetriableReadableStream";
+import { RetriableReadableStream } from "./utils/RetriableReadableStream";
 import type { ResponseWithHeaders } from "./utils/utils.common";
 
 /**

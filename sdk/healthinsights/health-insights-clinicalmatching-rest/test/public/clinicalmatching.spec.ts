@@ -4,7 +4,7 @@
 import type { Recorder } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import type { Context } from "mocha";
-import type { ClinicalMatchingRestClient} from "../../src";
+import type { ClinicalMatchingRestClient } from "../../src";
 import { getLongRunningPoller } from "../../src";
 import { createClient, createRecorder } from "./utils/recordedClient";
 

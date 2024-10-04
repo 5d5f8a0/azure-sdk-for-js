@@ -8,10 +8,9 @@ import type {
   CreateHttpPollerOptions,
   LongRunningOperation,
   OperationResponse,
-  OperationState} from "@azure/core-lro";
-import {
-  createHttpPoller,
+  OperationState,
 } from "@azure/core-lro";
+import { createHttpPoller } from "@azure/core-lro";
 import type {
   TrainLargeFaceList202Response,
   TrainLargeFaceListDefaultResponse,

@@ -5,24 +5,18 @@ import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
 import type { ServiceBusMessage, ServiceBusSender } from "../../src";
 import { delay } from "../../src";
-import type { TestClientType} from "../public/utils/testUtils";
+import type { TestClientType } from "../public/utils/testUtils";
 import { TestMessage } from "../public/utils/testUtils";
 import type { ServiceBusReceiver, ServiceBusReceiverImpl } from "../../src/receivers/receiver";
-import type {
-  EntityName,
-  ServiceBusClientForTests} from "../public/utils/testutils2";
+import type { EntityName, ServiceBusClientForTests } from "../public/utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,
   //   getRandomTestClientTypeWithSessions,
   getRandomTestClientTypeWithNoSessions,
 } from "../public/utils/testutils2";
-import type {
-  ServiceBusMessageImpl,
-  ServiceBusReceivedMessage} from "../../src/serviceBusMessage";
-import {
-  DispositionType
-} from "../../src/serviceBusMessage";
+import type { ServiceBusMessageImpl, ServiceBusReceivedMessage } from "../../src/serviceBusMessage";
+import { DispositionType } from "../../src/serviceBusMessage";
 import { testLogger } from "./utils/misc";
 
 const should = chai.should();

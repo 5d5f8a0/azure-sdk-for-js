@@ -8,13 +8,12 @@ import type {
   Schema,
   SchemaDescription,
   SchemaProperties,
-  SchemaRegistry} from "@azure/schema-registry";
-import {
-  SchemaRegistryClient,
+  SchemaRegistry,
 } from "@azure/schema-registry";
+import { SchemaRegistryClient } from "@azure/schema-registry";
 import { createTestCredential } from "@azure-tools/test-credential";
 import { testSchemaIds } from "./dummies";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isLiveMode } from "@azure-tools/test-recorder";
 import { randomUUID } from "@azure/core-util";
 

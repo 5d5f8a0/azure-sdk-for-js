@@ -5,12 +5,9 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 /* eslint-disable sort-imports */
 
-import type {
-  MsalTestCleanup} from "../../../../identity/test/node/msalNodeTestSetup";
-import {
-  msalNodeTestSetup,
-} from "../../../../identity/test/node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { MsalTestCleanup } from "../../../../identity/test/node/msalNodeTestSetup";
+import { msalNodeTestSetup } from "../../../../identity/test/node/msalNodeTestSetup";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { isRecordMode } from "@azure-tools/test-recorder";
 import { VisualStudioCodeCredential } from "@azure/identity";
 import assert from "assert";

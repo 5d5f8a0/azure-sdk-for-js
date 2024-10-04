@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { ShareClient} from "../src";
+import type { ShareClient } from "../src";
 import { ShareDirectoryClient, ShareFileClient } from "../src";
 import { getBSU, getUniqueName, recorderEnvSetup, uriSanitizers } from "./utils/index";
 import { assert } from "chai";

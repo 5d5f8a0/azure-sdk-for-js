@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import type { Context } from "mocha";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import type { TieringClient } from "../../src";
 import { assert } from "chai";

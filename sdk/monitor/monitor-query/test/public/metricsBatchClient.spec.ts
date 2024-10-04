@@ -4,8 +4,7 @@
 import { assert } from "chai";
 import type { Context } from "mocha";
 import type { MetricsClient, MetricsQueryResult } from "../../src";
-import type {
-  RecorderAndMetricsBatchQueryClient} from "./shared/testShared";
+import type { RecorderAndMetricsBatchQueryClient } from "./shared/testShared";
 import {
   createRecorderAndMetricsBatchQueryClient,
   getMetricsBatchResourceIds,

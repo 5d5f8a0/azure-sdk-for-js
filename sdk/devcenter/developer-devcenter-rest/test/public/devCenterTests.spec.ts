@@ -5,13 +5,8 @@ import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import { createRecordedClient, createRecorder } from "./utils/recordedClient.js";
 import { describe, it, beforeEach, afterEach, expect } from "vitest";
-import type {
-  AzureDeveloperDevCenterClient,
-  ProjectOutput} from "../../src/index.js";
-import {
-  isUnexpected,
-  paginate,
-} from "../../src/index.js";
+import type { AzureDeveloperDevCenterClient, ProjectOutput } from "../../src/index.js";
+import { isUnexpected, paginate } from "../../src/index.js";
 
 describe("DevCenter Project Operations Tests", function () {
   let recorder: Recorder;

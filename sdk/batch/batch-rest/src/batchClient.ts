@@ -4,7 +4,7 @@
 import type { ClientOptions } from "@azure-rest/core-client";
 import { getClient } from "@azure-rest/core-client";
 import { logger } from "./logger.js";
-import type { TokenCredential, AzureNamedKeyCredential} from "@azure/core-auth";
+import type { TokenCredential, AzureNamedKeyCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { BatchClient } from "./clientDefinitions.js";
 import { createBatchSharedKeyCredentialsPolicy } from "./credentials/batchSharedKeyCredentials.js";

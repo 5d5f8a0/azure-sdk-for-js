@@ -3,22 +3,12 @@
 import * as os from "os";
 import type {
   MeterProviderOptions,
-  PeriodicExportingMetricReaderOptions} from "@opentelemetry/sdk-metrics";
-import {
-  MeterProvider,
-  PeriodicExportingMetricReader
+  PeriodicExportingMetricReaderOptions,
 } from "@opentelemetry/sdk-metrics";
+import { MeterProvider, PeriodicExportingMetricReader } from "@opentelemetry/sdk-metrics";
 import type { InternalConfig } from "../../shared/config";
-import type {
-  Meter,
-  ObservableGauge,
-  ObservableResult} from "@opentelemetry/api";
-import {
-  SpanKind,
-  SpanStatusCode,
-  ValueType,
-  context,
-} from "@opentelemetry/api";
+import type { Meter, ObservableGauge, ObservableResult } from "@opentelemetry/api";
+import { SpanKind, SpanStatusCode, ValueType, context } from "@opentelemetry/api";
 import type { ReadableSpan, TimedEvent } from "@opentelemetry/sdk-trace-base";
 import { RandomIdGenerator } from "@opentelemetry/sdk-trace-base";
 import type { LogRecord } from "@opentelemetry/sdk-logs";
@@ -34,11 +24,9 @@ import type {
   Request,
   Trace,
   KeyValuePairString,
-  DerivedMetricInfo} from "../../generated";
-import {
-  KnownCollectionConfigurationErrorType,
-  KnownTelemetryType,
+  DerivedMetricInfo,
 } from "../../generated";
+import { KnownCollectionConfigurationErrorType, KnownTelemetryType } from "../../generated";
 import {
   getCloudRole,
   getCloudRoleInstance,
@@ -62,10 +50,9 @@ import type {
   DependencyData,
   TraceData,
   ExceptionData,
-  TelemetryData} from "./types";
-import {
-  QuickPulseOpenTelemetryMetricNames
+  TelemetryData,
 } from "./types";
+import { QuickPulseOpenTelemetryMetricNames } from "./types";
 import { hrTimeToMilliseconds, suppressTracing } from "@opentelemetry/core";
 import { getInstance } from "../../utils/statsbeat";
 import type { CollectionConfigurationError } from "../../generated";

@@ -6,11 +6,9 @@ import type {
   PipelinePolicy,
   PipelineRequest,
   SendRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  isRestError,
-  RestError,
+  PipelineResponse,
 } from "@azure/core-rest-pipeline";
+import { isRestError, RestError } from "@azure/core-rest-pipeline";
 import { getErrorMessage } from "@azure/core-util";
 import type { StorageRetryOptions } from "../StorageRetryPolicyFactory";
 import { URLConstants } from "../utils/constants";

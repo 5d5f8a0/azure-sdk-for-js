@@ -7,21 +7,15 @@ import type { TokenCredential } from "@azure/core-auth";
 import type { Context } from "mocha";
 import { assert } from "@azure-tools/test-utils";
 import sinon from "sinon";
-import type {
-  DecryptParameters,
-  EncryptParameters,
-  KeyVaultKey} from "../../src";
-import {
-  CryptographyClient,
-  KeyClient
-} from "../../src";
+import type { DecryptParameters, EncryptParameters, KeyVaultKey } from "../../src";
+import { CryptographyClient, KeyClient } from "../../src";
 import { RsaCryptographyProvider } from "../../src/cryptography/rsaCryptographyProvider";
 import type { JsonWebKey } from "../../src";
 import { stringToUint8Array } from "../public/utils/crypto";
 import type { CryptographyProvider } from "../../src/cryptography/models";
 import { RemoteCryptographyProvider } from "../../src/cryptography/remoteCryptographyProvider";
 import { NoOpCredential } from "@azure-tools/test-credential";
-import type { SendRequest} from "@azure/core-rest-pipeline";
+import type { SendRequest } from "@azure/core-rest-pipeline";
 import { RestError, createHttpHeaders } from "@azure/core-rest-pipeline";
 
 describe("internal crypto tests", () => {

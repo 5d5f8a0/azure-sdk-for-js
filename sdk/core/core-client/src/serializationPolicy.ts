@@ -8,11 +8,9 @@ import type {
   OperationSpec,
   RequiredSerializerOptions,
   SerializerOptions,
-  XmlOptions} from "./interfaces.js";
-import {
-  XML_ATTRKEY,
-  XML_CHARKEY
+  XmlOptions,
 } from "./interfaces.js";
+import { XML_ATTRKEY, XML_CHARKEY } from "./interfaces.js";
 import type { PipelinePolicy, PipelineResponse, SendRequest } from "@azure/core-rest-pipeline";
 import {
   getOperationArgumentValueFromParameter,

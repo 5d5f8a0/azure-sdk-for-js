@@ -7,10 +7,9 @@ import type {
   LongRunningOperation,
   LroResponse,
   OperationState,
-  SimplePollerLike} from "@azure/core-lro";
-import {
-  createHttpPoller,
+  SimplePollerLike,
 } from "@azure/core-lro";
+import { createHttpPoller } from "@azure/core-lro";
 import type {
   CreateJob200Response,
   CreateJob201Response,

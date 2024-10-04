@@ -9,12 +9,13 @@ import type {
   CosmosHeaders,
   ExecutionContext,
   FetchFunctionCallback,
-  SqlQuerySpec} from "./queryExecutionContext";
+  SqlQuerySpec,
+} from "./queryExecutionContext";
 import {
   DefaultQueryExecutionContext,
   getInitialHeader,
   mergeHeaders,
-  PipelinedQueryExecutionContext
+  PipelinedQueryExecutionContext,
 } from "./queryExecutionContext";
 import type { Response } from "./request";
 import type { ErrorResponse, PartitionedQueryExecutionInfo } from "./request/ErrorResponse";

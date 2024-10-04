@@ -4,14 +4,11 @@
 /* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 /* eslint-disable sort-imports */
 
-import type {
-  MsalTestCleanup} from "../../../../identity/test/node/msalNodeTestSetup";
-import {
-  msalNodeTestSetup,
-} from "../../../../identity/test/node/msalNodeTestSetup";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { MsalTestCleanup } from "../../../../identity/test/node/msalNodeTestSetup";
+import { msalNodeTestSetup } from "../../../../identity/test/node/msalNodeTestSetup";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
-import type { TokenCachePersistenceOptions} from "../../../../identity/src";
+import type { TokenCachePersistenceOptions } from "../../../../identity/src";
 import { UsernamePasswordCredential } from "../../../../identity/src";
 
 import { PublicClientApplication } from "@azure/msal-node";

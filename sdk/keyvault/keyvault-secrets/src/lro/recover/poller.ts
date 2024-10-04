@@ -1,11 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  RecoverDeletedSecretPollOperationState} from "./operation.js";
-import {
-  RecoverDeletedSecretPollOperation
-} from "./operation.js";
+import type { RecoverDeletedSecretPollOperationState } from "./operation.js";
+import { RecoverDeletedSecretPollOperation } from "./operation.js";
 import type { SecretProperties } from "../../secretsModels.js";
 import type { KeyVaultSecretPollerOptions } from "../keyVaultSecretPoller.js";
 import { KeyVaultSecretPoller } from "../keyVaultSecretPoller.js";

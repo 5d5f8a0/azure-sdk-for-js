@@ -6,8 +6,7 @@ import { isAggregateLogsUploadError, LogsIngestionClient } from "../../src";
 import type { Context } from "mocha";
 import { assert } from "chai";
 import type { AdditionalPolicyConfig } from "@azure/core-client";
-import type {
-  RecorderAndLogsClient} from "./shared/testShared";
+import type { RecorderAndLogsClient } from "./shared/testShared";
 import {
   createClientAndStartRecorder,
   getDcrId,

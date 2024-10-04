@@ -52,20 +52,17 @@ import type {
   AppConfigurationGetLabelsHeaders,
 } from "./generated/src/models";
 import type { InternalClientPipelineOptions } from "@azure/core-client";
-import type { PagedAsyncIterableIterator, PagedResult} from "@azure/core-paging";
+import type { PagedAsyncIterableIterator, PagedResult } from "@azure/core-paging";
 import { getPagedAsyncIterator } from "@azure/core-paging";
-import type {
-  PipelinePolicy,
-  RestError} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy
-} from "@azure/core-rest-pipeline";
+import type { PipelinePolicy, RestError } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
 import { SyncTokens, syncTokenPolicy } from "./internal/synctokenpolicy";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type {
   SendConfigurationSettingsOptions,
-  SendLabelsRequestOptions} from "./internal/helpers";
+  SendLabelsRequestOptions,
+} from "./internal/helpers";
 import {
   assertResponse,
   checkAndFormatIfAndIfNoneMatch,

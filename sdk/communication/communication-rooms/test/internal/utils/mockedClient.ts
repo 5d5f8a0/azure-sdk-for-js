@@ -1,13 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  HttpClient,
-  PipelineRequest,
-  PipelineResponse} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders,
-} from "@azure/core-rest-pipeline";
+import type { HttpClient, PipelineRequest, PipelineResponse } from "@azure/core-rest-pipeline";
+import { createHttpHeaders } from "@azure/core-rest-pipeline";
 import type * as RestModel from "../../../src/generated/src/models";
 import { RoomsClient } from "../../../src";
 

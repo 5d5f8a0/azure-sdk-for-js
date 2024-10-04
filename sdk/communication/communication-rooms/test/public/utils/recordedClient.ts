@@ -1,9 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  RecorderStartOptions,
-  SanitizerOptions} from "@azure-tools/test-recorder";
+import type { RecorderStartOptions, SanitizerOptions } from "@azure-tools/test-recorder";
 import {
   Recorder,
   assertEnvironmentVariable,
@@ -11,7 +9,7 @@ import {
   isPlaybackMode,
 } from "@azure-tools/test-recorder";
 import type { TokenCredential } from "@azure/core-auth";
-import type { CommunicationUserIdentifier} from "@azure/communication-common";
+import type { CommunicationUserIdentifier } from "@azure/communication-common";
 import { parseConnectionString } from "@azure/communication-common";
 import { createTestCredential } from "@azure-tools/test-credential";
 import type { Context, Test } from "mocha";

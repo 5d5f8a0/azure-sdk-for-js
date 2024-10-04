@@ -12,17 +12,14 @@ import {
   CALL_TARGET_ID,
   CALL_TARGET_ID_2,
 } from "./utils/connectionUtils";
-import type { CommunicationIdentifier, CommunicationUserIdentifier } from "@azure/communication-common";
+import type {
+  CommunicationIdentifier,
+  CommunicationUserIdentifier,
+} from "@azure/communication-common";
 import { assert } from "chai";
 import type { Context } from "mocha";
-import type {
-  CallInvite,
-  CallConnection,
-  CreateCallOptions,
-  AnswerCallOptions} from "../src";
-import {
-  CallAutomationClient
-} from "../src";
+import type { CallInvite, CallConnection, CreateCallOptions, AnswerCallOptions } from "../src";
+import { CallAutomationClient } from "../src";
 import {
   createRecorder,
   createTestUser,
@@ -37,7 +34,10 @@ import {
   loadPersistedEvents,
   persistEvents,
 } from "./utils/recordedClient";
-import type { AnswerCallEventResult, CreateCallEventResult } from "../src/eventprocessor/eventResponses";
+import type {
+  AnswerCallEventResult,
+  CreateCallEventResult,
+} from "../src/eventprocessor/eventResponses";
 import { randomUUID } from "@azure/core-util";
 
 describe("Call Automation Client Unit Tests", () => {

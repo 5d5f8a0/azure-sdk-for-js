@@ -1,16 +1,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { DeserializationPolicyOptions} from "./deserializationPolicy.js";
+import type { DeserializationPolicyOptions } from "./deserializationPolicy.js";
 import { deserializationPolicy } from "./deserializationPolicy.js";
-import type {
-  InternalPipelineOptions,
-  Pipeline} from "@azure/core-rest-pipeline";
+import type { InternalPipelineOptions, Pipeline } from "@azure/core-rest-pipeline";
 import {
   bearerTokenAuthenticationPolicy,
   createPipelineFromOptions,
 } from "@azure/core-rest-pipeline";
-import type { SerializationPolicyOptions} from "./serializationPolicy.js";
+import type { SerializationPolicyOptions } from "./serializationPolicy.js";
 import { serializationPolicy } from "./serializationPolicy.js";
 import type { TokenCredential } from "@azure/core-auth";
 

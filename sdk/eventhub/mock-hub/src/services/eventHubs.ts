@@ -8,10 +8,9 @@ import type {
   OnMessagesEvent,
   ReceiverOpenEvent,
   SenderCloseEvent,
-  SenderOpenEvent} from "../server/mockServer.js";
-import {
-  MockServer
+  SenderOpenEvent,
 } from "../server/mockServer.js";
+import { MockServer } from "../server/mockServer.js";
 import {
   generateBadPartitionInfoResponse,
   generatePartitionInfoResponse,

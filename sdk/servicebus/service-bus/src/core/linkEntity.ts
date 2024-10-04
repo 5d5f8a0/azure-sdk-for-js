@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  RequestResponseLink} from "@azure/core-amqp";
+import type { RequestResponseLink } from "@azure/core-amqp";
 import {
   Constants,
   TokenType,
@@ -17,10 +16,9 @@ import type {
   AwaitableSenderOptions,
   Receiver,
   ReceiverOptions,
-  SenderOptions} from "rhea-promise";
-import {
-  generate_uuid
+  SenderOptions,
 } from "rhea-promise";
+import { generate_uuid } from "rhea-promise";
 import { getUniqueName } from "../util/utils";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import { AbortError } from "@azure/abort-controller";

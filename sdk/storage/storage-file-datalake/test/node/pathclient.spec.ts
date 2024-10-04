@@ -14,12 +14,13 @@ import type {
   DataLakeFileSystemClient,
   DataLakeServiceClient,
   PathAccessControlItem,
-  PathPermissions} from "../../src";
+  PathPermissions,
+} from "../../src";
 import {
   DataLakeFileClient,
   DataLakePathClient,
   DataLakeSASPermissions,
-  getDataLakeServiceAccountAudience
+  getDataLakeServiceAccountAudience,
 } from "../../src";
 import { toAcl, toRemoveAcl } from "../../src/transforms";
 import {

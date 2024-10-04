@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { matrix } from "@azure-tools/test-utils";
-import type { Recorder} from "@azure-tools/test-recorder";
+import type { Recorder } from "@azure-tools/test-recorder";
 import { env, isPlaybackMode } from "@azure-tools/test-recorder";
 import { assert } from "chai";
 import type { Context } from "mocha";

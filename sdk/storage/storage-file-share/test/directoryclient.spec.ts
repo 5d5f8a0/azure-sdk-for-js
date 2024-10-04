@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { getBSU, getTokenBSU, getUniqueName, recorderEnvSetup, uriSanitizers } from "./utils";
-import type { ShareClient} from "../src";
+import type { ShareClient } from "../src";
 import { ShareDirectoryClient, FileSystemAttributes } from "../src";
 import { Recorder, isLiveMode } from "@azure-tools/test-recorder";
 import type { DirectoryCreateResponse } from "../src/generated/src/models";

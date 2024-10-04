@@ -3,7 +3,7 @@
 
 import type { CheckpointStore, FullEventProcessorOptions } from "./eventProcessor.js";
 import { EventProcessor } from "./eventProcessor.js";
-import type { ConnectionContext} from "./connectionContext.js";
+import type { ConnectionContext } from "./connectionContext.js";
 import { createConnectionContext } from "./connectionContext.js";
 import type {
   EventHubConsumerClientOptions,

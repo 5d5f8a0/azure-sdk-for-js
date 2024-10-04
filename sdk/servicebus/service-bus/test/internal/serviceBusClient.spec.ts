@@ -12,20 +12,16 @@ import type {
   ServiceBusError,
   ServiceBusSessionReceiver,
   ServiceBusSender,
-  ServiceBusReceiverOptions} from "../../src";
-import {
-  isServiceBusError,
-  ServiceBusClient
+  ServiceBusReceiverOptions,
 } from "../../src";
+import { isServiceBusError, ServiceBusClient } from "../../src";
 import type { ServiceBusReceivedMessage } from "../../src/serviceBusMessage";
 import { DispositionType } from "../../src/serviceBusMessage";
 import { getReceiverClosedErrorMsg, getSenderClosedErrorMsg } from "../../src/util/errors";
 import { getEnvVars } from "../public/utils/envVarUtils";
 import { isNode } from "@azure/core-util";
 import { checkWithTimeout, TestClientType, TestMessage } from "../public/utils/testUtils";
-import type {
-  EntityName,
-  ServiceBusClientForTests} from "../public/utils/testutils2";
+import type { EntityName, ServiceBusClientForTests } from "../public/utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,

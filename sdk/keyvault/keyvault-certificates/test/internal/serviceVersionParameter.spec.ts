@@ -6,10 +6,9 @@ import type {
   HttpClient,
   PipelineRequest,
   PipelineResponse,
-  SendRequest} from "@azure/core-rest-pipeline";
-import {
-  createHttpHeaders
+  SendRequest,
 } from "@azure/core-rest-pipeline";
+import { createHttpHeaders } from "@azure/core-rest-pipeline";
 import { ClientSecretCredential } from "@azure/identity";
 import type { MockInstance } from "vitest";
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";

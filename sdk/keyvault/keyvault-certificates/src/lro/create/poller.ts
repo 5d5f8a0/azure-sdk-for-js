@@ -8,11 +8,8 @@ import type {
   CreateCertificateOptions,
   CertificatePolicy,
 } from "../../certificatesModels.js";
-import type {
-  KeyVaultCertificatePollerOptions} from "../keyVaultCertificatePoller.js";
-import {
-  KeyVaultCertificatePoller
-} from "../keyVaultCertificatePoller.js";
+import type { KeyVaultCertificatePollerOptions } from "../keyVaultCertificatePoller.js";
+import { KeyVaultCertificatePoller } from "../keyVaultCertificatePoller.js";
 
 export interface CreateCertificatePollerOptions extends KeyVaultCertificatePollerOptions {
   certificatePolicy?: CertificatePolicy;

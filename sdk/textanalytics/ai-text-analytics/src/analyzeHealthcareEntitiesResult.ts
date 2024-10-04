@@ -14,9 +14,7 @@ import type {
   TextAnalyticsError,
   TextDocumentBatchStatistics,
 } from "./generated/models";
-import type {
-  TextAnalyticsErrorResult,
-  TextAnalyticsSuccessResult} from "./textAnalyticsResult";
+import type { TextAnalyticsErrorResult, TextAnalyticsSuccessResult } from "./textAnalyticsResult";
 import {
   makeTextAnalyticsErrorResult,
   makeTextAnalyticsSuccessResult,

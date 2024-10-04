@@ -3,9 +3,13 @@
 
 import * as sinon from "sinon";
 import type { AccessToken, GetTokenOptions, TokenCredential } from "@azure/core-auth";
-import type { AzureLogLevel} from "@azure/logger";
+import type { AzureLogLevel } from "@azure/logger";
 import { AzureLogger, getLogLevel, setLogLevel } from "@azure/logger";
-import type { IdentityTestContextInterface, RawTestResponse, TestResponse } from "./httpRequestsCommon";
+import type {
+  IdentityTestContextInterface,
+  RawTestResponse,
+  TestResponse,
+} from "./httpRequestsCommon";
 import type { RestError } from "@azure/core-rest-pipeline";
 import { getError } from "./authTestUtils";
 

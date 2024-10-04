@@ -11,10 +11,9 @@ import type {
   LogsQueryPartialResult,
   LogsQueryResult,
   LogsQuerySuccessfulResult,
-  QueryBatch} from "./models/publicLogsModels";
-import {
-  LogsQueryResultStatus
+  QueryBatch,
 } from "./models/publicLogsModels";
+import { LogsQueryResultStatus } from "./models/publicLogsModels";
 
 import {
   convertGeneratedTable,
@@ -23,7 +22,11 @@ import {
   mapError,
 } from "./internal/modelConverters";
 import { formatPreferHeader } from "./internal/util";
-import type { CommonClientOptions, FullOperationResponse, OperationOptions } from "@azure/core-client";
+import type {
+  CommonClientOptions,
+  FullOperationResponse,
+  OperationOptions,
+} from "@azure/core-client";
 import type { QueryTimeInterval } from "./models/timeInterval";
 import { convertTimespanToInterval } from "./timespanConversion";
 import { KnownMonitorLogsQueryAudience, SDK_VERSION } from "./constants";

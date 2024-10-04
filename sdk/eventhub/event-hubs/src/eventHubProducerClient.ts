@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type { ConnectionContext} from "./connectionContext.js";
+import type { ConnectionContext } from "./connectionContext.js";
 import { createConnectionContext } from "./connectionContext.js";
 import type {
   CreateBatchOptions,
@@ -11,8 +11,11 @@ import type {
   GetPartitionPropertiesOptions,
   SendBatchOptions,
 } from "./models/public.js";
-import type { PartitionPublishingOptions, PartitionPublishingProperties } from "./models/private.js";
-import type { EventDataBatch} from "./eventDataBatch.js";
+import type {
+  PartitionPublishingOptions,
+  PartitionPublishingProperties,
+} from "./models/private.js";
+import type { EventDataBatch } from "./eventDataBatch.js";
 import { EventDataBatchImpl, isEventDataBatch } from "./eventDataBatch.js";
 import type { EventHubProperties, PartitionProperties } from "./managementClient.js";
 import type { TracingContext, TracingSpanLink } from "@azure/core-tracing";

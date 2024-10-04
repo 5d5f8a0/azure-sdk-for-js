@@ -1,12 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  CreateTestSerializerOptions} from "./utils/mockedSerializer";
-import {
-  createTestSerializer,
-  registerTestSchema,
-} from "./utils/mockedSerializer";
+import type { CreateTestSerializerOptions } from "./utils/mockedSerializer";
+import { createTestSerializer, registerTestSchema } from "./utils/mockedSerializer";
 import { assert } from "@azure-tools/test-utils";
 import { createContentType, encoder, testGroup, testSchema, testValue } from "./utils/dummies";
 import type { Context } from "mocha";

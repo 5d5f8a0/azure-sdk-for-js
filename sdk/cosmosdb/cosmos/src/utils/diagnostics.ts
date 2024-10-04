@@ -3,12 +3,8 @@
 
 import type { MetadataLookUpType } from "../CosmosDiagnostics";
 import { CosmosDiagnostics } from "../CosmosDiagnostics";
-import type {
-  DiagnosticDataValue} from "../diagnostics/DiagnosticNodeInternal";
-import {
-  DiagnosticNodeInternal,
-  DiagnosticNodeType,
-} from "../diagnostics/DiagnosticNodeInternal";
+import type { DiagnosticDataValue } from "../diagnostics/DiagnosticNodeInternal";
+import { DiagnosticNodeInternal, DiagnosticNodeType } from "../diagnostics/DiagnosticNodeInternal";
 import type { ClientContext } from "../ClientContext";
 import { getCurrentTimestampInMs } from "./time";
 import { CosmosDbDiagnosticLevel } from "../diagnostics/CosmosDbDiagnosticLevel";

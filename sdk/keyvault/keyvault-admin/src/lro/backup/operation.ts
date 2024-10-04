@@ -7,11 +7,8 @@ import type {
   FullBackupResponse,
   FullBackupStatusResponse,
 } from "../../generated/models/index.js";
-import type {
-  KeyVaultAdminPollOperationState} from "../keyVaultAdminPoller.js";
-import {
-  KeyVaultAdminPollOperation
-} from "../keyVaultAdminPoller.js";
+import type { KeyVaultAdminPollOperationState } from "../keyVaultAdminPoller.js";
+import { KeyVaultAdminPollOperation } from "../keyVaultAdminPoller.js";
 import type { KeyVaultBackupResult, KeyVaultBeginBackupOptions } from "../../backupClientModels.js";
 import type { AbortSignalLike } from "@azure/abort-controller";
 import type { KeyVaultClient } from "../../generated/keyVaultClient.js";

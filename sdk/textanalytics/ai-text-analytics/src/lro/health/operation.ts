@@ -15,26 +15,20 @@ import type {
   AnalyzeHealthcareEntitiesResult,
   AnalyzeHealthcareEntitiesResultArray,
   PagedAnalyzeHealthcareEntitiesResult,
-  PagedAsyncIterableAnalyzeHealthcareEntitiesResult} from "../../analyzeHealthcareEntitiesResult";
+  PagedAsyncIterableAnalyzeHealthcareEntitiesResult,
+} from "../../analyzeHealthcareEntitiesResult";
 import {
   makeHealthcareEntitiesErrorResult,
   makeHealthcareEntitiesResult,
 } from "../../analyzeHealthcareEntitiesResult";
 import type { PageSettings } from "@azure/core-paging";
-import type {
-  StringIndexType} from "../../util";
-import {
-  addStrEncodingParam,
-  getOperationId,
-  nextLinkToTopAndSkip,
-  throwError,
-} from "../../util";
+import type { StringIndexType } from "../../util";
+import { addStrEncodingParam, getOperationId, nextLinkToTopAndSkip, throwError } from "../../util";
 import type {
   AnalysisPollOperationState,
-  OperationMetadata as AnalyzeHealthcareEntitiesOperationMetadata} from "../poller";
-import {
-  AnalysisPollOperation
+  OperationMetadata as AnalyzeHealthcareEntitiesOperationMetadata,
 } from "../poller";
+import { AnalysisPollOperation } from "../poller";
 import type { GeneratedClient as Client } from "../../generated";
 import { processAndCombineSuccessfulAndErroneousDocuments } from "../../textAnalyticsResult";
 import type { TextAnalyticsOperationOptions } from "../../textAnalyticsOperationOptions";

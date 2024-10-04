@@ -6,10 +6,9 @@ import { assert } from "chai";
 import type { Context } from "mocha";
 import type {
   AzureCommunicationRoutingServiceClient,
-  DistributionPolicyOutput} from "../../../src";
-import {
-  paginate,
+  DistributionPolicyOutput,
 } from "../../../src";
+import { paginate } from "../../../src";
 import { getDistributionPolicyRequest } from "../utils/testData";
 import { createRecordedRouterClientWithConnectionString } from "../../internal/utils/mockClient";
 import { timeoutMs } from "../utils/constants";

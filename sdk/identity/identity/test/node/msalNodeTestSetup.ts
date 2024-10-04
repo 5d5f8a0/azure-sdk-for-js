@@ -1,12 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  AuthenticationResult} from "@azure/msal-node";
-import {
-  ConfidentialClientApplication,
-  PublicClientApplication,
-} from "@azure/msal-node";
+import type { AuthenticationResult } from "@azure/msal-node";
+import { ConfidentialClientApplication, PublicClientApplication } from "@azure/msal-node";
 import type Sinon from "sinon";
 import { createSandbox } from "sinon";
 

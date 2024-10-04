@@ -10,7 +10,7 @@ import {
   ResourceType,
   StatusCodes,
 } from "../../common";
-import type { PartitionKey, PartitionKeyInternal} from "../../documents";
+import type { PartitionKey, PartitionKeyInternal } from "../../documents";
 import { convertToInternalPartitionKey } from "../../documents";
 import type { RequestOptions, Response } from "../../request";
 import type { PatchRequestBody } from "../../utils/patch";

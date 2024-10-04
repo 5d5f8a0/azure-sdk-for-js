@@ -10,12 +10,8 @@ import type {
   GetPlainCertificateOperationOptions,
   KeyVaultCertificateWithPolicy,
 } from "../../certificatesModels.js";
-import type {
-  KeyVaultCertificatePollOperationState} from "../keyVaultCertificatePoller.js";
-import {
-  cleanState,
-  KeyVaultCertificatePollOperation
-} from "../keyVaultCertificatePoller.js";
+import type { KeyVaultCertificatePollOperationState } from "../keyVaultCertificatePoller.js";
+import { cleanState, KeyVaultCertificatePollOperation } from "../keyVaultCertificatePoller.js";
 import type { KeyVaultClient } from "../../generated/keyVaultClient.js";
 import {
   getCertificateOperationFromCoreOperation,

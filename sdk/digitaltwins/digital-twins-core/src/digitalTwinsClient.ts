@@ -33,7 +33,8 @@ import type {
   DigitalTwinModelsAddResponse,
   EventRoutesGetByIdResponse,
   EventRoute,
-  QueryQueryTwinsResponse} from "./generated/models";
+  QueryQueryTwinsResponse,
+} from "./generated/models";
 import {
   DigitalTwinModelsGetByIdOptionalParams as GetModelOptions,
   DigitalTwinModelsListOptionalParams as ListModelsOptions,

@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import type { AbortSignalLike } from "@azure/abort-controller";
-import type { HttpHeaders} from "@azure/core-rest-pipeline";
+import type { HttpHeaders } from "@azure/core-rest-pipeline";
 import { createHttpHeaders } from "@azure/core-rest-pipeline";
 import {
   HeaderConstants,

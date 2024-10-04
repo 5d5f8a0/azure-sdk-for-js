@@ -6,20 +6,11 @@ import type {
   FullOperationResponse,
   OperationRequest,
   OperationResponseMap,
-  Serializer} from "../../src/index.js";
-import {
-  ServiceClient,
-  createSerializer,
-  deserializationPolicy,
+  Serializer,
 } from "../../src/index.js";
-import type {
-  HttpClient,
-  HttpHeaders,
-  HttpMethods} from "@azure/core-rest-pipeline";
-import {
-  createEmptyPipeline,
-  createHttpHeaders,
-} from "@azure/core-rest-pipeline";
+import { ServiceClient, createSerializer, deserializationPolicy } from "../../src/index.js";
+import type { HttpClient, HttpHeaders, HttpMethods } from "@azure/core-rest-pipeline";
+import { createEmptyPipeline, createHttpHeaders } from "@azure/core-rest-pipeline";
 
 /**
  * Representation of a Service Client test case where the response status is 200.

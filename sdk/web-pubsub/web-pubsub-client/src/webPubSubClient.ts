@@ -38,11 +38,14 @@ import type {
   AckMessage,
   SequenceAckMessage,
 } from "./models/messages";
-import type { WebPubSubClientProtocol} from "./protocols";
+import type { WebPubSubClientProtocol } from "./protocols";
 import { WebPubSubJsonReliableProtocol } from "./protocols";
 import type { WebPubSubClientCredential } from "./webPubSubClientCredential";
 import { WebSocketClientFactory } from "./websocket/websocketClient";
-import type { WebSocketClientFactoryLike, WebSocketClientLike } from "./websocket/websocketClientLike";
+import type {
+  WebSocketClientFactoryLike,
+  WebSocketClientLike,
+} from "./websocket/websocketClientLike";
 import { abortablePromise } from "./utils/abortablePromise";
 
 enum WebPubSubClientState {

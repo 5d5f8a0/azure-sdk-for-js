@@ -1,8 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import type { CommonClientOptions, OperationOptions } from "@azure/core-client";
-import type {
-  ChatMessageType} from "../generated/src/models";
+import type { ChatMessageType } from "../generated/src/models";
 import {
   ChatListChatThreadsOptionalParams as RestListChatThreadsOptions,
   ChatThreadListChatMessagesOptionalParams as RestListMessagesOptions,

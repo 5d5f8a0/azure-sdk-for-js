@@ -4,8 +4,7 @@
 import type * as coreClient from "@azure/core-client";
 import type { ExtendedCommonClientOptions } from "@azure/core-http-compat";
 
-import type {
-  DeletionRecoveryLevel} from "./generated/models";
+import type { DeletionRecoveryLevel } from "./generated/models";
 import {
   JsonWebKeyOperation as KeyOperation,
   JsonWebKeyType as KeyType,

@@ -2,12 +2,9 @@
 // Licensed under the MIT License.
 
 import type { CommonClientOptions } from "@azure/core-client";
-import type {
-  InternalPipelineOptions} from "@azure/core-rest-pipeline";
-import {
-  bearerTokenAuthenticationPolicy,
-} from "@azure/core-rest-pipeline";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { InternalPipelineOptions } from "@azure/core-rest-pipeline";
+import { bearerTokenAuthenticationPolicy } from "@azure/core-rest-pipeline";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import { SDK_VERSION } from "./constants";
 import { GeneratedClient } from "./generated/generatedClient";
@@ -24,37 +21,19 @@ import type {
   PiiCategory,
   TextDocumentInput,
 } from "./generated/models";
-import type {
-  DetectLanguageResultArray} from "./detectLanguageResultArray";
-import {
-  makeDetectLanguageResultArray,
-} from "./detectLanguageResultArray";
-import type {
-  RecognizeCategorizedEntitiesResultArray} from "./recognizeCategorizedEntitiesResultArray";
-import {
-  makeRecognizeCategorizedEntitiesResultArray,
-} from "./recognizeCategorizedEntitiesResultArray";
-import type {
-  AnalyzeSentimentResultArray} from "./analyzeSentimentResultArray";
-import {
-  makeAnalyzeSentimentResultArray,
-} from "./analyzeSentimentResultArray";
-import type {
-  ExtractKeyPhrasesResultArray} from "./extractKeyPhrasesResultArray";
-import {
-  makeExtractKeyPhrasesResultArray,
-} from "./extractKeyPhrasesResultArray";
-import type {
-  RecognizePiiEntitiesResultArray} from "./recognizePiiEntitiesResultArray";
-import {
-  makeRecognizePiiEntitiesResultArray,
-} from "./recognizePiiEntitiesResultArray";
-import type {
-  RecognizeLinkedEntitiesResultArray} from "./recognizeLinkedEntitiesResultArray";
-import {
-  makeRecognizeLinkedEntitiesResultArray,
-} from "./recognizeLinkedEntitiesResultArray";
-import type { TracingClient} from "@azure/core-tracing";
+import type { DetectLanguageResultArray } from "./detectLanguageResultArray";
+import { makeDetectLanguageResultArray } from "./detectLanguageResultArray";
+import type { RecognizeCategorizedEntitiesResultArray } from "./recognizeCategorizedEntitiesResultArray";
+import { makeRecognizeCategorizedEntitiesResultArray } from "./recognizeCategorizedEntitiesResultArray";
+import type { AnalyzeSentimentResultArray } from "./analyzeSentimentResultArray";
+import { makeAnalyzeSentimentResultArray } from "./analyzeSentimentResultArray";
+import type { ExtractKeyPhrasesResultArray } from "./extractKeyPhrasesResultArray";
+import { makeExtractKeyPhrasesResultArray } from "./extractKeyPhrasesResultArray";
+import type { RecognizePiiEntitiesResultArray } from "./recognizePiiEntitiesResultArray";
+import { makeRecognizePiiEntitiesResultArray } from "./recognizePiiEntitiesResultArray";
+import type { RecognizeLinkedEntitiesResultArray } from "./recognizeLinkedEntitiesResultArray";
+import { makeRecognizeLinkedEntitiesResultArray } from "./recognizeLinkedEntitiesResultArray";
+import type { TracingClient } from "@azure/core-tracing";
 import { createTracingClient } from "@azure/core-tracing";
 import { textAnalyticsAzureKeyCredentialPolicy } from "./azureKeyCredentialPolicy";
 import {

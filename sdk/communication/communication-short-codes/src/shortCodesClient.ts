@@ -17,7 +17,7 @@ import type {
   SubmitUSProgramBriefOptions,
 } from "./models";
 import type { CommonClientOptions, InternalClientPipelineOptions } from "@azure/core-client";
-import type { KeyCredential, TokenCredential} from "@azure/core-auth";
+import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type {
   ProgramBriefAttachment,

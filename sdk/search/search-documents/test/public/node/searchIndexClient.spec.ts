@@ -10,11 +10,9 @@ import type {
   SearchIndex,
   SynonymMap,
   VectorSearchAlgorithmConfiguration,
-  VectorSearchProfile} from "../../../src";
-import {
-  AzureKeyCredential,
-  SearchIndexClient
+  VectorSearchProfile,
 } from "../../../src";
+import { AzureKeyCredential, SearchIndexClient } from "../../../src";
 import { defaultServiceVersion } from "../../../src/serviceUtils";
 import type { Hotel } from "../utils/interfaces";
 import { createClients } from "../utils/recordedClient";

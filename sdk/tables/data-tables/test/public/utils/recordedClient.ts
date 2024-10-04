@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { AzureNamedKeyCredential, AzureSASCredential } from "@azure/core-auth";
-import type { Recorder, RecorderStartOptions, SanitizerOptions} from "@azure-tools/test-recorder";
+import type { Recorder, RecorderStartOptions, SanitizerOptions } from "@azure-tools/test-recorder";
 import { env } from "@azure-tools/test-recorder";
 import type { TableServiceClientOptions } from "../../../src";
 import { TableClient, TableServiceClient } from "../../../src";

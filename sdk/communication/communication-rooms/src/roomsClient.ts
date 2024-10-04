@@ -3,8 +3,7 @@
 
 import type { InternalClientPipelineOptions } from "@azure/core-client";
 import type { KeyCredential, TokenCredential } from "@azure/core-auth";
-import type {
-  CommunicationIdentifier} from "@azure/communication-common";
+import type { CommunicationIdentifier } from "@azure/communication-common";
 import {
   createCommunicationAuthPolicy,
   isKeyCredential,

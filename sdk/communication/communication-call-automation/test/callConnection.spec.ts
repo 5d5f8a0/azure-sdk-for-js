@@ -25,10 +25,9 @@ import type {
   AnswerCallOptions,
   AddParticipantOptions,
   RemoveParticipantsOption,
-  CancelAddParticipantOperationOptions} from "../src";
-import {
-  CallConnection
+  CancelAddParticipantOperationOptions,
 } from "../src";
+import { CallConnection } from "../src";
 import type { SinonStubbedInstance } from "sinon";
 import Sinon from "sinon";
 import { CALL_TARGET_ID, CALL_TARGET_ID_2 } from "./utils/connectionUtils";

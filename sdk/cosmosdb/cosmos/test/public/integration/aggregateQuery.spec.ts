@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 import assert from "assert";
 import type { Suite } from "mocha";
-import type { Container, ContainerDefinition} from "../../../src";
+import type { Container, ContainerDefinition } from "../../../src";
 import { IndexingMode } from "../../../src";
 import { DataType, IndexKind } from "../../../src";
 import type { QueryIterator } from "../../../src";

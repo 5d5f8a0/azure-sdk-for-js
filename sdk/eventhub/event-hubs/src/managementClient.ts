@@ -1,10 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import type {
-  RetryConfig,
-  RetryOptions,
-  SendRequestOptions} from "@azure/core-amqp";
+import type { RetryConfig, RetryOptions, SendRequestOptions } from "@azure/core-amqp";
 import {
   Constants,
   RequestResponseLink,
@@ -14,17 +11,9 @@ import {
   retry,
   translate,
 } from "@azure/core-amqp";
-import type {
-  EventContext,
-  Message,
-  ReceiverOptions,
-  SenderOptions} from "rhea-promise";
-import {
-  ReceiverEvents,
-  SenderEvents
-} from "rhea-promise";
-import type {
-  SimpleLogger} from "./logger.js";
+import type { EventContext, Message, ReceiverOptions, SenderOptions } from "rhea-promise";
+import { ReceiverEvents, SenderEvents } from "rhea-promise";
+import type { SimpleLogger } from "./logger.js";
 import {
   logErrorStackTrace,
   createSimpleLogger,

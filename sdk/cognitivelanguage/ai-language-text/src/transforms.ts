@@ -66,8 +66,7 @@ import type {
   TextAnalysisErrorResult,
   TextAnalysisSuccessResult,
 } from "./models";
-import type {
-  AssessmentIndex} from "./util";
+import type { AssessmentIndex } from "./util";
 import {
   extractErrorPointerIndex,
   parseAssessmentIndex,

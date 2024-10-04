@@ -7,13 +7,11 @@ const should = chai.should();
 const expect = chai.expect;
 import chaiAsPromised from "chai-as-promised";
 chai.use(chaiAsPromised);
-import type { ServiceBusMessage} from "../../src";
+import type { ServiceBusMessage } from "../../src";
 import { delay } from "../../src";
 import { TestClientType, TestMessage } from "./utils/testUtils";
 import type { ServiceBusReceiver } from "../../src";
-import type {
-  ServiceBusClientForTests,
-  EntityName} from "./utils/testutils2";
+import type { ServiceBusClientForTests, EntityName } from "./utils/testutils2";
 import {
   createServiceBusClientForTests,
   testPeekMsgsLength,

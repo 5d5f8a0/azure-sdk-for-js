@@ -1,13 +1,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import type { AbortSignalLike } from "@azure/abort-controller";
-import type {
-  RequestBodyType as HttpRequestBody} from "@azure/core-rest-pipeline";
-import {
-  getDefaultProxySettings
-} from "@azure/core-rest-pipeline";
+import type { RequestBodyType as HttpRequestBody } from "@azure/core-rest-pipeline";
+import { getDefaultProxySettings } from "@azure/core-rest-pipeline";
 import { isNode } from "@azure/core-util";
-import type { TokenCredential} from "@azure/core-auth";
+import type { TokenCredential } from "@azure/core-auth";
 import { isTokenCredential } from "@azure/core-auth";
 import type { PagedAsyncIterableIterator, PageSettings } from "@azure/core-paging";
 import { AnonymousCredential } from "./credentials/AnonymousCredential";
@@ -49,11 +46,10 @@ import type {
 } from "./models";
 import type { PipelineLike, StoragePipelineOptions } from "./Pipeline";
 import { newPipeline, isPipelineLike } from "./Pipeline";
-import type { CommonOptions} from "./StorageClient";
+import type { CommonOptions } from "./StorageClient";
 import { StorageClient } from "./StorageClient";
 import { tracingClient } from "./utils/tracing";
-import type {
-  WithResponse} from "./utils/utils.common";
+import type { WithResponse } from "./utils/utils.common";
 import {
   appendToURLPath,
   appendToURLQuery,
@@ -66,7 +62,7 @@ import {
   isIpEndpointStyle,
   parseObjectReplicationRecord,
   toTags,
-  truncatedISO8061Date
+  truncatedISO8061Date,
 } from "./utils/utils.common";
 import type { ContainerSASPermissions } from "./sas/ContainerSASPermissions";
 import {
@@ -77,13 +73,9 @@ import { BlobLeaseClient } from "./BlobLeaseClient";
 import type {
   BlobDeleteOptions,
   BlockBlobUploadOptions,
-  CommonGenerateSasUrlOptions} from "./Clients";
-import {
-  AppendBlobClient,
-  BlobClient,
-  BlockBlobClient,
-  PageBlobClient,
+  CommonGenerateSasUrlOptions,
 } from "./Clients";
+import { AppendBlobClient, BlobClient, BlockBlobClient, PageBlobClient } from "./Clients";
 import { BlobBatchClient } from "./BlobBatchClient";
 import type {
   ContainerCreateHeaders,
