@@ -414,7 +414,6 @@ export async function delay(
       resolve();
     };
 
-     
     timeout = setTimeout(resolveHandler, timeInMs);
     if (aborter !== undefined) {
       aborter.addEventListener("abort", abortHandler);
