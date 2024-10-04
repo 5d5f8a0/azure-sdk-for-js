@@ -48,7 +48,7 @@ const validateUrl =
     try {
       new URL(prefixUrlProtocol(input));
       return true;
-    } catch (e) {
+    } catch {
       return msg(prefixUrlProtocol(input));
     }
   };
