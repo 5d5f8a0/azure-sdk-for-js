@@ -4,11 +4,11 @@
 
 ```ts
 
-import { AbortSignalLike } from '@azure/abort-controller';
-import { AccessToken } from '@azure/core-auth';
-import { KeyCredential } from '@azure/core-auth';
-import { PipelinePolicy } from '@azure/core-rest-pipeline';
-import { TokenCredential } from '@azure/core-auth';
+import type { AbortSignalLike } from '@azure/abort-controller';
+import type { AccessToken } from '@azure/core-auth';
+import type { KeyCredential } from '@azure/core-auth';
+import type { PipelinePolicy } from '@azure/core-rest-pipeline';
+import type { TokenCredential } from '@azure/core-auth';
 
 // @public
 export class AzureCommunicationTokenCredential implements CommunicationTokenCredential {

@@ -4,7 +4,7 @@
 
 ```ts
 
-import { ChallengeCallbacks } from '@azure/core-rest-pipeline';
+import type { ChallengeCallbacks } from '@azure/core-rest-pipeline';
 
 // @public
 export interface CreateChallengeCallbacksOptions {
